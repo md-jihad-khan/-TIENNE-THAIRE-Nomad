@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const navLinks = [
@@ -11,10 +12,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar bg-base-100 shadow-sm fixed w-full z-50">
+    <motion.div
+      className="navbar bg-base-100 shadow-sm fixed w-full z-50"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       {/* Left (Mobile Dropdown + Logo) */}
       <div className="navbar-start lg:hidden">
-        {/* Mobile Dropdown */}
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -39,18 +44,26 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow cormorant-garamond"
           >
             {navLinks.map((link) => (
-              <li key={link.title}>
+              <motion.li
+                key={link.title}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: navLinks.indexOf(link) * 0.1,
+                }}
+              >
                 <NavLink
                   to={link.path}
                   className={({ isActive }) =>
                     isActive
-                      ? "font-bold border-b border-black rounded-none"
+                      ? "font-bold border-b  hover:bg-transparent border-black rounded-none"
                       : "hover:border-b border-black/60 rounded-none hover:bg-transparent"
                   }
                 >
                   {link.title}
                 </NavLink>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
@@ -58,14 +71,14 @@ const Navbar = () => {
 
       {/* Center (Desktop Menu - Perfectly Centered) */}
       <div className="hidden w-full lg:flex items-center justify-center">
-        <ul className="menu menu-horizontal px-1 text-base font-normal cormorant-garamond">
+        <ul className="menu menu-horizontal gap-2 text-base font-normal cormorant-garamond">
           {navLinks.map((link) => (
             <li key={link.title}>
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
                   isActive
-                    ? "font-bold border-b border-black rounded-none"
+                    ? "font-bold border-b border-black rounded-none hover:bg-transparent"
                     : "hover:border-b border-black/60 rounded-none hover:bg-transparent"
                 }
               >
@@ -75,7 +88,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
