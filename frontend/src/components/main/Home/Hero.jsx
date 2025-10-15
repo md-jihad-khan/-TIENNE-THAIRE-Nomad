@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import img2 from "../../../assets/Home/home1.png";
+import img2 from "../../../assets/Home/home1.webp";
 const Hero = () => {
   return (
     <section className="h-full w-full rounded-2xl bg-gradient-to-t from-transparent p-2 to-gray-100 relative overflow-hidden">
@@ -36,6 +36,7 @@ const Hero = () => {
         <motion.div
           className="relative"
           initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
