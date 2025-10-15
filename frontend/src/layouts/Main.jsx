@@ -8,7 +8,7 @@ const Main = () => {
         <Navbar />
       </div>
 
-      <div className="lg:container mx-auto px-6  lg:px-12">
+      <div className="lg:container mx-auto px-1  lg:px-12">
         <Outlet />
       </div>
     </div>
