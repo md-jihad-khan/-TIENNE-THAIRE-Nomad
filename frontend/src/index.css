@@ -21,3 +21,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@layer utilities {
+  .mask-gradient {
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+}

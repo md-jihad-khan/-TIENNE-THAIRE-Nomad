@@ -4,8 +4,11 @@ import Navbar from "../components/shared/Navbar";
 const Main = () => {
   return (
     <div className="inter">
-      <Navbar />
-      <div className="container mx-auto">
+      <div className="h-16  relative z-50 w-full">
+        <Navbar />
+      </div>
+
+      <div className="lg:container mx-auto px-6  lg:px-12">
         <Outlet />
       </div>
     </div>
