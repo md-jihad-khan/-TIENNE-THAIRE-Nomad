@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full z-50  shadow-sm">
+    <div className="fixed w-full z-50 bg-white  shadow-sm">
       <motion.div
         className="navbar px-3 lg:px-12 container mx-auto flex justify-between items-center"
         initial={{ y: -50, opacity: 0 }}
