@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "biography": "Biographie",
+    "books": "Livres",
+    "books_sub": {
+      "roman": "Roman",
+      "docuFiction": "Docu-fiction",
+      "documentary": "Documentaire"
+    },
+    "photography": "Photographie de Voyages",
+    "nbs": "Nomad Black Sheep"
+  }
+}
