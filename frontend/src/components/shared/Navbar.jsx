@@ -40,9 +40,6 @@ const Navbar = () => {
 
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-4">
-          {/* Language Toggle */}
-          <LanguageSwitcher />
-
           {/* Desktop NavLinks */}
           <ul className="hidden lg:flex menu menu-horizontal p-1 font-eb-garamond border-primary border-[1px] rounded-[40px] gap-2">
             {navLinks.map((link) =>
@@ -86,7 +83,8 @@ const Navbar = () => {
               )
             )}
           </ul>
-
+          {/* Language Toggle */}
+          <LanguageSwitcher />
           {/* Mobile Dropdown - RIGHT SIDE */}
           <div className="dropdown dropdown-end lg:hidden">
             <div tabIndex={0} role="button" className="btn btn-ghost">

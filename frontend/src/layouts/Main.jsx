@@ -9,7 +9,7 @@ const Main = () => {
         <Navbar />
       </div>
 
-      <div className="lg:container mx-auto my-3 px-1  lg:px-12 ">
+      <div className="lg:container mx-auto my-3 px-3  lg:px-12 ">
         <Outlet />
       </div>
       <div>
