@@ -4,7 +4,7 @@ import img1 from "../../../assets/Home/3.webp";
 const LastSection = () => {
   const { t } = useTranslation("global");
   return (
-    <section className="my-20 w-3/4 ml-auto">
+    <section className="my-20 lg:w-3/4 ml-auto">
       {/* images */}
       <div className="mt-8 aspect-video ">
         <img
@@ -15,15 +15,18 @@ const LastSection = () => {
       </div>
 
       {/* text */}
-      <div className=" flex justify-between">
-        <p className="font-jhost text-xl uppercase w-1/3 mr-auto font">
+      <div className=" flex flex-col-reverse lg:flex-row justify-between">
+        <p className="font-jhost text-sm md:text-lg  lg:w-1/3 mr-auto italic">
           {" "}
           {t("home.lastSectionCaption")}
         </p>{" "}
-        <p className="-jhost text-xl  text-[#0c331c] ">© Samuel Nicolaï</p>
+        <p className="-jhost text-sm md:text-lg  text-[#0c331c] ">
+          {" "}
+          © Ana Serafim
+        </p>
       </div>
 
-      <p className="w-3/4 my-9 mx-auto font-jhost text-xl uppercase">
+      <p className="lg:w-3/4 lg:my-9 mx-auto font-jhost md:text-xl lg:text-2xl mt-8">
         {t("home.lastSectionDescription")}
       </p>
     </section>

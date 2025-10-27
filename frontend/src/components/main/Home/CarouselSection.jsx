@@ -14,7 +14,7 @@ const CarouselSection = () => {
   const { t } = useTranslation("global");
 
   return (
-    <section className="my-20 w-3/4">
+    <section className="my-20 lg:w-3/4 ">
       {/* carousel */}
 
       <div className="mt-8 aspect-video ">
@@ -42,14 +42,16 @@ const CarouselSection = () => {
           ))}
         </Swiper>
       </div>
-      <div className=" flex justify-between">
-        <p className="font-jhost text-xl text-[#0c331c] ">© Samuel Nicolaï</p>{" "}
-        <p className="w-1/3 ml-auto font-jhost text-xl italic">
+      <div className=" flex flex-col lg:flex-row justify-between">
+        <p className="font-jhost text-sm md:text-lg  text-green-900 ">
+          © Samuel Nicolaï
+        </p>{" "}
+        <p className="lg:w-1/3 lg:ml-auto font-jhost text-sm  md:text-lg italic">
           {t("home.carouselCaption")}
         </p>
       </div>
 
-      <p className="w-3/4 my-9 ml-8 font-jhost text-xl ">
+      <p className="lg:w-3/4  my-8 lg:ml-8 font-jhost md:text-xl lg:text-2xl">
         {t("home.carouselDescription")}
       </p>
     </section>
