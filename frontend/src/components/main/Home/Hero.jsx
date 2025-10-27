@@ -9,10 +9,7 @@ const Hero = () => {
     <section className=" py-10">
       <div className="relative">
         <h1 className="font-eb-garamond text-2xl lg:text-7xl lg:text-center text-primary">
-          <span className="font-semibold uppercase">
-            {t("home.heroTitle")}{" "}
-          </span>{" "}
-          ÉTIENNE ÉTHAIRE{" "}
+          ÉTIENNE ÉTHAIRE
         </h1>
 
         <img
@@ -23,7 +20,7 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-between gap-4 lg:items-center mt-2">
-        <h2 className="font-jhost text-base lg:text-2xl lg:w-4/12 w-2/3 ">
+        <h2 className="font-jhost text-base lg:text-3xl  lg:w-1/2 w-2/3 ">
           {t("home.heroDescription")}
         </h2>
 
@@ -34,9 +31,17 @@ const Hero = () => {
               src={rainbow}
               alt=""
             />
-            <img className="rounded-2xl " src={img2} alt="" />
           </div>
           <img className=" rounded-2xl" src={img1} alt="" />
+
+          <div className=" col-span-2">
+            <p className="font-jhost text-lg text-right text-[#0c331c] ">
+              © Samuel Nicolaï
+            </p>{" "}
+            <p className="w-full font-jhost text-lg italic">
+              {t("home.heroCaption")}
+            </p>
+          </div>
         </div>
       </div>
     </section>

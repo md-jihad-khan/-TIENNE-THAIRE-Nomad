@@ -105,21 +105,25 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={-1}
-              className="menu menu-sm dropdown-content rounded-box z-[100] mt-3 w-52 bg-white p-2 shadow font-eb-garamond"
+              className="menu menu-sm dropdown-content  z-[100] mt-3 w-56 bg-white p-2 shadow font-eb-garamond  rounded-md gap-2"
             >
               {navLinks.map((link) =>
                 link.subLinks ? (
                   <li key={link.title}>
-                    <details>
-                      <summary className="cursor-pointer hover:border-b border-blue-700 rounded-none px-3 py-1">
+                    <details className="group">
+                      <summary className="px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white">
                         {link.title}
                       </summary>
-                      <ul className="p-2 bg-white shadow-lg rounded-box mt-1">
+                      <ul className="p-2 bg-white shadow-lg rounded-box mt-1 rounded-md">
                         {link.subLinks.map((sub) => (
                           <li key={sub.title}>
                             <NavLink
                               to={sub.path}
-                              className="hover:bg-gray-100 rounded-md px-3 py-1 block"
+                              className={({ isActive }) =>
+                                isActive
+                                  ? "block bg-primary text-white rounded-3xl px-4 py-1"
+                                  : "block px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
+                              }
                             >
                               {sub.title}
                             </NavLink>
@@ -132,7 +136,11 @@ const Navbar = () => {
                   <li key={link.title}>
                     <NavLink
                       to={link.path}
-                      className="hover:bg-gray-100 rounded-md px-2 py-1 block"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "block bg-primary text-white rounded-4xl px-5 py-1"
+                          : "block px-5 py-1 rounded-4xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
+                      }
                     >
                       {link.title}
                     </NavLink>

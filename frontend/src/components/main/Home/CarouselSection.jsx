@@ -44,12 +44,12 @@ const CarouselSection = () => {
       </div>
       <div className=" flex justify-between">
         <p className="font-jhost text-xl text-[#0c331c] ">© Samuel Nicolaï</p>{" "}
-        <p className="w-1/3 ml-auto font-jhost text-xl uppercase">
+        <p className="w-1/3 ml-auto font-jhost text-xl italic">
           {t("home.carouselCaption")}
         </p>
       </div>
 
-      <p className="w-3/4 my-9 ml-8 font-jhost text-xl uppercase">
+      <p className="w-3/4 my-9 ml-8 font-jhost text-xl ">
         {t("home.carouselDescription")}
       </p>
     </section>
