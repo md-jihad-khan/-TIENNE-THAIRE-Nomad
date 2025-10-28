@@ -3,7 +3,9 @@
 @plugin "daisyui" {
   themes: light;
 }
-
+body {
+  overflow-x: hidden;
+}
 .font-eb-garamond {
   font-family: "EB Garamond", serif;
 }
@@ -24,51 +26,4 @@
 }
 .border-primary {
   border-color: #0c331c;
-}
-.gradient-primary {
-  background: linear-gradient(
-    180deg,
-    rgb(220, 220, 255),
-    rgb(237, 237, 252),
-    transparent,
-    rgb(234, 234, 252)
-  );
-}
-.gradient-primary2 {
-  background-color: #e5e5f7;
-  opacity: 0.1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      #e5e5f7 20%,
-      #e5e5f7 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        #e5e5f7 20%,
-        #e5e5f7 80%,
-        transparent 80%,
-        transparent
-      )
-      10px 10px,
-    linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
-    linear-gradient(90deg, #444cf7 0.8px, #e5e5f7 0.8px) -0.4px 0;
-  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
-}
-.masked-text {
-  background-image: url("/images/grass-texture.jpg"); /* Replace with your actual path */
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-@layer utilities {
-  .mask-gradient {
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-  }
 }
