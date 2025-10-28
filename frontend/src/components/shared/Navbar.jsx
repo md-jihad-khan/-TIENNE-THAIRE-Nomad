@@ -1,30 +1,49 @@
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { motion } from "framer-motion";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const { t } = useTranslation("global");
+  const location = useLocation();
+  const navbarRef = useRef(null);
 
   const navLinks = [
     { title: t("nav.home"), path: "/" },
     { title: t("nav.biography"), path: "/biography" },
     {
       title: t("nav.books"),
-      path: "/livres",
+      path: "/books",
       subLinks: [
-        { title: t("nav.books_sub.roman"), path: "/livres/roman" },
-        { title: t("nav.books_sub.docuFiction"), path: "/livres/docu-fiction" },
-        { title: t("nav.books_sub.documentary"), path: "/livres/documentaire" },
+        { title: t("nav.books_sub.roman"), path: "/books/novel" },
+        { title: t("nav.books_sub.docuFiction"), path: "/books/docu-fiction" },
+        { title: t("nav.books_sub.documentary"), path: "/books/documentary" },
       ],
     },
     { title: t("nav.photography"), path: "/voyages" },
     { title: t("nav.nbs"), path: "/nomad-black-sheep" },
   ];
 
+  // ✅ Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+        // Close all open <details>
+        document.querySelectorAll("details[open]").forEach((detail) => {
+          detail.removeAttribute("open");
+        });
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <div className="fixed w-full z-50 bg-white  shadow-sm">
       <motion.div
+        ref={navbarRef}
         className="navbar px-3 lg:px-12 container mx-auto flex justify-between items-center"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -40,13 +59,25 @@ const Navbar = () => {
 
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-4">
-          {/* Desktop NavLinks */}
           <ul className="hidden lg:flex menu menu-horizontal p-1 font-eb-garamond border-primary border-[1px] rounded-[40px] gap-2">
-            {navLinks.map((link) =>
-              link.subLinks ? (
+            {navLinks.map((link) => {
+              const isSubActive =
+                link.subLinks &&
+                link.subLinks.some((sub) =>
+                  location.pathname.startsWith(sub.path)
+                );
+
+              return link.subLinks ? (
                 <li key={link.title}>
-                  <details className="group">
-                    <summary className="px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white">
+                  <details className="group" open={isSubActive}>
+                    <summary
+                      className={`px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200 
+                        ${
+                          isSubActive
+                            ? "bg-primary text-white"
+                            : "hover:!bg-[#0c331c] hover:!text-white"
+                        }`}
+                    >
                       {link.title}
                     </summary>
                     <ul className="p-2 bg-white shadow-lg rounded-box mt-1">
@@ -57,7 +88,7 @@ const Navbar = () => {
                             className={({ isActive }) =>
                               isActive
                                 ? "block bg-primary text-white rounded-3xl px-4 py-1"
-                                : "block px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c]  hover:!text-white"
+                                : "block px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
                             }
                           >
                             {sub.title}
@@ -80,9 +111,10 @@ const Navbar = () => {
                     {link.title}
                   </NavLink>
                 </li>
-              )
-            )}
+              );
+            })}
           </ul>
+
           {/* Language Toggle */}
           <LanguageSwitcher />
           {/* Mobile Dropdown - RIGHT SIDE */}
