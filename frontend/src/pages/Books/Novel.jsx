@@ -74,7 +74,7 @@ const Novel = () => {
         </div>
       </div>
 
-      {/* interview 1  black background*/}
+      {/* interview 1  green background*/}
 
       <div className="relative left-[50%] right-[50%] -mx-[50vw] w-screen bg-primary text-white font-jost my-10 py-10 px-4 sm:px-6">
         <div className="container lg:px-12 px-2 mx-auto ">
@@ -189,6 +189,167 @@ const Novel = () => {
           </div>
         </div>
       </div>
+      {/* order */}
+      <div className="lg:w-2/3 ">
+        <p className="md:text-xl lg:text-2xl mb-10 uppercase">Podcast</p>
+        <p className="md:text-xl lg:text-2xl mb-10 ">{t("books.orderDesc")}</p>
+        <p className="md:text-xl lg:text-2xl mb-10 uppercase">
+          {t("books.order")}
+        </p>
+      </div>
+      {/* AL 2004 */}
+      <div className="lg:w-2/3 ml-auto">
+        <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
+          {" "}
+          {t("books.LLTitle2")}{" "}
+        </h4>
+        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
+          {" "}
+          {t("books.LL2Desc1")}
+        </p>
+        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
+          {" "}
+          {t("books.LL2Desc2")}
+        </p>
+        <p className="font-jost  md:text-xl lg:text-2xl ">
+          {" "}
+          {t("books.LL2Desc3")}
+        </p>
+      </div>
+      {/* Interview2 */}
+      <div className="relative left-[50%] right-[50%] -mx-[50vw] w-screen bg-primary text-white font-jost my-10 py-10 px-4 sm:px-6">
+        <div className="container lg:px-12 px-2 mx-auto ">
+          {/* left-side section */}
+          <div className="lg:w-3/4 mr-auto pt-10">
+            <p className="md:text-xl lg:text-2xl mb-10 uppercase">Interview</p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc1")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc2")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc3")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc4")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc5")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc6")}
+            </p>
+          </div>
+          {/* right-side section */}
+          <div className="lg:w-3/4 ml-auto pt-10">
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc7")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc8")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc9")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc10")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-11 ">
+              {" "}
+              {t("books.interview2Desc11")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-12 ">
+              {" "}
+              {t("books.interview2Desc12")}
+            </p>
+          </div>
+          {/* left-side section */}
+          <div className="lg:w-3/4 mr-auto pt-10">
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc13")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc14")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc15")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc16")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc17")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc18")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc19")}
+            </p>
+          </div>
+          {/* right-side section */}
+          <div className="lg:w-3/4 ml-auto pt-10">
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc20")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc21")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc22")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc23")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-11 ">
+              {" "}
+              {t("books.interview2Desc24")}
+            </p>
+          </div>
+          {/* left-side section */}
+          <div className="lg:w-3/4 mr-auto pt-10">
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc25")}
+            </p>
+            <p className="md:text-xl lg:text-2xl mb-10 ">
+              {" "}
+              {t("books.interview2Desc26")}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p className="md:text-xl lg:text-2xl mb-10 uppercase">
+        {" "}
+        {t("books.interview2podcast")}
+      </p>
+      <p className="md:text-xl lg:text-2xl mb-10 uppercase">
+        {" "}
+        {t("books.interview2commander")}
+      </p>
     </div>
   );
 };

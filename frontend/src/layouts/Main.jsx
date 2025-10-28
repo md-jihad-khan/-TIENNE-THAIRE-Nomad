@@ -1,8 +1,14 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
+import { useEffect } from "react";
 
 const Main = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="inter min-h-screen">
       <div className="h-16  relative z-50 w-full">
