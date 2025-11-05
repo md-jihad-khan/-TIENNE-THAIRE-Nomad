@@ -16,7 +16,7 @@ const LastSection = () => {
 
       {/* text */}
       <div className=" flex flex-col-reverse lg:flex-row justify-between">
-        <p className="font-jhost text-sm md:text-lg  lg:w-1/3 mr-auto italic">
+        <p className="font-jhost text-sm md:text-lg   italic">
           {" "}
           {t("home.lastSectionCaption")}
         </p>{" "}

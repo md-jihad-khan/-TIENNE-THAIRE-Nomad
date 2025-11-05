@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section className=" py-10">
       <div className="relative">
-        {/* <h1 className="font-eb-garamond text-3xl md:text-7xl md:text-center text-primary">
+        <h2 className="font-eb-garamond text-3xl md:text-5xl md:text-center text-primary  ">
           {t("home.heroDescription")}
-        </h1> */}
+        </h2>
 
         <img
           className="absolute hidden lg:flex  left-1/3 -bottom-30"
@@ -20,9 +20,9 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center mt-2">
-        <h2 className="font-eb-garamond text-3xl md:text-5xl md:text-center text-primary  lg:w-2/3  ">
-          {t("home.heroDescription")}
-        </h2>
+        <h4 className="font-jost lg:w-2/3 ml-auto md:text-xl lg:text-2xl  lg:mt-30">
+          {t("home.biographyDescription")}
+        </h4>
 
         <div className="md:w-3/4 lg:w-5/12 grid grid-cols-2 items-end gap-1">
           <div className="relative">

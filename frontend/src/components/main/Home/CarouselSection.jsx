@@ -43,12 +43,12 @@ const CarouselSection = () => {
         </Swiper>
       </div>
       <div className=" flex flex-col lg:flex-row justify-between">
+        <p className=" font-jhost text-sm  md:text-lg italic">
+          {t("home.carouselCaption")}
+        </p>
         <p className="font-jhost text-sm md:text-lg  text-green-900 ">
           © Samuel Nicolaï
         </p>{" "}
-        <p className="lg:w-1/3 lg:ml-auto font-jhost text-sm  md:text-lg italic">
-          {t("home.carouselCaption")}
-        </p>
       </div>
 
       <p className="lg:w-3/4  my-8 lg:ml-8 font-jhost md:text-xl lg:text-2xl">

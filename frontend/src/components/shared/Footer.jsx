@@ -71,7 +71,7 @@ const Footer = () => {
         <nav className=" gap-10 items-center text-center md:justify-self-end  md:text-left w-full md:w-auto">
           {/* Subscribe */}
           <div className="flex flex-col items-center w-full md:items-start">
-            <h3 className="text-xl font-semibold mb-4 tracking-wide text-white">
+            <h3 className="text-xl font-semibold mb-4 tracking-wide  text-white">
               {t("footer.subscribe.title")}
             </h3>
 
@@ -100,11 +100,11 @@ const Footer = () => {
           </div>
 
           {/* Partners */}
-          <div className="flex flex-col items-center w-full md:items-start">
+          <div className="flex flex-col items-center w-full ">
             <h3 className="text-xl font-semibold mb-4 tracking-wide text-white">
               {t("footer.partners.title")}
             </h3>
-            <ul className="text-stone-300 space-y-2 text-sm">
+            <ul className="text-stone-300 text-center space-y-2 text-sm">
               <li className="hover:text-white transition-colors duration-300">
                 Éditions Lola Valérie Stein
               </li>
