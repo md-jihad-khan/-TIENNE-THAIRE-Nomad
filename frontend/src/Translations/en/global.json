@@ -22,7 +22,26 @@
     "lastSectionCaption": "“Keep me safe, Keep me wild”, comme le",
     "lastSectionDescription": "In reality, I see myself as a schizophrenic lost in this asylum called “Planet Earth.” My madness is the pursuit of impossible immortality. I’m obsessed with living several lives, since one alone is not enough (honestly, I ask: how can anyone accept living just one life — and such a short one, at that?). So there you have it — the writer of intimacy has become a long-distance explorer. Through travel, I am reborn at times as a photographer, at times as a videographer, at times as an artistic manager… Well hidden beneath the thick wool of a nomadic black sheep who invites you to frolic with him across the green meadows of this website…"
   },
-
+  "footer": {
+    "subtitle": "Contact Form",
+    "input": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email address",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here",
+      "submit": "Send Message"
+    },
+    "subscribe": {
+      "title": "Subscribe to our channel",
+      "channelName": "Nomad Black Sheep",
+      "merchandise": "Visit our store"
+    },
+    "partners": {
+      "title": "Partners"
+    }
+  },
   "biography": {
     "introDescription": "Born in Saint-Trond, nine months after a carefully coordinated action by my dear parents. The exact date will remain secret. Let’s simply place it at the end of what historians call the baby boom.",
     "introDescription2": "A journey through words, images, and moments.",

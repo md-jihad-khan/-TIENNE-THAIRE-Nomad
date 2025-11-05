@@ -16,20 +16,19 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={handleChangeLanguage}
-      className="relative w-22 h-7 rounded-full bg-primary flex items-center justify-between px-2 overflow-hidden shadow-md cursor-pointer border border-primary/20"
+      className="relative w-22 h-7 rounded-full bg-primary flex items-center justify-between px-1 shadow-md cursor-pointer border border-primary/20"
       aria-label={isFrench ? "Switch to English" : "Passer en français"}
     >
       {/* Animated Flag */}
       <motion.img
-        layout
-        transition={{ type: "spring", stiffness: 200, damping: 20 }}
         src={isFrench ? ukFlag : franceFlag}
         alt={isFrench ? "UK Flag" : "France Flag"}
         className="w-6 h-4 rounded-sm shadow absolute"
-        style={{
-          left: isFrench ? "8px" : "auto",
-          right: isFrench ? "auto" : "8px",
+        initial={false}
+        animate={{
+          x: isFrench ? 0 : 56, // manually control animation
         }}
+        transition={{ type: "spring", stiffness: 300, damping: 25 }}
       />
 
       {/* Language Text (constant center) */}
@@ -39,14 +38,13 @@ const LanguageSwitcher = () => {
 
       {/* Animated White Ball */}
       <motion.div
-        layout
-        transition={{ type: "spring", stiffness: 200, damping: 20 }}
         className="absolute bg-white w-5 h-5 rounded-full shadow"
-        style={{
-          right: isFrench ? "8px" : "auto",
-          left: isFrench ? "auto" : "8px",
+        initial={false}
+        animate={{
+          x: isFrench ? 56 : 0, // smooth transition, independent of layout
         }}
-      ></motion.div>
+        transition={{ type: "spring", stiffness: 300, damping: 25 }}
+      />
     </button>
   );
 };

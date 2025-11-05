@@ -5,7 +5,7 @@ const Documentary = () => {
   return (
     <div className="my-20 ">
       <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
-        {t("books.novelTitle")}
+        {t("BooksDocumentary.title")}
       </h2>
     </div>
   );

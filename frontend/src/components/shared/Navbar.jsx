@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* LEFT: TEXT LOGO */}
         <NavLink
           to="/"
-          className="font-semibold text-lg md:text-xl tracking-widest font-jomhuria "
+          className="font-semibold text-xl md:text-2xl tracking-widest text-primary font-jomhuria "
         >
           ÉTIENNE ÉTHAIRE
         </NavLink>
@@ -80,7 +80,7 @@ const Navbar = () => {
                     >
                       {link.title}
                     </summary>
-                    <ul className="p-2 bg-white shadow-lg rounded-box mt-1">
+                    <ul className="p-2 bg-white gap-1 flex flex-col shadow-lg rounded-box mt-1">
                       {link.subLinks.map((sub) => (
                         <li key={sub.title}>
                           <NavLink

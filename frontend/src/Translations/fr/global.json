@@ -21,6 +21,26 @@
     "lastSectionCaption": "“Keep me safe, Keep me wild”, comme le dit le tattoo sur ma tempe.",
     "lastSectionDescription": "En réalité, je me perçois en schizophrène égaré dans cet asile appelé ‘Planète Terre”. Mon délire, c’est la quête de l’impossible immortalité. J’ai l’obsession de vivre plusieurs vies puisqu’une seule ne suffit pas (sincèrement, je pose la question: comment peut-on se résoudre à ne vivre qu’une vie, et si courte, de surcroît?). Alors voilà, l’écrivain de l’intimité est devenu un explorateur au long cours. Grâce aux voyages, je renais tantôt photographe, tantôt vidéaste, tantôt manager artistique… Bien caché sous la laine épaisse d’un mouton noir nomade qui vous invite à venir gambader avec lui sur les vertes prairies de ce site internet…"
   },
+  "footer": {
+    "subtitle": "Formulaire de contact ",
+    "input": {
+      "name": "Nom",
+      "namePlaceholder": "Entrez votre nom",
+      "email": "E-mail",
+      "emailPlaceholder": "Entrez votre adresse e-mail",
+      "message": "Message",
+      "messagePlaceholder": "Écrivez votre message ici",
+      "submit": "Envoyer le message"
+    },
+    "subscribe": {
+      "title": "Abonnez-vous à notre chaîne",
+      "channelName": "Nomad Black Sheep",
+      "merchandise": "Visitez notre boutique"
+    },
+    "partners": {
+      "title": "Partenaires"
+    }
+  },
 
   "biography": {
     "introDescription": "Naissance à Saint-Trond, neuf mois après une action concertée par mes très chers parents. La date restera secrète. Situons-la simplement à la fin de ce que les historiens appellent le baby-boom.",
@@ -169,5 +189,16 @@
     "interviewDesc27": " C’est narcissique, mais c’est la raison pour laquelle je ne peux qu’écrire au « Je narratif ». L’écriture est trop proche de moi, trop vécue, je ne voudrais pas en prendre distance. Même si pour les fictions, je me fixe la contrainte du « Je féminin ». Ici, comme il s’agit d’une réalité, je ne pouvais que me projeter à l’avant-plan avec un « Je narratif masculin ». Le « Je » du texte me correspond à 100%.",
     "interviewDesc28": "Tout est donc véridique dans votre livre ?",
     "interviewDesc29": "Ah, ça, mystère! J’ai parlé d’une réalité. J’ai parlé d’un « Je » qui me correspond à 100%. Je n’ai pas dit « la réalité », je n’ai pas dit un « Je qui est moi ». A chacun d’apporter sa réponse. Casting ne m’appartient plus.  "
+  },
+  "BooksDocumentary": {
+    "title": "Documentaires",
+    "doc1Name": "Diva Siouxsie (2006)",
+    "doc1Timeline": "cover - interview - presse - podcast - extrait - commander",
+    "doc2Name": "Diva Siouxsie (2006)",
+    "doc2Desc": "Étienne Éthaire est 1) un supporter du Standard, 2) un supporter du Standard, 3) un supporter du Standard. Ensuite, un amateur de football. Ce \"documentaire\" exalté raconte ma passion pour un club volcanique qui possède ce que pas un autre club en Belgique, et même des plus fortunés, et même des plus titrés, ne possède : une âme. Rassemblant des portraits de vieilles légendes, de dirigeants, d'employés, de joueurs et de supporters, ce recueil se doit de servir talisman. Un encouragement littéraire pour présager le retour du Standard sur une route à nouveau consacrée et le faire entrer au Panthéon de la Culture.",
+    "doc2Timeline": "cover - interview - presse - podcast - extrait - commander",
+    "doc3Name": "Funérarium (2009)",
+    "doc3Desc": "En vrac, Étienne Éthaire aime les libellules et les chats, les gourmandises et les gourgandines, les grains de beauté et les grains de folie, Louise Brooks et P.J. Harvey, les voyages et les grands espaces. Ça, c’est dans la vraie vie. Parce que dans ses fictions, il privilégie plutôt les atmosphères étouffantes en huis clos. Histoire de tisser des portraits de femmes au bord de la crise de nerfs.",
+    "doc3Timeline": "cover - interview - presse - extrait - commander"
   }
 }
