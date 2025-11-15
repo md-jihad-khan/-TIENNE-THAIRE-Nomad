@@ -21,8 +21,8 @@ const Navbar = () => {
         { title: t("nav.books_sub.documentary"), path: "/books/documentary" },
       ],
     },
-    { title: t("nav.photography"), path: "/voyages" },
-    { title: t("nav.nbs"), path: "/nomad-black-sheep" },
+    { title: t("nav.photography"), path: "/photography" },
+    { title: t("nav.nbs"), path: "/nomadblacksheep" },
   ];
 
   // ✅ Close dropdowns when clicking outside

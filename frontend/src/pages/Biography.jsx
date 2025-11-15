@@ -23,25 +23,21 @@ const Biography = () => {
           {t("biography.introDescription")}
         </p>
 
-        <p className="font-jost  md:text-xl lg:text-2xl">
-          {" "}
-          {t("biography.introDescription2")}
-        </p>
-      </div>
+        <div className="lg:w-4/5 lg:ml-auto mt-20">
+          <div className="grid grid-cols-2 md:flex justify-end items-center ">
+            <img className="" src={img1} alt="" />
+            <img src={img2} alt="" />
+          </div>
 
-      <div className="lg:w-4/5 lg:ml-auto mt-20">
-        <div className="grid grid-cols-2 md:flex justify-end items-center ">
-          <img className="" src={img1} alt="" />
-          <img src={img2} alt="" />
+          <p className="font-jhost text-sm  md:text-lg italic mt-5">
+            {" "}
+            {t("biography.caption1")}
+          </p>
+
+          <div className="bg-primary ml-auto w-1/6 mt-3 h-2"></div>
         </div>
-
-        <p className="font-jhost text-sm  md:text-lg italic mt-5">
-          {" "}
-          {t("biography.caption1")}
-        </p>
-
-        <div className="bg-primary ml-auto w-1/6 mt-3 h-2"></div>
       </div>
+
       {/* adolescence */}
       <p className="font-jost  md:text-xl lg:text-2xl lg:w-1/3 my-20 leading-7">
         {" "}

@@ -6,6 +6,8 @@ import Biography from "../pages/Biography";
 import Novel from "../pages/Books/Novel";
 import Docufiction from "../pages/Books/Docufiction";
 import Documentary from "../pages/Books/Documentary";
+import Photography from "../pages/Photography";
+import NBS from "../pages/NBS";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
       {
         path: "/books/documentary",
         element: <Documentary />,
+      },
+      {
+        path: "/photography",
+        element: <Photography />,
+      },
+      {
+        path: "/nomadblacksheep",
+        element: <NBS />,
       },
     ],
   },
