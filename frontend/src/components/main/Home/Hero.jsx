@@ -1,5 +1,3 @@
-import img3 from "../../../assets/Home/2.webp";
-import img4 from "../../../assets/Home/3.webp";
 import rainbow from "../../../assets/Home/rainbow.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 const images = [img1, img2];
 const Hero = () => {
   const { t } = useTranslation("global");
@@ -29,14 +27,15 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <p className="font-jost text-xl md:text-2xl md:text-center mt-5 italic">
-        “Le temps d’apprendre à vivre, il est déjà trop tard”, Louis Aragon
+      <p className="font-jost text-xl md:text-xl md:text-center mt-10 italic">
+        “Le temps d’apprendre à vivre, il est déjà trop tard”,{" "}
+        <b>Louis Aragon</b>
       </p>
-      <p className="font-jost  md:text-center md:text-xl lg:text-2xl my-5 italic  ">
+      <p className="font-jost  md:text-center md:text-xl lg:text-xl my-5 italic mb-10 ">
         “Dans la citation précédente, remplacez le verbe “vivre” par écrire,
         photographier, filmer, ou par tout autre verbe illustrant vos passions,
         et la même vérité vous reviendra à la gueule, comme un boomerang.”,
-        Étienne Éthaire, toujours en quête du filtre de l’immortalité.
+        <b>Étienne Éthaire</b>, toujours en quête du filtre de l’immortalité.
       </p>
 
       <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center ">

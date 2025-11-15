@@ -5,11 +5,11 @@ const LastSection = () => {
   const { t } = useTranslation("global");
   return (
     <section className="my-20 ">
-      <p className=" lg:my-9 mx-auto font-jhost md:text-xl lg:text-2xl mt-8">
+      <p className="lg:w-2/3 mr-auto lg:my-9  font-jhost md:text-xl lg:text-2xl mt-8">
         {t("home.lastSectionDescription")}
       </p>
       {/* images */}
-      <div className="mt-8 lg:w-10/12 mx-auto ">
+      <div className="mt-8 lg:w-2/3 ml-auto ">
         <img className="rounded-2xl  object-cover" src={img1} alt="" />
 
         {/* text */}
