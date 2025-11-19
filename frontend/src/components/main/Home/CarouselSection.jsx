@@ -16,11 +16,11 @@ const CarouselSection = () => {
     <section className="mb-20 flex flex-col md:flex-row items-center  relative">
       {/* carousel */}
 
-      <div className=" w-1/3">
-        <img className=" rounded-2xl" src={img1} alt="" />
+      <div className=" w-1/2 ">
+        <img className=" rounded-2xl mx-auto w-1/2" src={img1} alt="" />
 
         <div className=" ">
-          <p className="font-jhost text-lg text-right text-[#0c331c] ">
+          <p className="font-jhost text-sm text-center text-[#0c331c] ">
             © Samuel Nicolaï
           </p>{" "}
           <p className="w-full absolute font-jhost text-lg italic">
@@ -29,7 +29,7 @@ const CarouselSection = () => {
         </div>
       </div>
 
-      <p className="lg:w-3/4  my-8 lg:ml-8 font-jhost md:text-xl lg:text-2xl">
+      <p className="w-1/2  my-8 ml-auto font-jhost md:text-xl lg:text-2xl">
         {t("home.carouselDescription")}
       </p>
     </section>

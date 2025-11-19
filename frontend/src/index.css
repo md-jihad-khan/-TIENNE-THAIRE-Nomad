@@ -27,3 +27,34 @@ body {
 .border-primary {
   border-color: #0c331c;
 }
+
+.swiper-custom-theme {
+  --swiper-navigation-color: #0c331c;
+  --swiper-pagination-color: #0c331c;
+}
+
+.swiper-custom-theme .swiper-pagination-bullet {
+  background: #e0e0e0;
+  opacity: 1;
+}
+
+/* 2. Style the Navigation Buttons (Next/Prev) */
+.swiper-custom-theme .swiper-button-next,
+.swiper-custom-theme .swiper-button-prev {
+  /* Set Background, Padding, and Shape */
+  background-color: white; /* White background */
+  padding: 10px; /* Add padding around the icon */
+  border-radius: 50%; /* Make it fully rounded (circular) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  transition: background-color 0.3s ease;
+}
+
+/* 3. Style the Navigation Button on Hover */
+.swiper-custom-theme .swiper-button-next:hover,
+.swiper-custom-theme .swiper-button-prev:hover {
+  background-color: #f0f0f0; /* Light gray on hover for interaction feedback */
+}
+
+.swiper-custom-theme .swiper-pagination-bullet-active {
+  background: #0c331c;
+}

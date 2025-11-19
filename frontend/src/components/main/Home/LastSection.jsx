@@ -4,12 +4,12 @@ import img1 from "../../../assets/Home/3.webp";
 const LastSection = () => {
   const { t } = useTranslation("global");
   return (
-    <section className="my-20 ">
-      <p className="lg:w-2/3 mr-auto lg:my-9  font-jhost md:text-xl lg:text-2xl mt-8">
+    <section className="my-20  grid grid-cols-2 gap-5">
+      <p className=" mr-auto lg:my-9  font-jhost md:text-xl lg:text-2xl mt-8">
         {t("home.lastSectionDescription")}
       </p>
       {/* images */}
-      <div className="mt-8 lg:w-2/3 ml-auto ">
+      <div className="mt-8 ">
         <img className="rounded-2xl  object-cover" src={img1} alt="" />
 
         {/* text */}

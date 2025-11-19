@@ -9,9 +9,9 @@ import img7 from "../assets/Biography/img7.png";
 import img8 from "../assets/Biography/img10.jpg";
 import img9 from "../assets/Biography/img11.jpg";
 import caruselImg1 from "../assets/Biography/image1.jpg";
-import caruselImg2 from "../assets/Biography/image2.jpg";
+import caruselImg4 from "../assets/Biography/image2.jpg";
 import caruselImg3 from "../assets/Biography/image3.jpg";
-import caruselImg4 from "../assets/Biography/image4.jpg";
+import caruselImg2 from "../assets/Biography/image4.jpg";
 import caruselImg5 from "../assets/Biography/image5.jpg";
 import caruselImg6 from "../assets/Biography/image6.jpg";
 
@@ -22,6 +22,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import { useState } from "react";
 
 const images = [
   caruselImg1,
@@ -31,8 +32,57 @@ const images = [
   caruselImg5,
   caruselImg6,
 ];
+
+// Define names for the slides corresponding to the images array
+const slideNames = [
+  "Right Arm",
+  "Left Arm",
+  "Chest",
+  "Upper Back",
+  "Side View",
+  "Full Body (Nude)", // The last slide
+];
+// Define constants for better readability
+const NUDE_SLIDE_INDEX = images.length - 1;
+
 const Biography = () => {
   const { t } = useTranslation("global");
+
+  // State for the carousel's active index and modal status
+  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hasConsented, setHasConsented] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Function to handle slide change and intercept the nude slide
+  const handleSlideChange = (swiper) => {
+    const nextIndex = swiper.activeIndex;
+
+    // Check if the user is attempting to slide to the nude image
+    if (nextIndex === NUDE_SLIDE_INDEX && !hasConsented) {
+      // Force Swiper to stay on the previous slide
+      swiper.slideTo(NUDE_SLIDE_INDEX - 1);
+
+      // Open the consent modal
+      setIsModalOpen(true);
+    } else {
+      // Allow navigation and update the active index
+      setActiveIndex(nextIndex);
+    }
+  };
+
+  // Function to handle consent
+  const handleConsent = (consent) => {
+    setIsModalOpen(false);
+    if (consent) {
+      setHasConsented(true);
+      // Now that consent is given, manually slide to the nude image
+      swiperInstance.slideTo(NUDE_SLIDE_INDEX);
+      setActiveIndex(NUDE_SLIDE_INDEX);
+    }
+    // If 'No' is clicked, the state remains false and the slide stays put
+  };
+
   return (
     <div className="my-10 ">
       <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary text-center  uppercase mb-10">
@@ -124,7 +174,7 @@ const Biography = () => {
         />
       </p>
 
-      <div className="font-jost  md:text-xl lg:text-2xl  ml-auto lg:w-10/12 ">
+      {/* <div className="font-jost  md:text-xl lg:text-2xl  ml-auto lg:w-10/12 ">
         <p className="mb-5">
           <Trans
             i18nKey={t("biography.litterature")}
@@ -141,17 +191,41 @@ const Biography = () => {
             }}
           />
         </p>
+      </div> */}
+
+      {/* img 3 */}
+      <div className="grid grid-cols-2">
+        <div className="">
+          <img className="" src={img3} alt="" />
+          <p className="font-jhost text-sm  md:text-lg italic mt-5">
+            {" "}
+            {t("biography.youthCaption")}
+          </p>
+          <div className="bg-primary mr-auto w-1/6 my-10 h-2"></div>
+        </div>
+        <div className="font-jost  md:text-xl lg:text-2xl  ">
+          <p className="mb-5">
+            <Trans
+              i18nKey={t("biography.litterature")}
+              components={{
+                bold: <strong className="font-bold" />,
+              }}
+            />
+          </p>
+          <p>
+            <Trans
+              i18nKey={t("biography.cinema2")}
+              components={{
+                bold: <strong className="font-bold" />,
+              }}
+            />
+          </p>
+        </div>
       </div>
 
       {/* youth */}
-      <div className="lg:w-4/5 mr-auto mt-20">
-        <img className="" src={img3} alt="" />
-        <p className="font-jhost text-sm  md:text-lg italic mt-5">
-          {" "}
-          {t("biography.youthCaption")}
-        </p>
-        <div className="bg-primary mr-auto w-1/6 my-10 h-2"></div>
 
+      <div className="lg:w-4/5 mr-auto mt-5">
         <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
           {t("biography.experimentYouthTitle")}
         </p>
@@ -165,6 +239,7 @@ const Biography = () => {
           {t("biography.experimentYouthDesc3")}
         </p>
       </div>
+
       {/* adult hood */}
       <div className="lg:w-4/5 ml-auto mt-30">
         <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
@@ -181,32 +256,34 @@ const Biography = () => {
         </p>
       </div>
 
-      {/* adult part 2 */}
-      <div className="lg:w-4/5 mr-auto mt-20">
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-          {t("biography.adultTitle3")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 ">
-          {t("biography.adultDescription3")}
-        </p>
-      </div>
-
       {/* Home */}
 
-      <div className="lg:w-3/5 my-20 ml-auto">
-        <img className="ml-auto " src={img4} alt="" />
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.homeTitle")}
-        </p>
-        <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
-          {t("biography.homeCaption")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.homeDesc1")}
-        </p>
+      <div className="grid grid-cols-2 gap-5">
+        {/* adult part 2 */}
+        <div className=" mr-auto mt-20">
+          <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
+            {t("biography.adultTitle3")}
+          </p>
+          <p className="font-jost  md:text-xl lg:text-2xl mb-5 ">
+            {t("biography.adultDescription3")}
+          </p>
+        </div>
+        <div className="  ml-auto">
+          <img className="mx-auto " src={img4} alt="" />
+          <p className="font-jost  md:text-xl lg:text-2xl text-center my-5">
+            {t("biography.homeTitle")}
+          </p>
+          <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
+            {t("biography.homeCaption")}
+          </p>
+        </div>
       </div>
+      <p className="font-jost  md:text-xl lg:text-2xl mb-5">
+        {t("biography.homeDesc1")}
+      </p>
+
       {/* litterature */}
-      <div className="lg:w-3/5 mr-auto my-30">
+      <div className="lg:w-3/4 mr-auto my-20">
         <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
           {t("biography.litteratureTitle")}
         </p>
@@ -224,24 +301,30 @@ const Biography = () => {
         </p>
       </div>
       {/* cinema books */}
-      <div className="lg:w-3/5 mr-auto">
-        <img className="" src={img5} alt="" />
-        <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
-          {t("biography.cinemaCaption")}
+
+      <div className="grid grid-cols-2 gap-10 mb-10">
+        <div className="">
+          <img className="rounded-2xl" src={img5} alt="" />
+          <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
+            {t("biography.cinemaCaption")}
+          </p>
+        </div>
+
+        <p className=" font-jost  md:text-xl lg:text-2xl ">
+          {t("biography.cinemaDesc")}
         </p>
       </div>
 
-      <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl my-20">
-        {t("biography.cinemaDesc")}
-      </p>
-      <p className="lg:w-4/5 mr-auto font-jost  md:text-xl lg:text-2xl">
-        {t("biography.bookDesc")}
-      </p>
-
       {/* father section*/}
 
-      <div className="my-32 ">
+      <div className="grid grid-cols-2 gap-10">
+        <p className="  font-jost  md:text-xl lg:text-2xl">
+          {t("biography.bookDesc")}
+        </p>
         <img className="ml-auto rounded-2xl " src={img6} alt="" />
+      </div>
+
+      <div className="mb-20 mt-5 ">
         <p className="font-jhost text-sm  md:text-lg   italic mb-10">
           {t("biography.caption2")}
         </p>
@@ -249,14 +332,17 @@ const Biography = () => {
         <p className="lg:w-4/5 mr-auto font-jost  md:text-xl lg:text-2xl mt-20 mb-10">
           {t("biography.novelDesc")}
         </p>
-        <p className="lg:w-4/5 mr-auto font-jost  md:text-xl lg:text-2xl">
-          {t("biography.inspiration")}
-        </p>
       </div>
 
       {/*began writing */}
-      <div className="my-32">
-        <img src={img7} alt="" />
+      <div className="my-10">
+        <div className="grid items-center grid-cols-2 gap-10 ">
+          <img src={img7} alt="" />
+          <p className=" font-jost  md:text-xl lg:text-2xl">
+            {t("biography.inspiration")}
+          </p>
+        </div>
+
         <p className="font-jhost text-sm  md:text-lg mt-5  italic mb-10">
           {t("biography.writingCaption")}
         </p>
@@ -278,22 +364,27 @@ const Biography = () => {
         <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
           {t("biography.exitDesc1")}
         </p>
-        <p className="font-jost  md:text-xl lg:text-2xl">
-          {t("biography.exitDesc2")}
-        </p>
       </div>
-      <div className="my-32 ">
-        <img className="ml-auto w-2/3 rounded-2xl" src={img8} alt="" />
-        <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
-          {t("biography.caption3")}
-        </p>
+      <div className="my-20 ">
+        <div className="grid grid-cols-2 gap-10">
+          <div>
+            <img className="ml-auto  rounded-2xl" src={img8} alt="" />
+            <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
+              {t("biography.caption3")}
+            </p>
+          </div>
+
+          <p className="font-jost  md:text-xl lg:text-2xl">
+            {t("biography.exitDesc2")}
+          </p>
+        </div>
 
         <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl  mb-10">
           {t("biography.exitDesc3")}
         </p>
       </div>
       {/* Nomad Black sheep */}
-      <div className="lg:w-2/3 ml-auto my-32">
+      <div className="lg:w-3/4 ml-auto my-32">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold  mb-5">
           {t("biography.NBSTitle")}
         </h5>
@@ -322,39 +413,97 @@ const Biography = () => {
         </p>
       </div>
       {/* Tatto Image */}
-      <div className=" gap-6 items-center flex">
-        <p className="lg:w-4/5  font-jost  md:text-xl lg:text-2xl  ">
-          {" "}
-          {t("biography.endSection")}
-        </p>
-        <Swiper
-          spaceBetween={30}
-          effect={"fade"}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay, EffectFade, Navigation, Pagination]}
-          className="mySwiper rounded-2xl w-1/4"
+      <div className=" mx-auto px-4 my-32">
+        <div className="flex flex-col md:flex-row gap-15 items-center">
+          {/* Text Paragraph */}
+          <p
+            className={`md:w-1/2 font-jost md:text-xl lg:text-2xl leading-relaxed`}
+          >
+            {t("biography.endSection")}
+          </p>
+
+          {/* Swiper Container */}
+          <div className="md:w-1/4 mx-auto">
+            <Swiper
+              onSwiper={setSwiperInstance} // Get the swiper instance
+              onSlideChange={handleSlideChange} // Intercept slide changes
+              spaceBetween={30}
+              effect={"fade"}
+              centeredSlides={true}
+              navigation={true}
+              pagination={{ clickable: true }}
+              modules={[EffectFade, Navigation, Pagination]}
+              className="rounded-2xl shadow-xl w-full swiper-custom-theme"
+            >
+              {images.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="relative overflow-hidden rounded-2xl">
+                    <div className="w-full pb-[177.77%] relative">
+                      <img
+                        src={src}
+                        alt={`Tattoo slide ${index + 1}`}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Slide Name Display */}
+            <p className="text-center font-bold text-lg mt-4 text-[#0c331c]">
+              {slideNames[activeIndex]}
+            </p>
+          </div>
+        </div>
+
+        {/* Caption */}
+        <p
+          className={`font-jost text-sm md:text-lg mt-4 italic text-gray-700 text-center`}
         >
-          {images.map((src, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative w-full h-[500px] overflow-hidden rounded-2xl">
-                {/* 👇 Full width + full height + crop like Instagram */}
-                <img
-                  src={src}
-                  alt={`slide-${index}`}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          {t("biography.TattooCaption")}
+        </p>
       </div>
-      <p className="font-jhost text-sm  md:text-lg mt-5  italic mb-10">
-        {t("biography.TattooCaption")}
-      </p>
+
+      {/* --- Nude Content Consent Modal --- */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+          <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
+            {/* Title: Use the new theme color for the warning text for contrast */}
+            <h3 className="text-2xl font-bold text-[#0c331c] mb-4">
+              ⚠️ Content Warning: Next Image
+            </h3>
+
+            <p className="text-gray-700 mb-6">
+              The next image in the progression is a **full-body photograph**
+              intended to display the entirety of the tattoo work. As this image
+              contains **nudity**, we require your explicit consent to view it.
+            </p>
+            <p className="text-gray-700 mb-8 font-semibold">
+              Do you wish to proceed and view the "Full Body (Nude)" photograph?
+            </p>
+
+            <div className="flex justify-center space-x-4">
+              {/* YES Button: Use the new theme color for the primary action */}
+              <button
+                onClick={() => handleConsent(true)}
+                className="px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-300"
+              >
+                Yes, Show Me
+              </button>
+
+              {/* NO Button: Keep it neutral for the secondary action */}
+              <button
+                onClick={() => handleConsent(false)}
+                className="px-6 py-3 border border-gray-300 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
+              >
+                No, Keep Me Here
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* desire for youth */}
       <div className="lg:w-2/3 mr-auto lg:mt-32">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
@@ -388,18 +537,21 @@ const Biography = () => {
         </p>
       </div>
       {/* Nora */}
-      <div className="my-32 ">
-        <img className="ml-auto w-2/3 rounded-2xl" src={img9} alt="" />
-        <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
-          {t("biography.caption4")}
-        </p>
-
-        <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl  mb-10">
-          {t("biography.noraDesc1")}
-        </p>
-        <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl  mb-10">
-          {t("biography.noraDesc2")}
-        </p>
+      <div className="my-20 grid grid-cols-2 gap-10 ">
+        <div>
+          <img className=" rounded-2xl" src={img9} alt="" />
+          <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
+            {t("biography.caption4")}
+          </p>
+        </div>
+        <div>
+          <p className=" font-jost  md:text-xl lg:text-2xl  mb-10">
+            {t("biography.noraDesc1")}
+          </p>
+          <p className=" font-jost  md:text-xl lg:text-2xl  mb-10">
+            {t("biography.noraDesc2")}
+          </p>
+        </div>
       </div>
     </div>
   );
