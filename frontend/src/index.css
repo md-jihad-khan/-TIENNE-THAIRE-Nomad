@@ -41,6 +41,8 @@ body {
 /* 2. Style the Navigation Buttons (Next/Prev) */
 .swiper-custom-theme .swiper-button-next,
 .swiper-custom-theme .swiper-button-prev {
+  width: 30px; /* button width */
+  height: 30px;
   /* Set Background, Padding, and Shape */
   background-color: white; /* White background */
   padding: 10px; /* Add padding around the icon */

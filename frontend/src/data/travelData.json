@@ -1,0 +1,33 @@
+[
+  {
+    "country": "Japan",
+    "photos": [
+      {
+        "src": "https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg",
+        "caption": "Mount Fuji at sunrise"
+      },
+      {
+        "src": "https://career-advice.jobs.ac.uk/wp-content/uploads/Japan-e1634207070862.jpg.optimal.jpg"
+      },
+      {
+        "src": "https://www.pelago.com/img/countries/japan/1201-0821_japan-book-things-to-do-pelago-xlarge.webp",
+        "caption": "Tokyo streets at night"
+      }
+    ]
+  },
+  {
+    "country": "France",
+    "photos": [
+      {
+        "src": "https://dynamic-media.tacdn.com/media/photo-o/30/42/46/65/caption.jpg?f=webp&w=1000&h=700",
+        "caption": "Eiffel Tower at night"
+      },
+      {
+        "src": "https://www.welcometofrance.com/app/uploads/2019/12/alexander-kagan-t9Td0zfDTwI-unsplash-1920x1280.jpg"
+      },
+      {
+        "src": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/05/149803.jpg"
+      }
+    ]
+  }
+]

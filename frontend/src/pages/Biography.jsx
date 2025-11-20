@@ -16,7 +16,7 @@ import caruselImg5 from "../assets/Biography/image5.jpg";
 import caruselImg6 from "../assets/Biography/image6.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Pagination, Navigation, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -302,7 +302,7 @@ const Biography = () => {
       </div>
       {/* cinema books */}
 
-      <div className="grid grid-cols-2 gap-10 mb-10">
+      <div className="grid grid-cols-2 gap-10 mb-10 items-center">
         <div className="">
           <img className="rounded-2xl" src={img5} alt="" />
           <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
@@ -317,7 +317,7 @@ const Biography = () => {
 
       {/* father section*/}
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10 items-center">
         <p className="  font-jost  md:text-xl lg:text-2xl">
           {t("biography.bookDesc")}
         </p>
@@ -356,7 +356,7 @@ const Biography = () => {
       </div>
 
       {/* exit leterature */}
-      <div className="lg:w-4/5 mr-auto my-32">
+      <div className="lg:w-4/5 mr-auto my-20">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold  mb-5">
           {t("biography.exitTitle")}
         </h5>
@@ -366,7 +366,7 @@ const Biography = () => {
         </p>
       </div>
       <div className="my-20 ">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-10 items-center">
           <div>
             <img className="ml-auto  rounded-2xl" src={img8} alt="" />
             <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
@@ -384,7 +384,7 @@ const Biography = () => {
         </p>
       </div>
       {/* Nomad Black sheep */}
-      <div className="lg:w-3/4 ml-auto my-32">
+      <div className="lg:w-3/4 ml-auto ">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold  mb-5">
           {t("biography.NBSTitle")}
         </h5>
@@ -400,7 +400,7 @@ const Biography = () => {
         </p>
       </div>
       {/* return Literature */}
-      <div className="lg:w-2/3 mr-auto lg:my-32">
+      <div className="lg:w-2/3 mr-auto lg:my-20">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
           {t("biography.RLTitle")}
         </h5>
@@ -413,7 +413,7 @@ const Biography = () => {
         </p>
       </div>
       {/* Tatto Image */}
-      <div className=" mx-auto px-4 my-32">
+      <div className=" mx-auto px-4 my-10">
         <div className="flex flex-col md:flex-row gap-15 items-center">
           {/* Text Paragraph */}
           <p
@@ -505,7 +505,7 @@ const Biography = () => {
       )}
 
       {/* desire for youth */}
-      <div className="lg:w-2/3 mr-auto lg:mt-32">
+      <div className="lg:w-2/3 mr-auto lg:mt-16">
         <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
           {t("biography.desireTitle")}
         </h5>
