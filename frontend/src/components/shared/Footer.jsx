@@ -109,7 +109,7 @@ const Footer = () => {
                 Éditions Lola Valérie Stein
               </li>
               <li className="hover:text-white transition-colors duration-300">
-                Étienne Éthaire
+                Nomad Black Sheep
               </li>
             </ul>
           </div>
