@@ -487,7 +487,7 @@ const Biography = () => {
               {/* YES Button: Use the new theme color for the primary action */}
               <button
                 onClick={() => handleConsent(true)}
-                className="px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-300"
+                className=" btn px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md  hover:bg-opacity-90 transition duration-300"
               >
                 Yes, Show Me
               </button>
@@ -495,7 +495,7 @@ const Biography = () => {
               {/* NO Button: Keep it neutral for the secondary action */}
               <button
                 onClick={() => handleConsent(false)}
-                className="px-6 py-3 border border-gray-300 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
+                className="px-6 py-3 border btn border-gray-300 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
               >
                 No, Keep Me Here
               </button>
