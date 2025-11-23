@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import { useEffect } from "react";
+import img from "../assets/Footer/et.png";
 
 const Main = () => {
   const { pathname } = useLocation();
@@ -18,7 +19,8 @@ const Main = () => {
       <div className="lg:container mx-auto my-3 px-3  lg:px-12 ">
         <Outlet />
       </div>
-      <div>
+      <div className="">
+        <img className="" src={img} alt="" />
         <div className="bg-primary text-white ">
           <Footer />
         </div>

@@ -85,8 +85,8 @@ const Biography = () => {
 
   return (
     <div className="my-10 ">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary text-center  uppercase mb-10">
-        Biography
+      <h2 className="font-eb-garamond text-3xl md:text-7xl md:text-center text-primary  mb-10">
+        Biographie
       </h2>
 
       <p className="font-jost text-md md:text-xl md:text-center mt-5 italic">

@@ -13,25 +13,30 @@ const CarouselSection = () => {
   const { t } = useTranslation("global");
 
   return (
-    <section className="mb-20 flex flex-col md:flex-row items-center  relative">
+    <section className="mb-5 flex flex-col gap-20 md:flex-row items-center  relative">
       {/* carousel */}
 
-      <div className=" w-1/2 ">
-        <img className=" rounded-2xl mx-auto w-1/2" src={img1} alt="" />
+      <div className=" w-1/4 mx-auto ">
+        <img className=" rounded-2xl mx-auto " src={img1} alt="" />
 
         <div className=" ">
           <p className="font-jhost text-sm text-center text-[#0c331c] ">
             © Samuel Nicolaï
           </p>{" "}
-          <p className="w-full absolute font-jhost text-lg italic">
+          <p className="w-full absolute   font-jhost text-md italic -bottom-6">
             {t("home.heroCaption")}
           </p>
         </div>
       </div>
 
-      <p className="w-1/2  my-8 ml-auto font-jhost md:text-xl lg:text-2xl">
-        {t("home.carouselDescription")}
-      </p>
+      <div className="w-full my-8 ">
+        <p className=" ml-auto font-jhost md:text-xl lg:text-2xl mb-5">
+          {t("home.carouselDescription")}
+        </p>
+        <p className=" ml-auto font-jhost md:text-xl lg:text-2xl">
+          {t("home.carouselDescription2")}
+        </p>
+      </div>
     </section>
   );
 };

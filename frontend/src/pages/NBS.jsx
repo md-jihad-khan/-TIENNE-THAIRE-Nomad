@@ -7,7 +7,7 @@ import img5 from "../assets/NBS/image5.jpg";
 const NBS = () => {
   return (
     <div className="my-10">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-5xl text-primary text-center  uppercase mb-10">
+      <h2 className="font-eb-garamond text-3xl md:text-5xl md:text-center text-primary mb-10">
         NOMAD BLACK SHEEP PRODUCTIONS
       </h2>
 
