@@ -3,12 +3,14 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import travelData from "../data/travelData.json";
 import img1 from "../assets/Travel/image1.jpg";
 import { useEffect, useRef } from "react";
 import twemoji from "twemoji";
+import { useTranslation } from "react-i18next";
 
 const Photography = () => {
+  const { t } = useTranslation("global");
+  const travelData = t("TravelData", { returnObjects: true }) || [];
   const ref = useRef(null);
 
   useEffect(() => {
@@ -93,9 +95,9 @@ const Photography = () => {
       <div ref={ref} className="grid grid-cols-4 gap-5">
         {travelData.map((country, index) => (
           <div key={index} className="mb-16">
-            <h2 className="text-3xl font-semibold mb-6 flex items-center gap-2">
+            <h2 className="text-lg font-semibold mb-6 flex items-center  gap-2">
               {country.country}{" "}
-              <span className="inline-block w-8 h-8 mt-2">{country.flag}</span>
+              <span className=" w-8 h-8 mt-2">{country.flag}</span>
             </h2>
 
             <Swiper
@@ -117,7 +119,7 @@ const Photography = () => {
 
                     {/* Caption below image */}
                     {photo.caption && (
-                      <p className="mt-3 text-center text-gray-700 text-sm font-medium ">
+                      <p className="mt-3 text-center text-gray-700 text-[9px] font-medium ">
                         {photo.caption}
                       </p>
                     )}

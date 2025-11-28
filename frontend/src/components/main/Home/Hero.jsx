@@ -11,21 +11,29 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router";
+import { FaArrowUpLong } from "react-icons/fa6";
 const images = [img1, img2];
 const Hero = () => {
   const { t } = useTranslation("global");
   return (
-    <section className=" py-10">
+    <section className=" mt-10">
       <div className="relative">
         <h2 className="font-eb-garamond text-3xl md:text-5xl md:text-center text-primary  ">
           {t("home.heroDescription")}
         </h2>
-
-        <img
-          className="absolute hidden lg:flex w-20 left-0 -bottom-8"
-          src={rainbow}
-          alt=""
-        />
+        <Link to={"/biography"} className="w-auto">
+          <FaArrowUpLong className="ml-8 rotate-45 text-gray-200 " />
+          <p className="z-10 text-gray-200 text-xs ml-3 font-jhost">
+            {" "}
+            {t("home.biographyTitle")}
+          </p>
+          <img
+            className="absolute hidden lg:flex w-20 left-0 -bottom-8 -z-10"
+            src={rainbow}
+            alt=""
+          />
+        </Link>
       </div>
       <p className="font-jost text-xl md:text-xl md:text-center mt-10 italic">
         “Le temps d’apprendre à vivre, il est déjà trop tard”,{" "}

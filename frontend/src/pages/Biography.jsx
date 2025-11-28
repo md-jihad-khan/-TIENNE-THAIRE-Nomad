@@ -85,7 +85,7 @@ const Biography = () => {
 
   return (
     <div className="my-10 ">
-      <h2 className="font-eb-garamond text-3xl md:text-7xl md:text-center text-primary  mb-10">
+      <h2 className="font-eb-garamond text-3xl md:text-6xl md:text-center text-primary  mb-10">
         Biographie
       </h2>
 
@@ -467,7 +467,7 @@ const Biography = () => {
 
       {/* --- Nude Content Consent Modal --- */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black/50  flex items-center justify-center z-50 p-4">
           <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
             {/* Title: Use the new theme color for the warning text for contrast */}
             <h3 className="text-2xl font-bold text-[#0c331c] mb-4">

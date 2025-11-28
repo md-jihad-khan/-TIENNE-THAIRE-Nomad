@@ -31,7 +31,14 @@ const CarouselSection = () => {
 
       <div className="w-full my-8 ">
         <p className=" ml-auto font-jhost md:text-xl lg:text-2xl mb-5">
-          {t("home.carouselDescription")}
+          S’échapper de la littérature, de sa prison schizophrénique (entre mon
+          "Je" réel et mon "Je" imaginaire) est dès lors devenu une question de
+          survie.
+        </p>
+        <p className=" ml-auto font-jhost md:text-xl lg:text-2xl mb-5">
+          J’ai d’abord trouvé un exutoire dans des écrits de type documentaire,
+          y abordant quelques thèmes de prédilection tels que le cinéma, le
+          rock, le sport…
         </p>
         <p className=" ml-auto font-jhost md:text-xl lg:text-2xl">
           {t("home.carouselDescription2")}
