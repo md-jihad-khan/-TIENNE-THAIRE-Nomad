@@ -3,6 +3,15 @@ import img2 from "../assets/NBS/image2.jpg";
 import img3 from "../assets/NBS/image3.png";
 import img4 from "../assets/NBS/image4.jpg";
 import img5 from "../assets/NBS/image5.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+
+import { Autoplay, EffectFade } from "swiper/modules";
+
+const images = [img4, img3];
 
 const NBS = () => {
   return (
@@ -29,46 +38,86 @@ const NBS = () => {
         <b> Jean Cocteau</b>
       </p>
 
-      <div className="grid grid-cols-2 gap-10 items-center">
-        <p className="font-jost  md:text-xl lg:text-2xl">
-          Comme expliqué dans la biographie, le pseudonyme Étienne Éthaire
-          laisse désormais progressivement la place au surnom Nomad Black Sheep
-          qui a jailli hors d’une peinture miniature d’Ana Serafim et qui s’est
-          finalement imposé comme une marque à part entière.
-        </p>
+      <div className="grid grid-cols-3 gap-10 items-center">
+        <div className="col-span-2">
+          <p className="font-jost  md:text-xl lg:text-2xl mb-5">
+            Comme expliqué dans la biographie, le pseudonyme Étienne Éthaire
+            laisse désormais progressivement la place au surnom Nomad Black
+            Sheep qui a jailli hors d’une peinture miniature d’Ana Serafim et
+            qui s’est finalement imposé comme une marque à part entière.
+          </p>
+          <p className="font-jost  md:text-xl lg:text-2xl ">
+            Au départ, j’ai fondé la chaîne Youtube Nomad Black Sheep avec
+            Colombe Akimana, une monteuse vidéo particulièrement douée. Nous
+            étions deux monteurs… Mais, dès les premiers clips musicaux, nos
+            goûts et nos talents respectifs ont façonné nos missions. Colombe
+            s’est naturellement spécialisée dans le montage où sa technique
+            excelle. Et, de mon côté, j’ai naturellement pris le contrôle du
+            management artistique où mon sens critique, mon degré d’exigence et
+            ma culture générale servent de guidance.
+          </p>
+        </div>
+
         <div>
-          <img className="w-1/2 mx-auto" src={img4} alt="" />
+          <div className="mt-8 aspect-square ">
+            <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, EffectFade]}
+              className="mySwiper rounded-2xl"
+            >
+              {images.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="aspect-square w-full h-fulloverflow-hidden relative">
+                    <img
+                      src={src}
+                      alt={`slide-${index}`}
+                      className="absolute aspect-square inset-0 w-full  object-cover"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
           <p className="font-jhost text-sm md:text-lg ml-auto italic mt-5">
             Cette peinture est devenue le premier logo de ma chaîne Youtube
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10 items-center mt-20">
-        <div>
-          <img className=" mx-auto" src={img3} alt="" />
-        </div>
+      <div className="gap-10 items-center mt-20">
+        <p className="font-jost  md:text-xl lg:text-2xl col-span-2 mb-5">
+          Enfin, bref, je ne vais pas retracer ici l’historique de ce qui est
+          vite devenu une maison de production à part entière. Ma biographie
+          évoque déjà la genèse et l’évolution d’un projet qui est de toute
+          façon présenté en détail sur le site Nomad Black Sheep.
+        </p>
         <p className="font-jost  md:text-xl lg:text-2xl col-span-2">
-          Au départ, j’ai fondé la chaîne Youtube Nomad Black Sheep avec Colombe
-          Akimana, une monteuse vidéo particulièrement douée. Nous étions deux
-          monteurs… Mais, dès les premiers clips musicaux, nos goûts et nos
-          talents respectifs ont façonné nos missions. Colombe s’est
-          naturellement spécialisée dans le montage où sa technique excelle. Et,
-          de mon côté, j’ai naturellement pris le contrôle du management
-          artistique où mon sens critique, mon degré d’exigence et ma culture
-          générale servent de guidance. Enfin, bref, je ne vais pas retracer ici
-          l’historique de ce qui est vite devenu une maison de production à part
-          entière. Ma biographie évoque déjà la genèse et l’évolution d’un
-          projet qui est de toute façon présenté en détail sur le site Nomad
-          Black Sheep.
+          En revanche, ce que je souhaite exprimer sur cette page, c’est la
+          volonté intérieure et les valeurs qui déterminent le concept Nomad
+          Black Sheep. En commençant par une mise au point. Je combats les
+          formats courts. Je combats la superficialité. Je préconise la
+          profondeur et la nuance. À partir de là, je ne vais pas changer ma
+          politique d’absence assumée sur les communautés offertes par Facebook,
+          Instagram ou TikTok. Certes, je connais l’importance des réseaux
+          soviaux dans le marketing moderne et, néanmoins, je leur dis “merde”.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-10 items-center mt-20">
         <p className="font-jost  md:text-xl lg:text-2xl ">
-          Au départ, j’ai fondé la chaîne Youtube Nomad Black Sheep avec Colombe
-          Akimana, une monteuse vidéo particulièrement douée. Nous étions deux
-          monteurs… Mais, dès les premiers clips musicaux, nos goûts et nos
-          talents respectifs ont façonné nos missions. Colombe s’est
-          naturellement spécialisée dans le montage où sa technique excelle.{" "}
+          Voilà, c’est écrit! Une des valeurs de Nomad Black Sheep, c’est de
+          prouver qu’il est possible de créer de la valeur artistique sans
+          souscrire aux diktats d’une société mercantile à l’extrême. Le rejet
+          des plate-formes Facebook, Instagram et Tik-Tok entre dans ce cadre.
+          Par contre, Youtube et les sites internets sont adoubés. Youtube est
+          un média! Nous ne l’utilisons pas en réseau social et nous récusons
+          cette appellation. De même, le site internet se conçoit comme un
+          catalogue accessible au monde entier.
           <br /> Et, de mon côté, j’ai naturellement pris le contrôle du
           management artistique où mon sens critique, mon degré d’exigence et ma
           culture générale servent de guidance.
@@ -77,12 +126,7 @@ const NBS = () => {
           <img className="w-2/3 mx-auto" src={img1} alt="" />
         </div>
       </div>
-      <p className="font-jost  md:text-xl lg:text-2xl mt-10 ">
-        Enfin, bref, je ne vais pas retracer ici l’historique de ce qui est vite
-        devenu une maison de production à part entière. Ma biographie évoque
-        déjà la genèse et l’évolution d’un projet qui est de toute façon
-        présenté en détail sur le site Nomad Black Sheep.
-      </p>
+
       <p className="font-jost  md:text-xl lg:text-2xl mt-10 ">
         Ce préambule étant clarifié, je voudrais présenter mon objectif
         personnel à travers Nomad Black Sheep. Après des années d’intense

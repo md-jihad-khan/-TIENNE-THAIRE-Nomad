@@ -91,13 +91,13 @@
       "flag": "🇦🇱",
       "photos": [
         {
-          "src": "./CountryImages/Albenia/image2.webp"
+          "src": "/CountryImages/Albenia/image2.webp"
         },
         {
-          "src": "./CountryImages/Albenia/image1.webp"
+          "src": "/CountryImages/Albenia/image1.webp"
         },
         {
-          "src": "./CountryImages/Albenia/image3.webp"
+          "src": "/CountryImages/Albenia/image3.webp"
         }
       ]
     },
@@ -106,13 +106,13 @@
       "flag": "🇩🇪",
       "photos": [
         {
-          "src": "./CountryImages/Allemagne/image1.webp"
+          "src": "/CountryImages/Allemagne/image1.webp"
         },
         {
-          "src": "./CountryImages/Allemagne/image3.webp"
+          "src": "/CountryImages/Allemagne/image3.webp"
         },
         {
-          "src": "./CountryImages/Allemagne/image2.webp"
+          "src": "/CountryImages/Allemagne/image2.webp"
         }
       ]
     },
@@ -121,7 +121,7 @@
       "flag": "🇦🇩",
       "photos": [
         {
-          "src": "./CountryImages/ANDORRE/image1.webp",
+          "src": "/CountryImages/ANDORRE/image1.webp",
           "caption": "Admire the initials"
         }
       ]
@@ -131,14 +131,14 @@
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "photos": [
         {
-          "src": "./CountryImages/ANGLETERRE/image2.webp",
+          "src": "/CountryImages/ANGLETERRE/image2.webp",
           "caption": "Memory of my new wave years, concerts in London, my fan road trip to follow my idol, Siouxsie, with her Banshees"
         },
         {
-          "src": "./CountryImages/ANGLETERRE/image3.webp"
+          "src": "/CountryImages/ANGLETERRE/image3.webp"
         },
         {
-          "src": "./CountryImages/ANGLETERRE/image1.webp",
+          "src": "/CountryImages/ANGLETERRE/image1.webp",
           "caption": "In London, everything breathes music, from Carnaby Street to the subway corridors"
         }
       ]
@@ -148,13 +148,13 @@
       "flag": "🇦🇲",
       "photos": [
         {
-          "src": "./CountryImages/Armenia/image3.webp"
+          "src": "/CountryImages/Armenia/image3.webp"
         },
         {
-          "src": "./CountryImages/Armenia/image1.webp"
+          "src": "/CountryImages/Armenia/image1.webp"
         },
         {
-          "src": "./CountryImages/Armenia/image2.webp"
+          "src": "/CountryImages/Armenia/image2.webp"
         }
       ]
     },
@@ -163,14 +163,14 @@
       "flag": "🇦🇹",
       "photos": [
         {
-          "src": "./CountryImages/AUTRICHE/image3.webp",
+          "src": "/CountryImages/AUTRICHE/image3.webp",
           "caption": "Poppies as far as the eye can see, so many childhood memories, I love this flower, red like my Standard"
         },
         {
-          "src": "./CountryImages/AUTRICHE/image2.webp"
+          "src": "/CountryImages/AUTRICHE/image2.webp"
         },
         {
-          "src": "./CountryImages/AUTRICHE/image1.webp"
+          "src": "/CountryImages/AUTRICHE/image1.webp"
         }
       ]
     },
@@ -179,19 +179,19 @@
       "flag": "🇦🇿",
       "photos": [
         {
-          "src": "./CountryImages/Azerbaijan/image4.webp"
+          "src": "/CountryImages/Azerbaijan/image4.webp"
         },
         {
-          "src": "./CountryImages/Azerbaijan/image3.webp"
+          "src": "/CountryImages/Azerbaijan/image3.webp"
         },
         {
-          "src": "./CountryImages/Azerbaijan/image2.webp"
+          "src": "/CountryImages/Azerbaijan/image2.webp"
         },
         {
-          "src": "./CountryImages/Azerbaijan/image5.webp"
+          "src": "/CountryImages/Azerbaijan/image5.webp"
         },
         {
-          "src": "./CountryImages/Azerbaijan/image1.webp"
+          "src": "/CountryImages/Azerbaijan/image1.webp"
         }
       ]
     },
@@ -200,20 +200,20 @@
       "flag": "🇧🇪",
       "photos": [
         {
-          "src": "./CountryImages/BELGIQUE/image5.webp"
+          "src": "/CountryImages/BELGIQUE/image5.webp"
         },
         {
-          "src": "./CountryImages/BELGIQUE/image3.webp"
+          "src": "/CountryImages/BELGIQUE/image3.webp"
         },
         {
-          "src": "./CountryImages/BELGIQUE/image1.webp",
+          "src": "/CountryImages/BELGIQUE/image1.webp",
           "caption": "These first three photos represent the Burial of Mati L'Ohé, a joyous, pagan, iconoclastic, tumultuous, disheveled celebration, fueled by péket (local gin). Every August 16th, the procession and ball conclude three days and nights of festivities. I advise everyone to come and discover the spirit of Liège."
         },
         {
-          "src": "./CountryImages/BELGIQUE/image4.webp"
+          "src": "/CountryImages/BELGIQUE/image4.webp"
         },
         {
-          "src": "./CountryImages/BELGIQUE/image2.webp"
+          "src": "/CountryImages/BELGIQUE/image2.webp"
         }
       ]
     },
@@ -222,7 +222,7 @@
       "flag": "🇧🇿",
       "photos": [
         {
-          "src": "./CountryImages/BÉLIZE/image1.jpg"
+          "src": "/CountryImages/BÉLIZE/image1.jpg"
         }
       ]
     },
@@ -231,25 +231,25 @@
       "flag": "🇧🇴",
       "photos": [
         {
-          "src": "./CountryImages/BOLIVIE/image5.webp"
+          "src": "/CountryImages/BOLIVIE/image5.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image4.webp"
+          "src": "/CountryImages/BOLIVIE/image4.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image7.webp"
+          "src": "/CountryImages/BOLIVIE/image7.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image3.webp"
+          "src": "/CountryImages/BOLIVIE/image3.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image1.webp"
+          "src": "/CountryImages/BOLIVIE/image1.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image6.webp"
+          "src": "/CountryImages/BOLIVIE/image6.webp"
         },
         {
-          "src": "./CountryImages/BOLIVIE/image2.webp"
+          "src": "/CountryImages/BOLIVIE/image2.webp"
         }
       ]
     },
@@ -258,7 +258,7 @@
       "flag": "🇧🇬",
       "photos": [
         {
-          "src": "./CountryImages/BULGARIE/image1.webp"
+          "src": "/CountryImages/BULGARIE/image1.webp"
         }
       ]
     },
@@ -267,25 +267,25 @@
       "flag": "🇰🇭",
       "photos": [
         {
-          "src": "./CountryImages/CAMBODGE/image1.jpg"
+          "src": "/CountryImages/CAMBODGE/image1.jpg"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image2.webp"
+          "src": "/CountryImages/CAMBODGE/image2.webp"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image3.webp"
+          "src": "/CountryImages/CAMBODGE/image3.webp"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image4.webp"
+          "src": "/CountryImages/CAMBODGE/image4.webp"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image5.webp"
+          "src": "/CountryImages/CAMBODGE/image5.webp"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image6.webp"
+          "src": "/CountryImages/CAMBODGE/image6.webp"
         },
         {
-          "src": "./CountryImages/CAMBODGE/image7.webp"
+          "src": "/CountryImages/CAMBODGE/image7.webp"
         }
       ]
     },
@@ -294,22 +294,22 @@
       "flag": "🇨🇦",
       "photos": [
         {
-          "src": "./CountryImages/CANADA/image1.jpg"
+          "src": "/CountryImages/CANADA/image1.jpg"
         },
         {
-          "src": "./CountryImages/CANADA/image2.jpg"
+          "src": "/CountryImages/CANADA/image2.jpg"
         },
         {
-          "src": "./CountryImages/CANADA/image3.jpg"
+          "src": "/CountryImages/CANADA/image3.jpg"
         },
         {
-          "src": "./CountryImages/CANADA/image4.jpg"
+          "src": "/CountryImages/CANADA/image4.jpg"
         },
         {
-          "src": "./CountryImages/CANADA/image5.jpg"
+          "src": "/CountryImages/CANADA/image5.jpg"
         },
         {
-          "src": "./CountryImages/CANADA/image6.jpg"
+          "src": "/CountryImages/CANADA/image6.jpg"
         }
       ]
     },
@@ -318,13 +318,13 @@
       "flag": "🇨🇻",
       "photos": [
         {
-          "src": "./CountryImages/CAP VERT/image1.jpg"
+          "src": "/CountryImages/CAP VERT/image1.jpg"
         },
         {
-          "src": "./CountryImages/CAP VERT/image2.jpg"
+          "src": "/CountryImages/CAP VERT/image2.jpg"
         },
         {
-          "src": "./CountryImages/CAP VERT/image3.jpg"
+          "src": "/CountryImages/CAP VERT/image3.jpg"
         }
       ]
     },
@@ -333,28 +333,28 @@
       "flag": "🇨🇳",
       "photos": [
         {
-          "src": "./CountryImages/CHINE/image1.jpg"
+          "src": "/CountryImages/CHINE/image1.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image2.png"
+          "src": "/CountryImages/CHINE/image2.png"
         },
         {
-          "src": "./CountryImages/CHINE/image3.jpg"
+          "src": "/CountryImages/CHINE/image3.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image4.jpg"
+          "src": "/CountryImages/CHINE/image4.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image5.jpg"
+          "src": "/CountryImages/CHINE/image5.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image6.jpg"
+          "src": "/CountryImages/CHINE/image6.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image7.jpg"
+          "src": "/CountryImages/CHINE/image7.jpg"
         },
         {
-          "src": "./CountryImages/CHINE/image8.jpg"
+          "src": "/CountryImages/CHINE/image8.jpg"
         }
       ]
     },
@@ -363,34 +363,34 @@
       "flag": "🇨🇷",
       "photos": [
         {
-          "src": "./CountryImages/COSTA RICA/image1.jpg"
+          "src": "/CountryImages/COSTA RICA/image1.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image2.jpg"
+          "src": "/CountryImages/COSTA RICA/image2.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image3.jpg"
+          "src": "/CountryImages/COSTA RICA/image3.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image4.jpg"
+          "src": "/CountryImages/COSTA RICA/image4.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image5.jpg"
+          "src": "/CountryImages/COSTA RICA/image5.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image6.jpg"
+          "src": "/CountryImages/COSTA RICA/image6.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image7.jpg"
+          "src": "/CountryImages/COSTA RICA/image7.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image8.jpg"
+          "src": "/CountryImages/COSTA RICA/image8.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image9.jpg"
+          "src": "/CountryImages/COSTA RICA/image9.jpg"
         },
         {
-          "src": "./CountryImages/COSTA RICA/image10.jpg"
+          "src": "/CountryImages/COSTA RICA/image10.jpg"
         }
       ]
     },
@@ -399,13 +399,13 @@
       "flag": "🇭🇷",
       "photos": [
         {
-          "src": "./CountryImages/CROATIE/image1.jpg"
+          "src": "/CountryImages/CROATIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/CROATIE/image2.jpg"
+          "src": "/CountryImages/CROATIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/CROATIE/image3.jpg"
+          "src": "/CountryImages/CROATIE/image3.jpg"
         }
       ]
     },
@@ -414,28 +414,28 @@
       "flag": "🇨🇺",
       "photos": [
         {
-          "src": "./CountryImages/CUBA/image1.jpg"
+          "src": "/CountryImages/CUBA/image1.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image2.jpg"
+          "src": "/CountryImages/CUBA/image2.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image3.jpg"
+          "src": "/CountryImages/CUBA/image3.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image4.jpg"
+          "src": "/CountryImages/CUBA/image4.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image5.jpg"
+          "src": "/CountryImages/CUBA/image5.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image6.jpg"
+          "src": "/CountryImages/CUBA/image6.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image7.jpg"
+          "src": "/CountryImages/CUBA/image7.jpg"
         },
         {
-          "src": "./CountryImages/CUBA/image8.jpg"
+          "src": "/CountryImages/CUBA/image8.jpg"
         }
       ]
     },
@@ -445,7 +445,7 @@
       "flag": "🇩🇰",
       "photos": [
         {
-          "src": "./CountryImages/DANEMARK/image1.jpg"
+          "src": "/CountryImages/DANEMARK/image1.jpg"
         }
       ]
     },
@@ -454,13 +454,13 @@
       "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "photos": [
         {
-          "src": "./CountryImages/ÉCOSSE/image1.jpg"
+          "src": "/CountryImages/ÉCOSSE/image1.jpg"
         },
         {
-          "src": "./CountryImages/ÉCOSSE/image2.jpg"
+          "src": "/CountryImages/ÉCOSSE/image2.jpg"
         },
         {
-          "src": "./CountryImages/ÉCOSSE/image3.jpg"
+          "src": "/CountryImages/ÉCOSSE/image3.jpg"
         }
       ]
     },
@@ -469,7 +469,7 @@
       "flag": "🇮🇪",
       "photos": [
         {
-          "src": "./CountryImages/EIRE/image1.jpg"
+          "src": "/CountryImages/EIRE/image1.jpg"
         }
       ]
     },
@@ -478,25 +478,25 @@
       "flag": "🇦🇪",
       "photos": [
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image1.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image1.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image2.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image2.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image3.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image3.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image4.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image4.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image5.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image5.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image6.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image6.jpg"
         },
         {
-          "src": "./CountryImages/ÉMIRATS ARABES UNIS/image7.jpg"
+          "src": "/CountryImages/ÉMIRATS ARABES UNIS/image7.jpg"
         }
       ]
     },
@@ -505,19 +505,19 @@
       "flag": "🇪🇸",
       "photos": [
         {
-          "src": "./CountryImages/ESPAGNE/image1.jpg"
+          "src": "/CountryImages/ESPAGNE/image1.jpg"
         },
         {
-          "src": "./CountryImages/ESPAGNE/image2.jpg"
+          "src": "/CountryImages/ESPAGNE/image2.jpg"
         },
         {
-          "src": "./CountryImages/ESPAGNE/image3.jpg"
+          "src": "/CountryImages/ESPAGNE/image3.jpg"
         },
         {
-          "src": "./CountryImages/ESPAGNE/image4.jpg"
+          "src": "/CountryImages/ESPAGNE/image4.jpg"
         },
         {
-          "src": "./CountryImages/ESPAGNE/image5.jpg"
+          "src": "/CountryImages/ESPAGNE/image5.jpg"
         }
       ]
     },
@@ -526,7 +526,7 @@
       "flag": "🇪🇪",
       "photos": [
         {
-          "src": "./CountryImages/ESTONIE/image1.jpg"
+          "src": "/CountryImages/ESTONIE/image1.jpg"
         }
       ]
     },
@@ -535,27 +535,27 @@
       "flag": "🇺🇸",
       "photos": [
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image1.jpg"
+          "src": "/CountryImages/ÉTATS-UNIS/image1.jpg"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image2.jpg"
+          "src": "/CountryImages/ÉTATS-UNIS/image2.jpg"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image3.jpg"
+          "src": "/CountryImages/ÉTATS-UNIS/image3.jpg"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image4.jpg",
+          "src": "/CountryImages/ÉTATS-UNIS/image4.jpg",
           "caption": "Twenty years later in Chicago, I finally became a good photographer, with a sharp eye and the camera always slung over my shoulder"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image5.jpg"
+          "src": "/CountryImages/ÉTATS-UNIS/image5.jpg"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image6.jpg",
+          "src": "/CountryImages/ÉTATS-UNIS/image6.jpg",
           "caption": "At the time, I was a poor photographer equipped with the worst cameras, the disposable Kodaks. Nonetheless, this is a historic photo of a vanished New York, given the presence of the Twin Towers"
         },
         {
-          "src": "./CountryImages/ÉTATS-UNIS/image7.jpg"
+          "src": "/CountryImages/ÉTATS-UNIS/image7.jpg"
         }
       ]
     },
@@ -564,13 +564,13 @@
       "flag": "🇫🇮",
       "photos": [
         {
-          "src": "./CountryImages/FINLANDE/image1.jpg"
+          "src": "/CountryImages/FINLANDE/image1.jpg"
         },
         {
-          "src": "./CountryImages/FINLANDE/image2.jpg"
+          "src": "/CountryImages/FINLANDE/image2.jpg"
         },
         {
-          "src": "./CountryImages/FINLANDE/image3.jpg"
+          "src": "/CountryImages/FINLANDE/image3.jpg"
         }
       ]
     },
@@ -579,31 +579,31 @@
       "flag": "🇫🇷",
       "photos": [
         {
-          "src": "./CountryImages/FRANCE/image1.jpg"
+          "src": "/CountryImages/FRANCE/image1.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image2.jpg"
+          "src": "/CountryImages/FRANCE/image2.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image3.jpg"
+          "src": "/CountryImages/FRANCE/image3.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image4.jpg"
+          "src": "/CountryImages/FRANCE/image4.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image5.jpg"
+          "src": "/CountryImages/FRANCE/image5.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image6.jpg"
+          "src": "/CountryImages/FRANCE/image6.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image7.jpg"
+          "src": "/CountryImages/FRANCE/image7.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image8.jpg"
+          "src": "/CountryImages/FRANCE/image8.jpg"
         },
         {
-          "src": "./CountryImages/FRANCE/image9.jpg"
+          "src": "/CountryImages/FRANCE/image9.jpg"
         }
       ]
     },
@@ -612,13 +612,13 @@
       "flag": "🇬🇲",
       "photos": [
         {
-          "src": "./CountryImages/GAMBIE/image1.jpg"
+          "src": "/CountryImages/GAMBIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/GAMBIE/image2.jpg"
+          "src": "/CountryImages/GAMBIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/GAMBIE/image3.jpg"
+          "src": "/CountryImages/GAMBIE/image3.jpg"
         }
       ]
     },
@@ -627,31 +627,31 @@
       "flag": "🇬🇪",
       "photos": [
         {
-          "src": "./CountryImages/GÉORGIE/image1.jpg"
+          "src": "/CountryImages/GÉORGIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image2.jpg"
+          "src": "/CountryImages/GÉORGIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image3.jpg"
+          "src": "/CountryImages/GÉORGIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image4.jpg"
+          "src": "/CountryImages/GÉORGIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image5.jpg"
+          "src": "/CountryImages/GÉORGIE/image5.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image6.jpg"
+          "src": "/CountryImages/GÉORGIE/image6.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image7.jpg"
+          "src": "/CountryImages/GÉORGIE/image7.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image8.jpg"
+          "src": "/CountryImages/GÉORGIE/image8.jpg"
         },
         {
-          "src": "./CountryImages/GÉORGIE/image9.jpg"
+          "src": "/CountryImages/GÉORGIE/image9.jpg"
         }
       ]
     },
@@ -660,7 +660,7 @@
       "flag": "🇬🇮",
       "photos": [
         {
-          "src": "./CountryImages/GIBRALTAR/image1.jpg"
+          "src": "/CountryImages/GIBRALTAR/image1.jpg"
         }
       ]
     },
@@ -669,19 +669,19 @@
       "flag": "🇬🇷",
       "photos": [
         {
-          "src": "./CountryImages/GRĖCE/image1.jpg"
+          "src": "/CountryImages/GRĖCE/image1.jpg"
         },
         {
-          "src": "./CountryImages/GRĖCE/image2.jpg"
+          "src": "/CountryImages/GRĖCE/image2.jpg"
         },
         {
-          "src": "./CountryImages/GRĖCE/image3.jpg"
+          "src": "/CountryImages/GRĖCE/image3.jpg"
         },
         {
-          "src": "./CountryImages/GRĖCE/image4.jpg"
+          "src": "/CountryImages/GRĖCE/image4.jpg"
         },
         {
-          "src": "./CountryImages/GRĖCE/image5.jpg"
+          "src": "/CountryImages/GRĖCE/image5.jpg"
         }
       ]
     },
@@ -690,13 +690,13 @@
       "flag": "🇬🇹",
       "photos": [
         {
-          "src": "./CountryImages/GUATÉMALA/image1.jpg"
+          "src": "/CountryImages/GUATÉMALA/image1.jpg"
         },
         {
-          "src": "./CountryImages/GUATÉMALA/image2.jpg"
+          "src": "/CountryImages/GUATÉMALA/image2.jpg"
         },
         {
-          "src": "./CountryImages/GUATÉMALA/image3.jpg"
+          "src": "/CountryImages/GUATÉMALA/image3.jpg"
         }
       ]
     },
@@ -705,22 +705,22 @@
       "flag": "🇭🇰",
       "photos": [
         {
-          "src": "./CountryImages/HONG KONG/image1.jpg"
+          "src": "/CountryImages/HONG KONG/image1.jpg"
         },
         {
-          "src": "./CountryImages/HONG KONG/image2.jpg"
+          "src": "/CountryImages/HONG KONG/image2.jpg"
         },
         {
-          "src": "./CountryImages/HONG KONG/image3.jpg"
+          "src": "/CountryImages/HONG KONG/image3.jpg"
         },
         {
-          "src": "./CountryImages/HONG KONG/image4.jpg"
+          "src": "/CountryImages/HONG KONG/image4.jpg"
         },
         {
-          "src": "./CountryImages/HONG KONG/image5.jpg"
+          "src": "/CountryImages/HONG KONG/image5.jpg"
         },
         {
-          "src": "./CountryImages/HONG KONG/image6.jpg"
+          "src": "/CountryImages/HONG KONG/image6.jpg"
         }
       ]
     },
@@ -729,7 +729,7 @@
       "flag": "🇭🇺",
       "photos": [
         {
-          "src": "./CountryImages/HONGRIE/image1.jpg"
+          "src": "/CountryImages/HONGRIE/image1.jpg"
         }
       ]
     },
@@ -738,31 +738,31 @@
       "flag": "🇮🇩",
       "photos": [
         {
-          "src": "./CountryImages/INDONÉSIE/image1.jpg"
+          "src": "/CountryImages/INDONÉSIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image2.jpg"
+          "src": "/CountryImages/INDONÉSIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image3.jpg"
+          "src": "/CountryImages/INDONÉSIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image4.jpg"
+          "src": "/CountryImages/INDONÉSIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image5.jpg"
+          "src": "/CountryImages/INDONÉSIE/image5.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image6.jpg"
+          "src": "/CountryImages/INDONÉSIE/image6.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image7.jpg"
+          "src": "/CountryImages/INDONÉSIE/image7.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image8.jpg"
+          "src": "/CountryImages/INDONÉSIE/image8.jpg"
         },
         {
-          "src": "./CountryImages/INDONÉSIE/image9.jpg"
+          "src": "/CountryImages/INDONÉSIE/image9.jpg"
         }
       ]
     },
@@ -771,7 +771,7 @@
       "flag": "󠁮󠁧󠁮",
       "photos": [
         {
-          "src": "./CountryImages/IRLANDE DU NORD/image1.jpg"
+          "src": "/CountryImages/IRLANDE DU NORD/image1.jpg"
         }
       ]
     },
@@ -780,19 +780,19 @@
       "flag": "🇮🇸",
       "photos": [
         {
-          "src": "./CountryImages/ISLANDE/image1.jpg"
+          "src": "/CountryImages/ISLANDE/image1.jpg"
         },
         {
-          "src": "./CountryImages/ISLANDE/image2.jpg"
+          "src": "/CountryImages/ISLANDE/image2.jpg"
         },
         {
-          "src": "./CountryImages/ISLANDE/image3.jpg"
+          "src": "/CountryImages/ISLANDE/image3.jpg"
         },
         {
-          "src": "./CountryImages/ISLANDE/image4.jpg"
+          "src": "/CountryImages/ISLANDE/image4.jpg"
         },
         {
-          "src": "./CountryImages/ISLANDE/image5.jpg"
+          "src": "/CountryImages/ISLANDE/image5.jpg"
         }
       ]
     },
@@ -801,31 +801,31 @@
       "flag": "🇮🇹",
       "photos": [
         {
-          "src": "./CountryImages/ITALIE/image1.jpg"
+          "src": "/CountryImages/ITALIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image2.jpg"
+          "src": "/CountryImages/ITALIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image3.jpg"
+          "src": "/CountryImages/ITALIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image4.jpg"
+          "src": "/CountryImages/ITALIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image5.jpg"
+          "src": "/CountryImages/ITALIE/image5.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image6.jpg"
+          "src": "/CountryImages/ITALIE/image6.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image7.jpg"
+          "src": "/CountryImages/ITALIE/image7.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image8.jpg"
+          "src": "/CountryImages/ITALIE/image8.jpg"
         },
         {
-          "src": "./CountryImages/ITALIE/image9.jpg"
+          "src": "/CountryImages/ITALIE/image9.jpg"
         }
       ]
     },
@@ -834,28 +834,28 @@
       "flag": "🇯🇲",
       "photos": [
         {
-          "src": "./CountryImages/JAMAÏQUE/image1.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image1.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image2.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image2.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image3.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image3.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image4.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image4.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image5.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image5.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image6.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image6.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image7.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image7.jpg"
         },
         {
-          "src": "./CountryImages/JAMAÏQUE/image8.jpg"
+          "src": "/CountryImages/JAMAÏQUE/image8.jpg"
         }
       ]
     },
@@ -864,7 +864,7 @@
       "flag": "🇰🇼",
       "photos": [
         {
-          "src": "./CountryImages/KOWEÏT/image1.jpg"
+          "src": "/CountryImages/KOWEÏT/image1.jpg"
         }
       ]
     },
@@ -873,29 +873,29 @@
       "flag": "🇱🇦",
       "photos": [
         {
-          "src": "./CountryImages/LAOS/image1.jpg"
+          "src": "/CountryImages/LAOS/image1.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image2.jpg"
+          "src": "/CountryImages/LAOS/image2.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image3.jpg",
+          "src": "/CountryImages/LAOS/image3.jpg",
           "caption": "New Year celebrations according to the Lao calendar. Everyone throws water on everyone."
         },
         {
-          "src": "./CountryImages/LAOS/image4.jpg"
+          "src": "/CountryImages/LAOS/image4.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image5.jpg"
+          "src": "/CountryImages/LAOS/image5.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image6.jpg"
+          "src": "/CountryImages/LAOS/image6.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image7.jpg"
+          "src": "/CountryImages/LAOS/image7.jpg"
         },
         {
-          "src": "./CountryImages/LAOS/image8.jpg"
+          "src": "/CountryImages/LAOS/image8.jpg"
         }
       ]
     },
@@ -904,7 +904,7 @@
       "flag": "🇱🇻",
       "photos": [
         {
-          "src": "./CountryImages/LETTONIE/image1.jpg"
+          "src": "/CountryImages/LETTONIE/image1.jpg"
         }
       ]
     },
@@ -913,7 +913,7 @@
       "flag": "🇱🇮",
       "photos": [
         {
-          "src": "./CountryImages/LIECHTENSTEIN/image1.jpg"
+          "src": "/CountryImages/LIECHTENSTEIN/image1.jpg"
         }
       ]
     },
@@ -922,7 +922,7 @@
       "flag": "🇱🇺",
       "photos": [
         {
-          "src": "./CountryImages/LUXEMBOURG/image1.jpg"
+          "src": "/CountryImages/LUXEMBOURG/image1.jpg"
         }
       ]
     },
@@ -931,7 +931,7 @@
       "flag": "🇲🇴",
       "photos": [
         {
-          "src": "./CountryImages/MACAO/image1.jpg"
+          "src": "/CountryImages/MACAO/image1.jpg"
         }
       ]
     },
@@ -940,13 +940,13 @@
       "flag": "🇲🇰",
       "photos": [
         {
-          "src": "./CountryImages/MACÉDOINE DU NORD/image1.jpg"
+          "src": "/CountryImages/MACÉDOINE DU NORD/image1.jpg"
         },
         {
-          "src": "./CountryImages/MACÉDOINE DU NORD/image2.jpg"
+          "src": "/CountryImages/MACÉDOINE DU NORD/image2.jpg"
         },
         {
-          "src": "./CountryImages/MACÉDOINE DU NORD/image3.jpg"
+          "src": "/CountryImages/MACÉDOINE DU NORD/image3.jpg"
         }
       ]
     },
@@ -955,19 +955,19 @@
       "flag": "🇲🇾",
       "photos": [
         {
-          "src": "./CountryImages/MALAISIE/image1.jpg"
+          "src": "/CountryImages/MALAISIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/MALAISIE/image2.jpg"
+          "src": "/CountryImages/MALAISIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/MALAISIE/image3.jpg"
+          "src": "/CountryImages/MALAISIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/MALAISIE/image4.jpg"
+          "src": "/CountryImages/MALAISIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/MALAISIE/image5.jpg"
+          "src": "/CountryImages/MALAISIE/image5.jpg"
         }
       ]
     },
@@ -976,25 +976,25 @@
       "flag": "🇲🇻",
       "photos": [
         {
-          "src": "./CountryImages/MALDIVES/image1.jpg"
+          "src": "/CountryImages/MALDIVES/image1.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image2.jpg"
+          "src": "/CountryImages/MALDIVES/image2.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image3.jpg"
+          "src": "/CountryImages/MALDIVES/image3.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image4.jpg"
+          "src": "/CountryImages/MALDIVES/image4.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image5.jpg"
+          "src": "/CountryImages/MALDIVES/image5.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image6.jpg"
+          "src": "/CountryImages/MALDIVES/image6.jpg"
         },
         {
-          "src": "./CountryImages/MALDIVES/image7.jpg"
+          "src": "/CountryImages/MALDIVES/image7.jpg"
         }
       ]
     },
@@ -1003,25 +1003,25 @@
       "flag": "🇲🇹",
       "photos": [
         {
-          "src": "./CountryImages/MALTE/image1.jpg"
+          "src": "/CountryImages/MALTE/image1.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image2.jpg"
+          "src": "/CountryImages/MALTE/image2.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image3.jpg"
+          "src": "/CountryImages/MALTE/image3.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image4.jpg"
+          "src": "/CountryImages/MALTE/image4.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image5.jpg"
+          "src": "/CountryImages/MALTE/image5.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image6.jpg"
+          "src": "/CountryImages/MALTE/image6.jpg"
         },
         {
-          "src": "./CountryImages/MALTE/image7.jpg"
+          "src": "/CountryImages/MALTE/image7.jpg"
         }
       ]
     },
@@ -1030,19 +1030,19 @@
       "flag": "🇲🇦",
       "photos": [
         {
-          "src": "./CountryImages/MAROC/image1.jpg"
+          "src": "/CountryImages/MAROC/image1.jpg"
         },
         {
-          "src": "./CountryImages/MAROC/image2.jpg"
+          "src": "/CountryImages/MAROC/image2.jpg"
         },
         {
-          "src": "./CountryImages/MAROC/image3.jpg"
+          "src": "/CountryImages/MAROC/image3.jpg"
         },
         {
-          "src": "./CountryImages/MAROC/image4.jpg"
+          "src": "/CountryImages/MAROC/image4.jpg"
         },
         {
-          "src": "./CountryImages/MAROC/image5.jpg"
+          "src": "/CountryImages/MAROC/image5.jpg"
         }
       ]
     },
@@ -1051,19 +1051,19 @@
       "flag": "🇲🇽",
       "photos": [
         {
-          "src": "./CountryImages/MEXIQUE/image1.jpg"
+          "src": "/CountryImages/MEXIQUE/image1.jpg"
         },
         {
-          "src": "./CountryImages/MEXIQUE/image2.jpg"
+          "src": "/CountryImages/MEXIQUE/image2.jpg"
         },
         {
-          "src": "./CountryImages/MEXIQUE/image3.jpg"
+          "src": "/CountryImages/MEXIQUE/image3.jpg"
         },
         {
-          "src": "./CountryImages/MEXIQUE/image4.jpg"
+          "src": "/CountryImages/MEXIQUE/image4.jpg"
         },
         {
-          "src": "./CountryImages/MEXIQUE/image5.jpg"
+          "src": "/CountryImages/MEXIQUE/image5.jpg"
         }
       ]
     },
@@ -1072,19 +1072,19 @@
       "flag": "🇲🇩",
       "photos": [
         {
-          "src": "./CountryImages/MOLDAVIE/image1.jpg"
+          "src": "/CountryImages/MOLDAVIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/MOLDAVIE/image2.jpg"
+          "src": "/CountryImages/MOLDAVIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/MOLDAVIE/image3.jpg"
+          "src": "/CountryImages/MOLDAVIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/MOLDAVIE/image4.jpg"
+          "src": "/CountryImages/MOLDAVIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/MOLDAVIE/image5.jpg"
+          "src": "/CountryImages/MOLDAVIE/image5.jpg"
         }
       ]
     },
@@ -1093,19 +1093,19 @@
       "flag": "🇲🇪",
       "photos": [
         {
-          "src": "./CountryImages/MONTÉNÉGRO/image1.jpg"
+          "src": "/CountryImages/MONTÉNÉGRO/image1.jpg"
         },
         {
-          "src": "./CountryImages/MONTÉNÉGRO/image2.jpg"
+          "src": "/CountryImages/MONTÉNÉGRO/image2.jpg"
         },
         {
-          "src": "./CountryImages/MONTÉNÉGRO/image3.jpg"
+          "src": "/CountryImages/MONTÉNÉGRO/image3.jpg"
         },
         {
-          "src": "./CountryImages/MONTÉNÉGRO/image4.jpg"
+          "src": "/CountryImages/MONTÉNÉGRO/image4.jpg"
         },
         {
-          "src": "./CountryImages/MONTÉNÉGRO/image5.jpg"
+          "src": "/CountryImages/MONTÉNÉGRO/image5.jpg"
         }
       ]
     },
@@ -1114,25 +1114,25 @@
       "flag": "🇳🇮",
       "photos": [
         {
-          "src": "./CountryImages/NICARAGUA/image1.jpg"
+          "src": "/CountryImages/NICARAGUA/image1.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image2.jpg"
+          "src": "/CountryImages/NICARAGUA/image2.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image3.jpg"
+          "src": "/CountryImages/NICARAGUA/image3.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image4.jpg"
+          "src": "/CountryImages/NICARAGUA/image4.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image5.jpg"
+          "src": "/CountryImages/NICARAGUA/image5.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image6.jpg"
+          "src": "/CountryImages/NICARAGUA/image6.jpg"
         },
         {
-          "src": "./CountryImages/NICARAGUA/image7.jpg"
+          "src": "/CountryImages/NICARAGUA/image7.jpg"
         }
       ]
     },
@@ -1141,25 +1141,25 @@
       "flag": "🇳🇴",
       "photos": [
         {
-          "src": "./CountryImages/NORVÈGE/image1.jpg"
+          "src": "/CountryImages/NORVÈGE/image1.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image2.jpg"
+          "src": "/CountryImages/NORVÈGE/image2.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image3.jpg"
+          "src": "/CountryImages/NORVÈGE/image3.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image4.jpg"
+          "src": "/CountryImages/NORVÈGE/image4.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image5.jpg"
+          "src": "/CountryImages/NORVÈGE/image5.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image6.jpg"
+          "src": "/CountryImages/NORVÈGE/image6.jpg"
         },
         {
-          "src": "./CountryImages/NORVÈGE/image7.jpg"
+          "src": "/CountryImages/NORVÈGE/image7.jpg"
         }
       ]
     },
@@ -1168,31 +1168,31 @@
       "flag": "🇴🇲",
       "photos": [
         {
-          "src": "./CountryImages/OMAN/image1.jpg"
+          "src": "/CountryImages/OMAN/image1.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image2.jpg"
+          "src": "/CountryImages/OMAN/image2.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image3.jpg"
+          "src": "/CountryImages/OMAN/image3.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image4.jpg"
+          "src": "/CountryImages/OMAN/image4.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image5.jpg"
+          "src": "/CountryImages/OMAN/image5.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image6.jpg"
+          "src": "/CountryImages/OMAN/image6.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image7.jpg"
+          "src": "/CountryImages/OMAN/image7.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image8.jpg"
+          "src": "/CountryImages/OMAN/image8.jpg"
         },
         {
-          "src": "./CountryImages/OMAN/image9.jpg"
+          "src": "/CountryImages/OMAN/image9.jpg"
         }
       ]
     },
@@ -1201,37 +1201,37 @@
       "flag": "🇵🇦",
       "photos": [
         {
-          "src": "./CountryImages/PANAMA/image1.jpg"
+          "src": "/CountryImages/PANAMA/image1.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image2.jpg"
+          "src": "/CountryImages/PANAMA/image2.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image3.jpg"
+          "src": "/CountryImages/PANAMA/image3.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image4.jpg"
+          "src": "/CountryImages/PANAMA/image4.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image5.jpg"
+          "src": "/CountryImages/PANAMA/image5.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image6.jpg"
+          "src": "/CountryImages/PANAMA/image6.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image7.jpg"
+          "src": "/CountryImages/PANAMA/image7.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image8.jpg"
+          "src": "/CountryImages/PANAMA/image8.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image9.jpg"
+          "src": "/CountryImages/PANAMA/image9.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image10.jpg"
+          "src": "/CountryImages/PANAMA/image10.jpg"
         },
         {
-          "src": "./CountryImages/PANAMA/image11.jpg"
+          "src": "/CountryImages/PANAMA/image11.jpg"
         }
       ]
     },
@@ -1240,13 +1240,13 @@
       "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
       "photos": [
         {
-          "src": "./CountryImages/PAYS DE GALLES/image1.jpg"
+          "src": "/CountryImages/PAYS DE GALLES/image1.jpg"
         },
         {
-          "src": "./CountryImages/PAYS DE GALLES/image2.jpg"
+          "src": "/CountryImages/PAYS DE GALLES/image2.jpg"
         },
         {
-          "src": "./CountryImages/PAYS DE GALLES/image3.jpg"
+          "src": "/CountryImages/PAYS DE GALLES/image3.jpg"
         }
       ]
     },
@@ -1255,13 +1255,13 @@
       "flag": "🇳🇱",
       "photos": [
         {
-          "src": "./CountryImages/PAYS-BAS/image1.jpg"
+          "src": "/CountryImages/PAYS-BAS/image1.jpg"
         },
         {
-          "src": "./CountryImages/PAYS-BAS/image2.jpg"
+          "src": "/CountryImages/PAYS-BAS/image2.jpg"
         },
         {
-          "src": "./CountryImages/PAYS-BAS/image3.jpg"
+          "src": "/CountryImages/PAYS-BAS/image3.jpg"
         }
       ]
     },
@@ -1270,19 +1270,19 @@
       "flag": "🇵🇪",
       "photos": [
         {
-          "src": "./CountryImages/PÉROU/image1.jpg"
+          "src": "/CountryImages/PÉROU/image1.jpg"
         },
         {
-          "src": "./CountryImages/PÉROU/image2.jpg"
+          "src": "/CountryImages/PÉROU/image2.jpg"
         },
         {
-          "src": "./CountryImages/PÉROU/image3.jpg"
+          "src": "/CountryImages/PÉROU/image3.jpg"
         },
         {
-          "src": "./CountryImages/PÉROU/image4.jpg"
+          "src": "/CountryImages/PÉROU/image4.jpg"
         },
         {
-          "src": "./CountryImages/PÉROU/image5.jpg"
+          "src": "/CountryImages/PÉROU/image5.jpg"
         }
       ]
     },
@@ -1291,25 +1291,25 @@
       "flag": "🇵🇭",
       "photos": [
         {
-          "src": "./CountryImages/PHILIPPINES/image1.jpg"
+          "src": "/CountryImages/PHILIPPINES/image1.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image2.jpg"
+          "src": "/CountryImages/PHILIPPINES/image2.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image3.jpg"
+          "src": "/CountryImages/PHILIPPINES/image3.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image4.jpg"
+          "src": "/CountryImages/PHILIPPINES/image4.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image5.jpg"
+          "src": "/CountryImages/PHILIPPINES/image5.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image6.jpg"
+          "src": "/CountryImages/PHILIPPINES/image6.jpg"
         },
         {
-          "src": "./CountryImages/PHILIPPINES/image7.jpg"
+          "src": "/CountryImages/PHILIPPINES/image7.jpg"
         }
       ]
     },
@@ -1318,7 +1318,7 @@
       "flag": "🇵🇱",
       "photos": [
         {
-          "src": "./CountryImages/POLOGNE/image1.jpg"
+          "src": "/CountryImages/POLOGNE/image1.jpg"
         }
       ]
     },
@@ -1327,17 +1327,17 @@
       "flag": "🇵🇹",
       "photos": [
         {
-          "src": "./CountryImages/PORTUGAL/image1.jpg"
+          "src": "/CountryImages/PORTUGAL/image1.jpg"
         },
         {
-          "src": "./CountryImages/PORTUGAL/image2.jpg"
+          "src": "/CountryImages/PORTUGAL/image2.jpg"
         },
         {
-          "src": "./CountryImages/PORTUGAL/image3.jpg",
+          "src": "/CountryImages/PORTUGAL/image3.jpg",
           "caption": "The joys of swimming in the river doubled by the immense beauty of Carolina's breasts"
         },
         {
-          "src": "./CountryImages/PORTUGAL/image4.jpg"
+          "src": "/CountryImages/PORTUGAL/image4.jpg"
         }
       ]
     },
@@ -1346,13 +1346,13 @@
       "flag": "🇶🇦",
       "photos": [
         {
-          "src": "./CountryImages/QATAR/image1.jpg"
+          "src": "/CountryImages/QATAR/image1.jpg"
         },
         {
-          "src": "./CountryImages/QATAR/image2.jpg"
+          "src": "/CountryImages/QATAR/image2.jpg"
         },
         {
-          "src": "./CountryImages/QATAR/image3.jpg"
+          "src": "/CountryImages/QATAR/image3.jpg"
         }
       ]
     },
@@ -1361,13 +1361,13 @@
       "flag": "🇩🇴",
       "photos": [
         {
-          "src": "./CountryImages/RÉPUBLIQUE DOMINICAINE/image1.jpg"
+          "src": "/CountryImages/RÉPUBLIQUE DOMINICAINE/image1.jpg"
         },
         {
-          "src": "./CountryImages/RÉPUBLIQUE DOMINICAINE/image2.jpg"
+          "src": "/CountryImages/RÉPUBLIQUE DOMINICAINE/image2.jpg"
         },
         {
-          "src": "./CountryImages/RÉPUBLIQUE DOMINICAINE/image3.jpg"
+          "src": "/CountryImages/RÉPUBLIQUE DOMINICAINE/image3.jpg"
         }
       ]
     },
@@ -1376,20 +1376,20 @@
       "flag": "🇷🇴",
       "photos": [
         {
-          "src": "./CountryImages/ROUMANIE/image1.jpg"
+          "src": "/CountryImages/ROUMANIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/ROUMANIE/image2.jpg",
+          "src": "/CountryImages/ROUMANIE/image2.jpg",
           "caption": "Leaving the Constanța shipyards"
         },
         {
-          "src": "./CountryImages/ROUMANIE/image3.jpg"
+          "src": "/CountryImages/ROUMANIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/ROUMANIE/image4.jpg"
+          "src": "/CountryImages/ROUMANIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/ROUMANIE/image5.jpg"
+          "src": "/CountryImages/ROUMANIE/image5.jpg"
         }
       ]
     },
@@ -1398,7 +1398,7 @@
       "flag": "🇸🇲",
       "photos": [
         {
-          "src": "./CountryImages/SAN MARINO/image1.jpg"
+          "src": "/CountryImages/SAN MARINO/image1.jpg"
         }
       ]
     },
@@ -1407,13 +1407,13 @@
       "flag": "🇸🇳",
       "photos": [
         {
-          "src": "./CountryImages/SÉNÉGAL/image1.jpg"
+          "src": "/CountryImages/SÉNÉGAL/image1.jpg"
         },
         {
-          "src": "./CountryImages/SÉNÉGAL/image2.jpg"
+          "src": "/CountryImages/SÉNÉGAL/image2.jpg"
         },
         {
-          "src": "./CountryImages/SÉNÉGAL/image3.jpg",
+          "src": "/CountryImages/SÉNÉGAL/image3.jpg",
           "caption": "All animals are my friends. And, as the t-shirt says: 'you're your only limit'"
         }
       ]
@@ -1423,13 +1423,13 @@
       "flag": "🇷🇸",
       "photos": [
         {
-          "src": "./CountryImages/SERBIE/image1.jpg"
+          "src": "/CountryImages/SERBIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/SERBIE/image2.jpg"
+          "src": "/CountryImages/SERBIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/SERBIE/image3.jpg"
+          "src": "/CountryImages/SERBIE/image3.jpg"
         }
       ]
     },
@@ -1438,29 +1438,29 @@
       "flag": "🇸🇨",
       "photos": [
         {
-          "src": "./CountryImages/SEYCHELLES/image1.jpg"
+          "src": "/CountryImages/SEYCHELLES/image1.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image2.jpg"
+          "src": "/CountryImages/SEYCHELLES/image2.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image3.jpg",
+          "src": "/CountryImages/SEYCHELLES/image3.jpg",
           "caption": "I like sunset hunters."
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image4.jpg"
+          "src": "/CountryImages/SEYCHELLES/image4.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image5.jpg"
+          "src": "/CountryImages/SEYCHELLES/image5.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image6.jpg"
+          "src": "/CountryImages/SEYCHELLES/image6.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image7.jpg"
+          "src": "/CountryImages/SEYCHELLES/image7.jpg"
         },
         {
-          "src": "./CountryImages/SEYCHELLES/image8.jpg"
+          "src": "/CountryImages/SEYCHELLES/image8.jpg"
         }
       ]
     },
@@ -1469,20 +1469,20 @@
       "flag": "🇸🇬",
       "photos": [
         {
-          "src": "./CountryImages/SINGAPOUR/image1.jpg"
+          "src": "/CountryImages/SINGAPOUR/image1.jpg"
         },
         {
-          "src": "./CountryImages/SINGAPOUR/image2.jpg",
+          "src": "/CountryImages/SINGAPOUR/image2.jpg",
           "caption": "One of the many joys in Asian cities: drinking a cocktail at rooftop lounge bars."
         },
         {
-          "src": "./CountryImages/SINGAPOUR/image3.jpg"
+          "src": "/CountryImages/SINGAPOUR/image3.jpg"
         },
         {
-          "src": "./CountryImages/SINGAPOUR/image4.jpg"
+          "src": "/CountryImages/SINGAPOUR/image4.jpg"
         },
         {
-          "src": "./CountryImages/SINGAPOUR/image5.jpg"
+          "src": "/CountryImages/SINGAPOUR/image5.jpg"
         }
       ]
     },
@@ -1491,19 +1491,19 @@
       "flag": "🇸🇰",
       "photos": [
         {
-          "src": "./CountryImages/SLOVAQUIE/image1.jpg"
+          "src": "/CountryImages/SLOVAQUIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/SLOVAQUIE/image2.jpg"
+          "src": "/CountryImages/SLOVAQUIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/SLOVAQUIE/image3.jpg"
+          "src": "/CountryImages/SLOVAQUIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/SLOVAQUIE/image4.jpg"
+          "src": "/CountryImages/SLOVAQUIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/SLOVAQUIE/image5.jpg"
+          "src": "/CountryImages/SLOVAQUIE/image5.jpg"
         }
       ]
     },
@@ -1512,13 +1512,13 @@
       "flag": "🇸🇮",
       "photos": [
         {
-          "src": "./CountryImages/SLOVÉNIE/image1.jpg"
+          "src": "/CountryImages/SLOVÉNIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/SLOVÉNIE/image2.jpg"
+          "src": "/CountryImages/SLOVÉNIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/SLOVÉNIE/image3.jpg"
+          "src": "/CountryImages/SLOVÉNIE/image3.jpg"
         }
       ]
     },
@@ -1527,19 +1527,19 @@
       "flag": "🇸🇪",
       "photos": [
         {
-          "src": "./CountryImages/SUÈDE/image1.jpg"
+          "src": "/CountryImages/SUÈDE/image1.jpg"
         },
         {
-          "src": "./CountryImages/SUÈDE/image2.jpg"
+          "src": "/CountryImages/SUÈDE/image2.jpg"
         },
         {
-          "src": "./CountryImages/SUÈDE/image3.jpg"
+          "src": "/CountryImages/SUÈDE/image3.jpg"
         },
         {
-          "src": "./CountryImages/SUÈDE/image4.jpg"
+          "src": "/CountryImages/SUÈDE/image4.jpg"
         },
         {
-          "src": "./CountryImages/SUÈDE/image5.jpg"
+          "src": "/CountryImages/SUÈDE/image5.jpg"
         }
       ]
     },
@@ -1548,13 +1548,13 @@
       "flag": "🇨🇭",
       "photos": [
         {
-          "src": "./CountryImages/SUISSE/image1.jpg"
+          "src": "/CountryImages/SUISSE/image1.jpg"
         },
         {
-          "src": "./CountryImages/SUISSE/image2.jpg"
+          "src": "/CountryImages/SUISSE/image2.jpg"
         },
         {
-          "src": "./CountryImages/SUISSE/image3.jpg"
+          "src": "/CountryImages/SUISSE/image3.jpg"
         }
       ]
     },
@@ -1563,22 +1563,22 @@
       "flag": "🇹🇼",
       "photos": [
         {
-          "src": "./CountryImages/TAÏWAN/image1.jpg"
+          "src": "/CountryImages/TAÏWAN/image1.jpg"
         },
         {
-          "src": "./CountryImages/TAÏWAN/image2.jpg"
+          "src": "/CountryImages/TAÏWAN/image2.jpg"
         },
         {
-          "src": "./CountryImages/TAÏWAN/image3.jpg"
+          "src": "/CountryImages/TAÏWAN/image3.jpg"
         },
         {
-          "src": "./CountryImages/TAÏWAN/image4.jpg"
+          "src": "/CountryImages/TAÏWAN/image4.jpg"
         },
         {
-          "src": "./CountryImages/TAÏWAN/image5.jpg"
+          "src": "/CountryImages/TAÏWAN/image5.jpg"
         },
         {
-          "src": "./CountryImages/TAÏWAN/image6.jpg"
+          "src": "/CountryImages/TAÏWAN/image6.jpg"
         }
       ]
     },
@@ -1587,7 +1587,7 @@
       "flag": "🇨🇿",
       "photos": [
         {
-          "src": "./CountryImages/TCHÉCOSLOVAQUIE/image1.jpg",
+          "src": "/CountryImages/TCHÉCOSLOVAQUIE/image1.jpg",
           "caption": "In those late 80s, it was still the old communist Czechoslovakia under Moscow's thumb. After visiting it, it was no longer possible to believe in the pipe dreams of communism."
         }
       ]
@@ -1597,14 +1597,14 @@
       "flag": "🇨🇿",
       "photos": [
         {
-          "src": "./CountryImages/TCHÉQUIE/image1.jpg"
+          "src": "/CountryImages/TCHÉQUIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/TCHÉQUIE/image2.jpg",
+          "src": "/CountryImages/TCHÉQUIE/image2.jpg",
           "caption": "Czechoslovakia split into two. In the capital, Prague, a new wind is blowing, distorting and reviving the facades."
         },
         {
-          "src": "./CountryImages/TCHÉQUIE/image3.jpg"
+          "src": "/CountryImages/TCHÉQUIE/image3.jpg"
         }
       ]
     },
@@ -1613,37 +1613,37 @@
       "flag": "🇹🇭",
       "photos": [
         {
-          "src": "./CountryImages/THAÏLANDE/image1.jpg"
+          "src": "/CountryImages/THAÏLANDE/image1.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image2.jpg"
+          "src": "/CountryImages/THAÏLANDE/image2.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image3.jpg"
+          "src": "/CountryImages/THAÏLANDE/image3.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image4.jpg"
+          "src": "/CountryImages/THAÏLANDE/image4.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image5.jpg"
+          "src": "/CountryImages/THAÏLANDE/image5.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image6.jpg"
+          "src": "/CountryImages/THAÏLANDE/image6.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image7.jpg"
+          "src": "/CountryImages/THAÏLANDE/image7.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image8.jpg"
+          "src": "/CountryImages/THAÏLANDE/image8.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image9.jpg"
+          "src": "/CountryImages/THAÏLANDE/image9.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image10.jpg"
+          "src": "/CountryImages/THAÏLANDE/image10.jpg"
         },
         {
-          "src": "./CountryImages/THAÏLANDE/image11.jpg"
+          "src": "/CountryImages/THAÏLANDE/image11.jpg"
         }
       ]
     },
@@ -1652,7 +1652,7 @@
       "flag": "🇷🇺",
       "photos": [
         {
-          "src": "./CountryImages/TRANSNISTRIE/image1.jpg",
+          "src": "/CountryImages/TRANSNISTRIE/image1.jpg",
           "caption": "It is a country that, officially, does not exist. A small strip of Russia in Moldova, a self-proclaimed independent territory strictly guarded by Russian soldiers. I hate the Kremlin regime and its vassals, but hey, if one believes in the free self-determination of peoples, the philosophy applies both ways..."
         }
       ]
@@ -1662,13 +1662,13 @@
       "flag": "🇹🇳",
       "photos": [
         {
-          "src": "./CountryImages/TUNISIE/image1.jpg"
+          "src": "/CountryImages/TUNISIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/TUNISIE/image2.jpg"
+          "src": "/CountryImages/TUNISIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/TUNISIE/image3.jpg"
+          "src": "/CountryImages/TUNISIE/image3.jpg"
         }
       ]
     },
@@ -1677,19 +1677,19 @@
       "flag": "🇹🇷",
       "photos": [
         {
-          "src": "./CountryImages/TURQUIE/image1.jpg"
+          "src": "/CountryImages/TURQUIE/image1.jpg"
         },
         {
-          "src": "./CountryImages/TURQUIE/image2.jpg"
+          "src": "/CountryImages/TURQUIE/image2.jpg"
         },
         {
-          "src": "./CountryImages/TURQUIE/image3.jpg"
+          "src": "/CountryImages/TURQUIE/image3.jpg"
         },
         {
-          "src": "./CountryImages/TURQUIE/image4.jpg"
+          "src": "/CountryImages/TURQUIE/image4.jpg"
         },
         {
-          "src": "./CountryImages/TURQUIE/image5.jpg"
+          "src": "/CountryImages/TURQUIE/image5.jpg"
         }
       ]
     },
@@ -1698,7 +1698,7 @@
       "flag": "🇻🇦",
       "photos": [
         {
-          "src": "./CountryImages/VATICAN/image1.jpg"
+          "src": "/CountryImages/VATICAN/image1.jpg"
         }
       ]
     },
@@ -1707,25 +1707,25 @@
       "flag": "🇻🇳",
       "photos": [
         {
-          "src": "./CountryImages/VIETNAM/image1.jpg"
+          "src": "/CountryImages/VIETNAM/image1.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image2.jpg"
+          "src": "/CountryImages/VIETNAM/image2.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image3.jpg"
+          "src": "/CountryImages/VIETNAM/image3.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image4.jpg"
+          "src": "/CountryImages/VIETNAM/image4.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image5.jpg"
+          "src": "/CountryImages/VIETNAM/image5.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image6.jpg"
+          "src": "/CountryImages/VIETNAM/image6.jpg"
         },
         {
-          "src": "./CountryImages/VIETNAM/image7.jpg"
+          "src": "/CountryImages/VIETNAM/image7.jpg"
         }
       ]
     }

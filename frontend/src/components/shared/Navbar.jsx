@@ -21,7 +21,21 @@ const Navbar = () => {
         { title: t("nav.books_sub.documentary"), path: "/books/documentary" },
       ],
     },
-    { title: t("nav.photography"), path: "/photography" },
+    {
+      title: t("nav.photography"),
+      path: "/photography",
+      subLinks: [
+        {
+          title: t("nav.photography_sub.introduction"),
+          path: "/photography/introduction",
+        },
+        { title: t("nav.photography_sub.travel"), path: "/photography/travel" },
+        {
+          title: t("nav.photography_sub.eroticism"),
+          path: "/photography/eroticism",
+        },
+      ],
+    },
     { title: t("nav.nbs"), path: "/nomadblacksheep" },
   ];
 
