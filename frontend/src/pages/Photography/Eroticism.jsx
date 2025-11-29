@@ -40,18 +40,16 @@ const ImageGallerySection = ({ title, images }) => (
       {title}
     </h3>
     {/* Modern Grid Layout: Responsive columns, gap, and aspect ratio for uniform images */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-      {images.map((imgSrc, index) => (
-        <div
-          key={index}
-          className="relative overflow-hidden rounded-lg shadow-lg "
-        >
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-8">
+      {images.map((imgObj, index) => (
+        <div key={index} className="  rounded-lg shadow-lg ">
           <img
-            src={imgSrc}
+            src={imgObj.src}
             alt={`${title}-${index + 1}`}
-            className="w-full h-full object-cover transition duration-500 ease-in-out hover:scale-105"
+            className="w-full h-full object-cover transition duration-500 rounded-lg ease-in-out hover:scale-105"
             loading="lazy"
           />
+          <p className="mt-2   text-center text-sm italic">{imgObj.credit}</p>
         </div>
       ))}
     </div>
@@ -63,35 +61,63 @@ const Eroticism = () => {
   const galleryData = [
     {
       title: "DÉSIRS MODERNES", // Modern Desires
-      images: [Modern1, Modern2, Modern3],
+      images: [{ src: Modern1 }, { src: Modern2 }, { src: Modern3 }],
     },
     {
-      title: "TATOUAGE", // Tattoo (Added based on image names)
-      images: [Tattoo1, Tattoo2, Tattoo3, Tattoo4, Tattoo5, Tattoo6],
+      title: "TATTOO SEXYNESS", // Tattoo
+      images: [
+        { src: Tattoo1 },
+        { src: Tattoo2 },
+        { src: Tattoo3 },
+        { src: Tattoo4 },
+        { src: Tattoo5 },
+        { src: Tattoo6 },
+      ],
     },
     {
       title: "L’ÉROTIQUE DU REGARD", // The Eroticism of the Gaze
-      images: [Gaze1, Gaze2, Gaze3, Gaze4],
+      images: [{ src: Gaze1 }, { src: Gaze2 }, { src: Gaze3 }, { src: Gaze4 }],
     },
     {
       title: "CHATTES", // Female Cats / Slang
-      images: [Chattest1, Chattest2],
+      images: [{ src: Chattest1 }, { src: Chattest2 }],
     },
     {
       title: "JAMBES EN L’AIR", // Legs in the Air
-      images: [Legs1, Legs2, Legs3],
+      images: [
+        { src: Legs1, credit: " © Émile Savitry" },
+        { src: Legs2 },
+        { src: Legs3 },
+      ],
     },
     {
-      title: "BARS", // Assuming BARS1 refers to a topic like "Bars"
-      images: [Bars1, Bars2],
+      title: "BARS", // Bars
+      images: [
+        { src: Bars1, credit: "© Vee Speers" },
+        { src: Bars2, credit: "@ Ruben Jacob Fees" },
+      ],
     },
     {
       title: "CERTAINES PENSÉES À PROPOS DE L’AMOUR", // Thoughts about Love
-      images: [Love1, Love2, Love3, Love4, Love5],
+      images: [
+        { src: Love1 },
+        { src: Love2 },
+        { src: Love3 },
+        { src: Love4, credit: "© Jean-Pierre Limosin (Novo)" },
+        { src: Love5 },
+      ],
     },
     {
       title: "L’ÉTAT DE GRÂCE", // The State of Grace
-      images: [State1, State2, State3, State4, State5, State6, State7],
+      images: [
+        { src: State1 },
+        { src: State2, credit: "Credit: Divine Art" },
+        { src: State3 },
+        { src: State4 },
+        { src: State5 },
+        { src: State6 },
+        { src: State7 },
+      ],
     },
   ];
 

@@ -13,7 +13,11 @@ import caruselImg4 from "../assets/Biography/image2.jpg";
 import caruselImg3 from "../assets/Biography/image3.jpg";
 import caruselImg2 from "../assets/Biography/image4.jpg";
 import caruselImg5 from "../assets/Biography/image5.jpg";
-import caruselImg6 from "../assets/Biography/image6.jpg";
+import caruselImg6 from "../assets/Biography/Leg tattoo 1.jpg";
+import caruselImg7 from "../assets/Biography/Leg Tattoo 2.jpg";
+import caruselImg8 from "../assets/Biography/Leg Tattoo 3.jpg";
+
+import caruselImg9 from "../assets/Biography/image6.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
@@ -31,6 +35,9 @@ const images = [
   caruselImg4,
   caruselImg5,
   caruselImg6,
+  caruselImg7,
+  caruselImg8,
+  caruselImg9,
 ];
 
 // Define names for the slides corresponding to the images array
@@ -40,6 +47,9 @@ const slideNames = [
   "Chest",
   "Upper Back",
   "Side View",
+  "Leg",
+  "Leg",
+  "Leg",
   "Full Body (Nude)", // The last slide
 ];
 // Define constants for better readability
