@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Casting from "../../assets/Books/casting.jpg";
 
 const Docufiction = () => {
   const { t } = useTranslation("global");
@@ -12,16 +13,119 @@ const Docufiction = () => {
           {" "}
           Casting (2006)
         </h4>
+        <div className="flex gap-5">
+          <img className="w-1/4 h-full" src={Casting} alt="" />
 
-        <p className="font-jost  md:text-xl lg:text-2xl mb-10">
-          {" "}
-          {t("BooksDocu-fiction.desc1")}
-        </p>
+          <div>
+            <p
+              className="font-jost  md:text-xl lg:text-2xl mb-10"
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {t("BooksDocu-fiction.desc1")}
+            </p>
+          </div>
+        </div>
+
         <p className="font-jost  md:text-xl lg:text-2xl ">
           {" "}
           {t("BooksDocu-fiction.desc2")}
         </p>
       </div>
+
+      <div className="my-20">
+        <h4 className="font-jost  md:text-2xl lg:w-3/4 ml-auto lg:text-4xl uppercase mb-5">
+          {t("books.Presse")}
+        </h4>
+        {/* article September */}
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseSept"),
+          }}
+        />
+
+        {/* article August */}
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 mr-auto mb-10"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseJune"),
+          }}
+        />
+
+        {/* article September2 */}
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseMarch"),
+          }}
+        />
+
+        <div className="my-20">
+          {/* article nov */}
+          <p
+            className="font-jost  md:text-xl lg:text-2xl  mb-10"
+            style={{ whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{
+              __html: t("BooksDocu-fiction.PresseMarch2"),
+            }}
+          />
+
+          {/* article Dec */}
+          <p
+            className="font-jost  md:text-xl lg:text-2xl  mb-10"
+            style={{ whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{
+              __html: t("BooksDocu-fiction.PresseApril"),
+            }}
+          />
+          <p
+            className="font-jost  md:text-xl lg:text-2xl  mb-10"
+            style={{ whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{
+              __html: t("BooksDocu-fiction.PresseApril2"),
+            }}
+          />
+          <p
+            className="font-jost  md:text-xl lg:text-2xl  mb-10"
+            style={{ whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{
+              __html: t("BooksDocu-fiction.PresseMarch3"),
+            }}
+          />
+          <p
+            className="font-jost  md:text-xl lg:text-2xl  mb-10"
+            style={{ whiteSpace: "pre-line" }}
+            dangerouslySetInnerHTML={{
+              __html: t("BooksDocu-fiction.PresseMarch4"),
+            }}
+          />
+        </div>
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseMarch5"),
+          }}
+        />
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseMarch6"),
+          }}
+        />
+        <p
+          className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+          style={{ whiteSpace: "pre-line" }}
+          dangerouslySetInnerHTML={{
+            __html: t("BooksDocu-fiction.PresseApril3"),
+          }}
+        />
+      </div>
+
       {/* interview */}
       <div className="relative left-[50%] right-[50%] -mx-[50vw] w-screen bg-primary text-white font-jost my-10 py-10 px-4 sm:px-6">
         <div className="container lg:px-12 px-2 mx-auto ">

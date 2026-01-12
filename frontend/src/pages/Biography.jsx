@@ -481,7 +481,7 @@ const Biography = () => {
           <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
             {/* Title: Use the new theme color for the warning text for contrast */}
             <h3 className="text-2xl font-bold text-[#0c331c] mb-4">
-              ⚠️ Content Warning: Next Image
+              ⚠️ Cautious: Naked Picture to follow.
             </h3>
 
             <p className="text-gray-700 mb-6">
@@ -490,7 +490,7 @@ const Biography = () => {
               contains **nudity**, we require your explicit consent to view it.
             </p>
             <p className="text-gray-700 mb-8 font-semibold">
-              Do you wish to proceed and view the "Full Body (Nude)" photograph?
+              Click only if you are 18 or over.
             </p>
 
             <div className="flex justify-center space-x-4">
