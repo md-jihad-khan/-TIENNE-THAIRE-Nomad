@@ -31,13 +31,15 @@ const Travel = () => {
         "Comme tout ce qui compte dans la vie, un beau voyage est une œuvre
         d'art" <b>André Suarès in Le Voyage de Condottiere.</b>
       </p>
-      <div>
-        <img className=" w-1/2 mx-auto my-5" src={img1} alt="" />
-        <p className="font-jhost text-sm w-2/3 md:text-lg mx-auto italic mt-5">
+      <div className="flex gap-2 mt-10 items-center justify-center lg:w-10/12 mx-auto">
+        <p className="font-jhost text-sm  md:text-lg mx-auto italic ">
           J’aimerais épingler les pays visités. En attendant, je propose de
           faire un recensement photographique, pays par pays, dans l’ordre
           alphabétique
         </p>
+        <div>
+          <img className="" src={img1} alt="" />
+        </div>
       </div>
 
       {/* travel carousel */}

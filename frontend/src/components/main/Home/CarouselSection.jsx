@@ -23,7 +23,7 @@ const CarouselSection = () => {
           <p className="font-jhost text-sm text-center text-[#0c331c] ">
             © Samuel Nicolaï
           </p>{" "}
-          <p className="w-full absolute   font-jhost text-md italic -bottom-6">
+          <p className="w-full absolute   font-jhost text-sm italic -bottom-6">
             {t("home.heroCaption")}
           </p>
         </div>

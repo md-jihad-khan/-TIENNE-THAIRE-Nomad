@@ -1,8 +1,21 @@
 import { useTranslation } from "react-i18next";
 import Casting from "../../assets/Books/casting.jpg";
+import { useEffect, useState } from "react";
+import i18next from "i18next";
+
+import podcast1FR from "../../assets/audio/Podcast français Casting.m4a";
+import podcast1EN from "../../assets/audio/Podcast anglais Casting.wav";
 
 const Docufiction = () => {
   const { t } = useTranslation("global");
+  const [lang, setLang] = useState(i18next.language);
+
+  useEffect(() => {
+    i18next.on("languageChanged", setLang);
+    return () => i18next.off("languageChanged", setLang);
+  }, []);
+
+  const Podcast1 = lang.startsWith("fr") ? podcast1FR : podcast1EN;
   return (
     <div className="my-20 ">
       <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
@@ -26,10 +39,10 @@ const Docufiction = () => {
           </div>
         </div>
 
-        <p className="font-jost  md:text-xl lg:text-2xl ">
+        {/* <p className="font-jost  md:text-xl lg:text-2xl ">
           {" "}
           {t("BooksDocu-fiction.desc2")}
-        </p>
+        </p> */}
       </div>
 
       <div className="my-20">
@@ -263,6 +276,12 @@ const Docufiction = () => {
           </div>
         </div>
       </div>
+
+      <p className="md:text-xl lg:text-2xl mb-10 uppercase">Podcast</p>
+      <audio key={Podcast1} controls className=" w-full mb-10">
+        <source src={Podcast1} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 };

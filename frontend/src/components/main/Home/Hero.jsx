@@ -85,10 +85,10 @@ const Hero = () => {
             </Swiper>
           </div>
           <div className="">
-            <p className="font-jhost text-sm text-right md:text-lg  text-green-900 ">
+            <p className="font-jhost text-sm text-right md  text-green-900 ">
               © Samuel Nicolaï
             </p>{" "}
-            <p className=" font-jhost text-sm  md:text-lg italic">
+            <p className=" font-jhost text-sm italic">
               {t("home.carouselCaption")}
             </p>
           </div>

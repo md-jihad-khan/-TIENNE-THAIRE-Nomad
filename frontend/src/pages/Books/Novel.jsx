@@ -4,9 +4,29 @@ import book2 from "../../assets/Books/Book2.jpg";
 import book3 from "../../assets/Books/book3.jpg";
 import press1 from "../../assets/Books/press1.jpg";
 import press2 from "../../assets/Books/press2.jpg";
+import podcast1FR from "../../assets/audio/Podcast français La Langoureuse.m4a";
+import podcast1EN from "../../assets/audio/Podcast anglais La Langoureuse.wav";
+import podcast2FR from "../../assets/audio/Podcast français Alissia Lone.m4a";
+import podcast2EN from "../../assets/audio/Podcast anglais Alissia Lone.wav";
+import podcast3FR from "../../assets/audio/Podcast français Funérarium.m4a";
+import podcast3EN from "../../assets/audio/Podcast anglais Funérarium.wav";
+
+import i18next from "i18next";
+import { useEffect, useState } from "react";
 
 const Novel = () => {
   const { t } = useTranslation("global");
+  const [lang, setLang] = useState(i18next.language);
+
+  useEffect(() => {
+    i18next.on("languageChanged", setLang);
+    return () => i18next.off("languageChanged", setLang);
+  }, []);
+
+  const Podcast1 = lang.startsWith("fr") ? podcast1FR : podcast1EN;
+
+  const Podcast2 = lang.startsWith("fr") ? podcast2FR : podcast2EN;
+  const Podcast3 = lang.startsWith("fr") ? podcast3FR : podcast3EN;
   return (
     <div className="my-20 ">
       <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
@@ -199,8 +219,12 @@ const Novel = () => {
         </div>
       </div>
       {/* order */}
-      <div className="lg:w-2/3 ">
+      <div className=" ">
         <p className="md:text-xl lg:text-2xl mb-10 uppercase">Podcast</p>
+        <audio key={Podcast1} controls className=" w-full mb-10">
+          <source src={Podcast1} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
         {/* <p className="md:text-xl lg:text-2xl mb-10 ">{t("books.orderDesc")}</p>
         <p className="md:text-xl lg:text-2xl mb-10 uppercase">
           {t("books.order")}
@@ -417,6 +441,11 @@ const Novel = () => {
         {" "}
         {t("books.interview2podcast")}
       </p>
+      <audio key={Podcast2} controls className=" w-full mb-10">
+        <source src={Podcast2} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
       <p className="md:text-xl lg:text-2xl mb-10 uppercase">
         {" "}
         {t("books.interview2commander")}
@@ -511,6 +540,11 @@ const Novel = () => {
         {" "}
         {t("books.fExtraitDesc3")}
       </p>
+      <p className="md:text-xl lg:text-2xl mb-10 uppercase">Podcast</p>
+      <audio key={Podcast3} controls className=" w-full mb-10">
+        <source src={Podcast3} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 };

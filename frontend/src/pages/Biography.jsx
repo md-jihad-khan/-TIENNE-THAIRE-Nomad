@@ -44,7 +44,7 @@ const images = [
 const slideNames = [
   "Right Arm",
   "Left Arm",
-  "Chest",
+  "Side View",
   "Upper Back",
   "Side View",
   "Leg",
@@ -537,23 +537,25 @@ const Biography = () => {
       </div>
 
       {/* pure love */}
-      <div className="lg:w-2/3 mr-auto lg:mt-32">
-        <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
-          {t("biography.loveTitle")}
-        </h5>
+      <div className="grid grid-cols-2 lg:mt-32 gap-10">
+        <div>
+          <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
+            {t("biography.loveTitle")}
+          </h5>
 
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.loveDesc1")}
-        </p>
-      </div>
-      {/* Nora */}
-      <div className="my-20 grid grid-cols-2 gap-10 ">
+          <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
+            {t("biography.loveDesc1")}
+          </p>
+        </div>
         <div>
           <img className=" rounded-2xl" src={img9} alt="" />
           <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
             {t("biography.caption4")}
           </p>
         </div>
+      </div>
+      {/* Nora */}
+      <div className="mt-10 mb-20 grid  ">
         <div>
           <p className=" font-jost  md:text-xl lg:text-2xl  mb-10">
             {t("biography.noraDesc1")}

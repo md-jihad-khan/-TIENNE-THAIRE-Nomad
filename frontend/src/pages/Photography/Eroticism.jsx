@@ -36,7 +36,7 @@ import State7 from "../../assets/Eroticism/State7.jpg";
 // Helper function to render a gallery section
 const ImageGallerySection = ({ title, images }) => (
   <div className="mb-20">
-    <h3 className="text-2xl md:text-4xl font-eb-garamond text-[#0c331c] border-b-2 border-[#0c331c] pb-2 mb-8  tracking-wider">
+    <h3 className="text-2xl md:text-4xl font-eb-garamond text-[#0c331c]  pb-2 mb-8  tracking-wider">
       {title}
     </h3>
     {/* Modern Grid Layout: Responsive columns, gap, and aspect ratio for uniform images */}
