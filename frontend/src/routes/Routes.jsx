@@ -11,11 +11,14 @@ import NBS from "../pages/NBS";
 import Introduction from "../pages/Photography/Introduction";
 import Travel from "../pages/Photography/Travel";
 import Eroticism from "../pages/Photography/Eroticism";
+import La from "../pages/Books/Novel/La";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -28,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/books/novel",
         element: <Novel />,
+      },
+      {
+        path: "/books/novel/la-langoureuse",
+        element: <La />,
       },
       {
         path: "/books/docu-fiction",

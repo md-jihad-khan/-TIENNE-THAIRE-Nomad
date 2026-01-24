@@ -12,15 +12,48 @@ const Navbar = () => {
   const navLinks = [
     { title: t("nav.home"), path: "/" },
     { title: t("nav.biography"), path: "/biography" },
+
     {
       title: t("nav.books"),
       path: "/books",
       subLinks: [
-        { title: t("nav.books_sub.roman"), path: "/books/novel" },
-        { title: t("nav.books_sub.docuFiction"), path: "/books/docu-fiction" },
-        { title: t("nav.books_sub.documentary"), path: "/books/documentary" },
+        {
+          title: t("nav.books_sub.roman"),
+          path: "/books/novel",
+
+          // ✅ NEW CHILDREN LEVEL
+          children: [
+            { title: "La Langoureuse", path: "/books/novel/la-langoureuse" },
+            { title: "Alissia Lone", path: "/books/novel/alissia-lone" },
+            {
+              title: "Funérarium ",
+              path: "/books/novel/funerarium",
+            },
+          ],
+        },
+        {
+          title: t("nav.books_sub.docuFiction"),
+          path: "/books/docu-fiction",
+          children: [{ title: "Casting", path: "/books/novel/la-langoureuse" }],
+        },
+        {
+          title: t("nav.books_sub.documentary"),
+          path: "/books/documentary",
+          children: [
+            { title: "Diva Siouxsie", path: "/books/novel/la-langoureuse" },
+            {
+              title: "Patti Smith, la fille de Rimbaud",
+              path: "/books/novel/alissia-lone",
+            },
+            {
+              title: "La Tribu des Rouches",
+              path: "/books/novel/funerarium",
+            },
+          ],
+        },
       ],
     },
+
     {
       title: t("nav.photography"),
       path: "/photography",
@@ -36,6 +69,7 @@ const Navbar = () => {
         },
       ],
     },
+
     { title: t("nav.nbs"), path: "/nomadblacksheep" },
   ];
 
@@ -43,7 +77,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navbarRef.current && !navbarRef.current.contains(e.target)) {
-        // Close all open <details>
         document.querySelectorAll("details[open]").forEach((detail) => {
           detail.removeAttribute("open");
         });
@@ -55,7 +88,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full z-50 bg-white  shadow-sm">
+    <div className="fixed w-full z-50 bg-white shadow-sm">
       <motion.div
         ref={navbarRef}
         className="navbar px-3 lg:px-12 container mx-auto flex justify-between items-center"
@@ -63,29 +96,30 @@ const Navbar = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* LEFT: TEXT LOGO */}
+        {/* LOGO */}
         <NavLink
           to="/"
-          className="font-semibold text-xl md:text-2xl tracking-widest text-primary font-jomhuria "
+          className="font-semibold text-xl md:text-2xl tracking-widest text-primary font-jomhuria"
         >
           ÉTIENNE ÉTHAIRE
         </NavLink>
 
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-4">
+          {/* ================= DESKTOP MENU ================= */}
           <ul className="hidden lg:flex menu menu-horizontal p-1 font-eb-garamond border-primary border-[1px] rounded-[40px] gap-2">
             {navLinks.map((link) => {
               const isSubActive =
                 link.subLinks &&
                 link.subLinks.some((sub) =>
-                  location.pathname.startsWith(sub.path)
+                  location.pathname.startsWith(sub.path),
                 );
 
               return link.subLinks ? (
                 <li key={link.title}>
                   <details className="group" open={isSubActive}>
                     <summary
-                      className={`px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200 
+                      className={`px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200
                         ${
                           isSubActive
                             ? "bg-primary text-white"
@@ -94,19 +128,46 @@ const Navbar = () => {
                     >
                       {link.title}
                     </summary>
-                    <ul className="p-2 bg-white gap-1 flex flex-col shadow-lg rounded-box mt-1">
+
+                    <ul className=" bg-white gap-1 flex flex-col shadow-lg w-auto rounded-box mt-1">
                       {link.subLinks.map((sub) => (
                         <li key={sub.title}>
-                          <NavLink
-                            to={sub.path}
-                            className={({ isActive }) =>
-                              isActive
-                                ? "block bg-primary text-white rounded-3xl px-4 py-1"
-                                : "block px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
-                            }
-                          >
-                            {sub.title}
-                          </NavLink>
+                          {sub.children ? (
+                            /* ========= 3rd LEVEL ========= */
+                            <details className="group">
+                              <summary className="px-4 py-1  rounded-3xl cursor-pointer transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white">
+                                {sub.title}
+                              </summary>
+
+                              <ul className="ml-4 mt-1 flex flex-col gap-1 p-0 border-l border-gray-300 ">
+                                {sub.children.map((child) => (
+                                  <li key={child.title}>
+                                    <NavLink
+                                      to={child.path}
+                                      className={({ isActive }) =>
+                                        isActive
+                                          ? " bg-primary  text-white rounded-md px-2 py-1 w-full"
+                                          : "w-full  px-2 rounded-md py-1  transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
+                                      }
+                                    >
+                                      {child.title}
+                                    </NavLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            </details>
+                          ) : (
+                            <NavLink
+                              to={sub.path}
+                              className={({ isActive }) =>
+                                isActive
+                                  ? " bg-primary text-white rounded-3xl px-4 py-1"
+                                  : " px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
+                              }
+                            >
+                              {sub.title}
+                            </NavLink>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -129,70 +190,49 @@ const Navbar = () => {
             })}
           </ul>
 
-          {/* Language Toggle */}
           <LanguageSwitcher />
-          {/* Mobile Dropdown - RIGHT SIDE */}
+
+          {/* ================= MOBILE MENU ================= */}
           <div className="dropdown dropdown-end lg:hidden">
             <div tabIndex={0} role="button" className="btn btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              ☰
             </div>
-            <ul
-              tabIndex={-1}
-              className="menu menu-sm dropdown-content  z-[100] mt-3 w-56 bg-white p-2 shadow font-eb-garamond  rounded-md gap-2"
-            >
-              {navLinks.map((link) =>
-                link.subLinks ? (
-                  <li key={link.title}>
-                    <details className="group">
-                      <summary className="px-5 py-1 rounded-4xl cursor-pointer transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white">
-                        {link.title}
-                      </summary>
-                      <ul className="p-2 bg-white shadow-lg rounded-box mt-1 rounded-md">
+
+            <ul className="menu menu-sm dropdown-content z-[100] mt-3 w-56 bg-white p-2 shadow font-eb-garamond rounded-md gap-2">
+              {navLinks.map((link) => (
+                <li key={link.title}>
+                  {link.subLinks ? (
+                    <details>
+                      <summary>{link.title}</summary>
+
+                      <ul>
                         {link.subLinks.map((sub) => (
                           <li key={sub.title}>
-                            <NavLink
-                              to={sub.path}
-                              className={({ isActive }) =>
-                                isActive
-                                  ? "block bg-primary text-white rounded-3xl px-4 py-1"
-                                  : "block px-4 py-1 rounded-3xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
-                              }
-                            >
-                              {sub.title}
-                            </NavLink>
+                            {sub.children ? (
+                              <details>
+                                <summary>{sub.title}</summary>
+                                <ul>
+                                  {sub.children.map((child) => (
+                                    <li key={child.title}>
+                                      <NavLink to={child.path}>
+                                        {child.title}
+                                      </NavLink>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
+                            ) : (
+                              <NavLink to={sub.path}>{sub.title}</NavLink>
+                            )}
                           </li>
                         ))}
                       </ul>
                     </details>
-                  </li>
-                ) : (
-                  <li key={link.title}>
-                    <NavLink
-                      to={link.path}
-                      className={({ isActive }) =>
-                        isActive
-                          ? "block bg-primary text-white rounded-4xl px-5 py-1"
-                          : "block px-5 py-1 rounded-4xl transition-all duration-200 hover:!bg-[#0c331c] hover:!text-white"
-                      }
-                    >
-                      {link.title}
-                    </NavLink>
-                  </li>
-                )
-              )}
+                  ) : (
+                    <NavLink to={link.path}>{link.title}</NavLink>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
