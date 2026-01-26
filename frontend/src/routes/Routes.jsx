@@ -13,6 +13,8 @@ import Travel from "../pages/Photography/Travel";
 import Eroticism from "../pages/Photography/Eroticism";
 import La from "../pages/Books/Novel/La";
 import ErrorPage from "../pages/ErrorPage";
+import Al from "../pages/Books/Novel/Al";
+import FN from "../pages/Books/Novel/FN";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ export const router = createBrowserRouter([
       {
         path: "/books/novel/la-langoureuse",
         element: <La />,
+      },
+      {
+        path: "/books/novel/alissia-lone",
+        element: <Al />,
+      },
+      {
+        path: "/books/novel/funerarium",
+        element: <FN />,
       },
       {
         path: "/books/docu-fiction",
