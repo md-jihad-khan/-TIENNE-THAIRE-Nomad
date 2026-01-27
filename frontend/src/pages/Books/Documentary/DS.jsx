@@ -1,21 +1,27 @@
 import { Trans, useTranslation } from "react-i18next";
-import book1 from "../../../assets/Books/Book1.jpg";
-import press1 from "../../../assets/Books/LA Press/Langoureuse-Alissia.Antipode.jpg";
-import press2 from "../../../assets/Books/LA Press/Langoureuse-Carnet.jpg";
-import press3 from "../../../assets/Books/LA Press/Langoureuse.Biblio.jpg";
-import press4 from "../../../assets/Books/LA Press/Langoureuse.ClassementCarnet.jpg";
-import press5 from "../../../assets/Books/LA Press/Langoureuse.D'uneCertaineGaieté.jpg";
-import press6 from "../../../assets/Books/LA Press/Langoureuse.DH.jpg";
-import press7 from "../../../assets/Books/LA Press/Langoureuse.LeVif.jpg";
-import press8 from "../../../assets/Books/LA Press/Langoureuse.Vers l'Avenir.jpg";
-import press9 from "../../../assets/Books/LA Press/press1.jpg";
-import podcast1FR from "../../../assets/audio/Podcast français La Langoureuse.m4a";
-import podcast1EN from "../../../assets/audio/Podcast anglais La Langoureuse.wav";
+import book1 from "../../../assets/Books/Book4.jpg";
+import press1 from "../../../assets/Books/Casting Press/press1.jpg";
+import press2 from "../../../assets/Books/Casting Press/press2.jpg";
+import press3 from "../../../assets/Books/Casting Press/press3.jpg";
+import press4 from "../../../assets/Books/Casting Press/press4.jpg";
+import press5 from "../../../assets/Books/Casting Press/press5.jpg";
+import press6 from "../../../assets/Books/Casting Press/press6.jpg";
+import press7 from "../../../assets/Books/Casting Press/press7.jpg";
+import press8 from "../../../assets/Books/Casting Press/press8.jpg";
+import press9 from "../../../assets/Books/Casting Press/press9.jpg";
+import press10 from "../../../assets/Books/Casting Press/press10.jpg";
+import press11 from "../../../assets/Books/Casting Press/press11.jpg";
+import press12 from "../../../assets/Books/Casting Press/press12.jpg";
+import press13 from "../../../assets/Books/Casting Press/press13.jpg";
+import press14 from "../../../assets/Books/Casting Press/press14.jpg";
+
+import podcast1FR from "../../../assets/audio/Podcast français Casting.m4a";
+import podcast1EN from "../../../assets/audio/Podcast anglais Casting.wav";
 import { motion, AnimatePresence } from "framer-motion";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
 
-const La = () => {
+const DS = () => {
   const { t } = useTranslation("global");
   const [lang, setLang] = useState(i18next.language);
   const [activeTab, setActiveTab] = useState("cover");
@@ -41,7 +47,7 @@ const La = () => {
     <div className="mt-10">
       <div className="flex gap-5">
         <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic ">
-          La Langoureuse <small>(2003)</small>
+          Diva Siouxsie <small>(2007)</small>
         </h4>
         <div className="flex flex-wrap gap-3 mb-5">
           <button
@@ -112,14 +118,7 @@ const La = () => {
                     className="font-jost  md:text-xl lg:text-2xl mb-10"
                     style={{ whiteSpace: "pre-line" }}
                   >
-                    {t("books.LLDesc")}
-                  </p>
-                  <p
-                    className="font-jost  md:text-xl lg:text-2xl mb-10"
-                    style={{ whiteSpace: "pre-line" }}
-                  >
-                    {" "}
-                    {t("books.LLDesc1")}
+                    {t("BooksDocumentary.DSDesc")}
                   </p>
                 </div>
               </motion.div>
@@ -136,9 +135,9 @@ const La = () => {
                 className="bg-primary text-white p-8 rounded-3xl shadow-2xl"
               >
                 <div>
-                  <p className="font-jost md:text-xl lg:text-2xl mt-5  w-full ">
+                  {/* <p className="font-jost md:text-xl lg:text-2xl mt-5  w-full ">
                     {t("books.LLDesc2")}
-                  </p>
+                  </p> */}
                 </div>
               </motion.div>
             )}
@@ -156,84 +155,6 @@ const La = () => {
                 <h4 className="font-jost  md:text-2xl  lg:text-3xl font-bold uppercase mb-5">
                   {t("books.Presse")}
                 </h4>
-                <p
-                  className="font-jost  md:text-xl lg:text-2xl mb-10"
-                  style={{ whiteSpace: "pre-line" }}
-                >
-                  Ce récit suit le parcours tragique de Maleea, une jeune femme
-                  hantée par la disparition prématurée de sa mère, Esther
-                  Figiel, et par une malédiction familiale. À travers ses
-                  souvenirs, elle décrit une adolescence tumultueuse marquée par
-                  une sexualité compulsive et des rapports conflictuels avec son
-                  père, qu'elle finit par accuser d'avoir assassiné sa mère.
-                  Malgré des retrouvailles fusionnelles et incestueuses avec
-                  cette dernière, le cycle de la fatalité reprend ses droits
-                  lors du décès brutal d'Esther. Sombrant dans une anorexie
-                  sévère et des séjours répétés en milieu psychiatrique,
-                  l'héroïne se laisse dépérir physiquement. Après l'échec d'un
-                  procès retentissant et le suicide final de son père, Maleea
-                  livre ses dernières pensées, oscillant entre le dédain de la
-                  vie et l'espoir d'une libération par l'écriture.
-                </p>
-
-                <button
-                  onClick={() => setOpenNewspapers(true)}
-                  className="
-    bg-white text-black
-    px-6 py-2
-    rounded-full
-    font-medium
-    transition-all duration-300
-    hover:scale-105 hover:shadow-xl
-    active:scale-95
-  "
-                >
-                  Newspapers reviews
-                </button>
-
-                {/* article September */}
-                <p
-                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
-                  style={{ whiteSpace: "pre-line" }}
-                  dangerouslySetInnerHTML={{
-                    __html: t("books.articleSep"),
-                  }}
-                />
-                {/* article August */}
-                <p
-                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 mr-auto mb-10"
-                  style={{ whiteSpace: "pre-line" }}
-                  dangerouslySetInnerHTML={{
-                    __html: t("books.articleAug"),
-                  }}
-                />
-                {/* article September2 */}
-                <p
-                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto"
-                  style={{ whiteSpace: "pre-line" }}
-                  dangerouslySetInnerHTML={{
-                    __html: t("books.articleSep2"),
-                  }}
-                />
-                <div className="my-20">
-                  {/* article nov */}
-                  <p
-                    className="font-jost  md:text-xl lg:text-2xl  mb-10"
-                    style={{ whiteSpace: "pre-line" }}
-                    dangerouslySetInnerHTML={{
-                      __html: t("books.articleNov"),
-                    }}
-                  />
-
-                  {/* article Dec */}
-                  <p
-                    className="font-jost  md:text-xl lg:text-2xl  "
-                    style={{ whiteSpace: "pre-line" }}
-                    dangerouslySetInnerHTML={{
-                      __html: t("books.articleDec"),
-                    }}
-                  />
-                </div>
               </motion.div>
             )}
 
@@ -247,99 +168,8 @@ const La = () => {
                 transition={{ duration: 0.3 }}
                 className="bg-primary text-white p-8 rounded-3xl shadow-2xl space-y-5"
               >
-                <p className="md:text-xl lg:text-3xl mb-5 uppercase ">
+                <p className="md:text-xl lg:text-2xl mb-10 uppercase">
                   Interview
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc1")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc2")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc3")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc4")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc5")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc6")} />
-                </p>
-
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc7")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc8")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc9")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc10")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc11")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc12")}
-                </p>
-
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc13")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc14")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc15")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc16")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc17")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc18")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc19")}
-                </p>
-
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc20")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc21")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc22")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc23")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc24")}
                 </p>
               </motion.div>
             )}
@@ -358,9 +188,9 @@ const La = () => {
                   Podcast
                 </p>
 
-                <audio key={Podcast1} controls className="w-full">
+                {/* <audio key={Podcast1} controls className="w-full">
                   <source src={Podcast1} type="audio/mpeg" />
-                </audio>
+                </audio> */}
               </motion.div>
             )}
           </AnimatePresence>
@@ -427,6 +257,11 @@ const La = () => {
                     press7,
                     press8,
                     press9,
+                    press10,
+                    press11,
+                    press12,
+                    press13,
+                    press14,
                   ].map((img, index) => (
                     <div
                       key={index}
@@ -465,4 +300,4 @@ const La = () => {
   );
 };
 
-export default La;
+export default DS;

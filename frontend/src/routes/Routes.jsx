@@ -15,6 +15,10 @@ import La from "../pages/Books/Novel/La";
 import ErrorPage from "../pages/ErrorPage";
 import Al from "../pages/Books/Novel/Al";
 import FN from "../pages/Books/Novel/FN";
+import Casting from "../pages/Books/Docufiction/Casting";
+import DS from "../pages/Books/Documentary/DS";
+import PS from "../pages/Books/Documentary/PS";
+import LT from "../pages/Books/Documentary/LT";
 
 export const router = createBrowserRouter([
   {
@@ -47,12 +51,28 @@ export const router = createBrowserRouter([
         element: <FN />,
       },
       {
-        path: "/books/docu-fiction",
-        element: <Docufiction />,
+        path: "/books/docu-fiction/casting",
+        element: <Casting />,
       },
       {
         path: "/books/documentary",
         element: <Documentary />,
+      },
+      {
+        path: "/books/documentary/diva-siouxsie",
+        element: <DS />,
+      },
+      {
+        path: "/books/documentary/patti-smith",
+        element: <PS />,
+      },
+      {
+        path: "/books/documentary/la-tribu",
+        element: <LT />,
+      },
+      {
+        path: "/books/documentary/diva-siouxsie",
+        element: <DS />,
       },
       {
         path: "/photography/introduction",

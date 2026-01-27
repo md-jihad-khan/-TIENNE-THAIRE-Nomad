@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Casting from "../../assets/Books/casting.jpg";
+import Casting from "../../assets/Books/book7.jpg";
 import { useEffect, useState } from "react";
 import i18next from "i18next";
 

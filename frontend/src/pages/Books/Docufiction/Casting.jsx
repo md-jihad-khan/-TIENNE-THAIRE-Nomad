@@ -1,21 +1,28 @@
 import { Trans, useTranslation } from "react-i18next";
-import book1 from "../../../assets/Books/Book1.jpg";
-import press1 from "../../../assets/Books/LA Press/Langoureuse-Alissia.Antipode.jpg";
-import press2 from "../../../assets/Books/LA Press/Langoureuse-Carnet.jpg";
-import press3 from "../../../assets/Books/LA Press/Langoureuse.Biblio.jpg";
-import press4 from "../../../assets/Books/LA Press/Langoureuse.ClassementCarnet.jpg";
-import press5 from "../../../assets/Books/LA Press/Langoureuse.D'uneCertaineGaieté.jpg";
-import press6 from "../../../assets/Books/LA Press/Langoureuse.DH.jpg";
-import press7 from "../../../assets/Books/LA Press/Langoureuse.LeVif.jpg";
-import press8 from "../../../assets/Books/LA Press/Langoureuse.Vers l'Avenir.jpg";
-import press9 from "../../../assets/Books/LA Press/press1.jpg";
-import podcast1FR from "../../../assets/audio/Podcast français La Langoureuse.m4a";
-import podcast1EN from "../../../assets/audio/Podcast anglais La Langoureuse.wav";
+import book1 from "../../../assets/Books/Book7.jpg";
+import press1 from "../../../assets/Books/Casting Press/press1.jpg";
+import press2 from "../../../assets/Books/Casting Press/press2.jpg";
+import press3 from "../../../assets/Books/Casting Press/press3.jpg";
+import press4 from "../../../assets/Books/Casting Press/press4.jpg";
+import press5 from "../../../assets/Books/Casting Press/press5.jpg";
+import press6 from "../../../assets/Books/Casting Press/press6.jpg";
+import press7 from "../../../assets/Books/Casting Press/press7.jpg";
+import press8 from "../../../assets/Books/Casting Press/press8.jpg";
+import press9 from "../../../assets/Books/Casting Press/press9.jpg";
+import press10 from "../../../assets/Books/Casting Press/press10.jpg";
+import press11 from "../../../assets/Books/Casting Press/press11.jpg";
+import press12 from "../../../assets/Books/Casting Press/press12.jpg";
+import press13 from "../../../assets/Books/Casting Press/press13.jpg";
+import press14 from "../../../assets/Books/Casting Press/press14.jpg";
+import press15 from "../../../assets/Books/Casting Press/press15.jpg";
+
+import podcast1FR from "../../../assets/audio/Podcast français Casting.m4a";
+import podcast1EN from "../../../assets/audio/Podcast anglais Casting.wav";
 import { motion, AnimatePresence } from "framer-motion";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
 
-const La = () => {
+const Casting = () => {
   const { t } = useTranslation("global");
   const [lang, setLang] = useState(i18next.language);
   const [activeTab, setActiveTab] = useState("cover");
@@ -41,7 +48,7 @@ const La = () => {
     <div className="mt-10">
       <div className="flex gap-5">
         <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic ">
-          La Langoureuse <small>(2003)</small>
+          Casting <small>(2006)</small>
         </h4>
         <div className="flex flex-wrap gap-3 mb-5">
           <button
@@ -112,14 +119,7 @@ const La = () => {
                     className="font-jost  md:text-xl lg:text-2xl mb-10"
                     style={{ whiteSpace: "pre-line" }}
                   >
-                    {t("books.LLDesc")}
-                  </p>
-                  <p
-                    className="font-jost  md:text-xl lg:text-2xl mb-10"
-                    style={{ whiteSpace: "pre-line" }}
-                  >
-                    {" "}
-                    {t("books.LLDesc1")}
+                    {t("BooksDocu-fiction.desc1")}
                   </p>
                 </div>
               </motion.div>
@@ -136,9 +136,9 @@ const La = () => {
                 className="bg-primary text-white p-8 rounded-3xl shadow-2xl"
               >
                 <div>
-                  <p className="font-jost md:text-xl lg:text-2xl mt-5  w-full ">
+                  {/* <p className="font-jost md:text-xl lg:text-2xl mt-5  w-full ">
                     {t("books.LLDesc2")}
-                  </p>
+                  </p> */}
                 </div>
               </motion.div>
             )}
@@ -160,20 +160,7 @@ const La = () => {
                   className="font-jost  md:text-xl lg:text-2xl mb-10"
                   style={{ whiteSpace: "pre-line" }}
                 >
-                  Ce récit suit le parcours tragique de Maleea, une jeune femme
-                  hantée par la disparition prématurée de sa mère, Esther
-                  Figiel, et par une malédiction familiale. À travers ses
-                  souvenirs, elle décrit une adolescence tumultueuse marquée par
-                  une sexualité compulsive et des rapports conflictuels avec son
-                  père, qu'elle finit par accuser d'avoir assassiné sa mère.
-                  Malgré des retrouvailles fusionnelles et incestueuses avec
-                  cette dernière, le cycle de la fatalité reprend ses droits
-                  lors du décès brutal d'Esther. Sombrant dans une anorexie
-                  sévère et des séjours répétés en milieu psychiatrique,
-                  l'héroïne se laisse dépérir physiquement. Après l'échec d'un
-                  procès retentissant et le suicide final de son père, Maleea
-                  livre ses dernières pensées, oscillant entre le dédain de la
-                  vie et l'espoir d'une libération par l'écriture.
+                  {t("BooksDocu-fiction.PresseDesc1")}
                 </p>
 
                 <button
@@ -190,50 +177,94 @@ const La = () => {
                 >
                   Newspapers reviews
                 </button>
-
                 {/* article September */}
                 <p
-                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mt-5 mb-10"
                   style={{ whiteSpace: "pre-line" }}
                   dangerouslySetInnerHTML={{
-                    __html: t("books.articleSep"),
+                    __html: t("BooksDocu-fiction.PresseSept"),
                   }}
                 />
+
                 {/* article August */}
                 <p
                   className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 mr-auto mb-10"
                   style={{ whiteSpace: "pre-line" }}
                   dangerouslySetInnerHTML={{
-                    __html: t("books.articleAug"),
+                    __html: t("BooksDocu-fiction.PresseJune"),
                   }}
                 />
+
                 {/* article September2 */}
                 <p
                   className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto"
                   style={{ whiteSpace: "pre-line" }}
                   dangerouslySetInnerHTML={{
-                    __html: t("books.articleSep2"),
+                    __html: t("BooksDocu-fiction.PresseMarch"),
                   }}
                 />
+
                 <div className="my-20">
                   {/* article nov */}
                   <p
                     className="font-jost  md:text-xl lg:text-2xl  mb-10"
                     style={{ whiteSpace: "pre-line" }}
                     dangerouslySetInnerHTML={{
-                      __html: t("books.articleNov"),
+                      __html: t("BooksDocu-fiction.PresseMarch2"),
                     }}
                   />
 
                   {/* article Dec */}
                   <p
-                    className="font-jost  md:text-xl lg:text-2xl  "
+                    className="font-jost  md:text-xl lg:text-2xl  mb-10"
                     style={{ whiteSpace: "pre-line" }}
                     dangerouslySetInnerHTML={{
-                      __html: t("books.articleDec"),
+                      __html: t("BooksDocu-fiction.PresseApril"),
+                    }}
+                  />
+                  <p
+                    className="font-jost  md:text-xl lg:text-2xl  mb-10"
+                    style={{ whiteSpace: "pre-line" }}
+                    dangerouslySetInnerHTML={{
+                      __html: t("BooksDocu-fiction.PresseApril2"),
+                    }}
+                  />
+                  <p
+                    className="font-jost  md:text-xl lg:text-2xl  mb-10"
+                    style={{ whiteSpace: "pre-line" }}
+                    dangerouslySetInnerHTML={{
+                      __html: t("BooksDocu-fiction.PresseMarch3"),
+                    }}
+                  />
+                  <p
+                    className="font-jost  md:text-xl lg:text-2xl  mb-10"
+                    style={{ whiteSpace: "pre-line" }}
+                    dangerouslySetInnerHTML={{
+                      __html: t("BooksDocu-fiction.PresseMarch4"),
                     }}
                   />
                 </div>
+                <p
+                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+                  style={{ whiteSpace: "pre-line" }}
+                  dangerouslySetInnerHTML={{
+                    __html: t("BooksDocu-fiction.PresseMarch5"),
+                  }}
+                />
+                <p
+                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+                  style={{ whiteSpace: "pre-line" }}
+                  dangerouslySetInnerHTML={{
+                    __html: t("BooksDocu-fiction.PresseMarch6"),
+                  }}
+                />
+                <p
+                  className="font-jost  md:text-xl lg:text-2xl lg:w-3/4 ml-auto mb-10"
+                  style={{ whiteSpace: "pre-line" }}
+                  dangerouslySetInnerHTML={{
+                    __html: t("BooksDocu-fiction.PresseApril3"),
+                  }}
+                />
               </motion.div>
             )}
 
@@ -247,99 +278,128 @@ const La = () => {
                 transition={{ duration: 0.3 }}
                 className="bg-primary text-white p-8 rounded-3xl shadow-2xl space-y-5"
               >
-                <p className="md:text-xl lg:text-3xl mb-5 uppercase ">
+                <p className="md:text-xl lg:text-2xl mb-10 uppercase">
                   Interview
                 </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc1")} />
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc1")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc2")}
+                  {t("BooksDocu-fiction.interviewDesc2")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc3")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc3")}
+                  {t("BooksDocu-fiction.interviewDesc4")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc4")}
+                  {t("BooksDocu-fiction.interviewDesc5")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc5")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc6")} />
+                  {t("BooksDocu-fiction.interviewDesc6")}
                 </p>
 
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc7")}
+                  {t("BooksDocu-fiction.interviewDesc7")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc8")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc8")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc9")} />
+                  {t("BooksDocu-fiction.interviewDesc9")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc10")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc11")} />
+                  {t("BooksDocu-fiction.interviewDesc10")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc12")}
+                  {t("BooksDocu-fiction.interviewDesc11")}
                 </p>
-
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc13")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
                   {" "}
-                  {t("books.interview1Desc14")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc15")}
-                </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc16")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc17")}
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 font-semibold">
-                  <Trans i18nKey={t("books.interview1Desc18")} />
-                </p>
-                <p className="md:text-xl lg:text-xl mb-5 ">
-                  {" "}
-                  {t("books.interview1Desc19")}
+                  {t("BooksDocu-fiction.interviewDesc12")}
                 </p>
 
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc20")}
+                  {t("BooksDocu-fiction.interviewDesc13")}
                 </p>
-                <p className="md:text-xl lg:text-xl font-semibold mb-5 ">
-                  <Trans i18nKey={t("books.interview1Desc21")} />
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc14")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc22")}
+                  {t("BooksDocu-fiction.interviewDesc15")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc23")}
+                  {t("BooksDocu-fiction.interviewDesc16")}
                 </p>
                 <p className="md:text-xl lg:text-xl mb-5 ">
                   {" "}
-                  {t("books.interview1Desc24")}
+                  {t("BooksDocu-fiction.interviewDesc17")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc18")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc19")}
+                </p>
+
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc20")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc21")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc22")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc23")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc24")}
+                </p>
+
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc25")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc26")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc27")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 italic font-semibold">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc28")}
+                </p>
+                <p className="md:text-xl lg:text-xl mb-5 ">
+                  {" "}
+                  {t("BooksDocu-fiction.interviewDesc29")}
                 </p>
               </motion.div>
             )}
@@ -427,6 +487,12 @@ const La = () => {
                     press7,
                     press8,
                     press9,
+                    press10,
+                    press11,
+                    press12,
+                    press13,
+                    press14,
+                    press15,
                   ].map((img, index) => (
                     <div
                       key={index}
@@ -464,5 +530,4 @@ const La = () => {
     </div>
   );
 };
-
-export default La;
+export default Casting;

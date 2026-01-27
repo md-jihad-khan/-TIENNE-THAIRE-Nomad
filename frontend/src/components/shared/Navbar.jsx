@@ -34,20 +34,23 @@ const Navbar = () => {
         {
           title: t("nav.books_sub.docuFiction"),
           path: "/books/docu-fiction",
-          children: [{ title: "Casting", path: "/books/novel/la-langoureuse" }],
+          children: [{ title: "Casting", path: "/books/docu-fiction/casting" }],
         },
         {
           title: t("nav.books_sub.documentary"),
           path: "/books/documentary",
           children: [
-            { title: "Diva Siouxsie", path: "/books/novel/la-langoureuse" },
+            {
+              title: "Diva Siouxsie",
+              path: "/books/documentary/diva-siouxsie",
+            },
             {
               title: "Patti Smith, la fille de Rimbaud",
-              path: "/books/novel/alissia-lone",
+              path: "/books/documentary/patti-smith",
             },
             {
               title: "La Tribu des Rouches",
-              path: "/books/novel/funerarium",
+              path: "/books/documentary/la-tribu",
             },
           ],
         },

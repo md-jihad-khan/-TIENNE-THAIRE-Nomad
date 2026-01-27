@@ -4,6 +4,7 @@ import press1 from "../../../assets/Books/FN Press/1.jpg";
 import press2 from "../../../assets/Books/FN Press/2.jpg";
 import press3 from "../../../assets/Books/FN Press/3.jpg";
 import press4 from "../../../assets/Books/FN Press/4.jpg";
+import press5 from "../../../assets/Books/FN Press/5.jpg";
 
 import podcast1FR from "../../../assets/audio/Podcast français Funérarium.m4a";
 import podcast1EN from "../../../assets/audio/Podcast anglais Funérarium.wav";
@@ -302,34 +303,36 @@ const FN = () => {
                   Newspapers Reviews
                 </p>
                 <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
-                  {[press1, press2, press3, press4].map((img, index) => (
-                    <div
-                      key={index}
-                      className="relative break-inside-avoid group"
-                    >
-                      {/* Image */}
-                      <img
-                        src={img}
-                        alt={`Press ${index + 1}`}
-                        className="w-full rounded-2xl shadow-lg"
-                      />
+                  {[press1, press2, press3, press4, press5].map(
+                    (img, index) => (
+                      <div
+                        key={index}
+                        className="relative break-inside-avoid group"
+                      >
+                        {/* Image */}
+                        <img
+                          src={img}
+                          alt={`Press ${index + 1}`}
+                          className="w-full rounded-2xl shadow-lg"
+                        />
 
-                      {/* Download button */}
-                      <a
-                        href={img}
-                        download
-                        className="
+                        {/* Download button */}
+                        <a
+                          href={img}
+                          download
+                          className="
             absolute bottom-3 right-3
             bg-black/60 text-white text-sm
             px-3 py-1 rounded-full
             opacity-0 group-hover:opacity-100
             transition
           "
-                      >
-                        Download
-                      </a>
-                    </div>
-                  ))}
+                        >
+                          Download
+                        </a>
+                      </div>
+                    ),
+                  )}
                 </div>
               </motion.div>
             </motion.div>
