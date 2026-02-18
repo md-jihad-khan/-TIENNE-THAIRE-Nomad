@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Casting from "../../assets/Books/book7.jpg";
 import { useEffect, useState } from "react";
 import i18next from "i18next";
+import rainbow from "../../assets/Home/rainbow.png";
 
 import podcast1FR from "../../assets/audio/Podcast français Casting.m4a";
 import podcast1EN from "../../assets/audio/Podcast anglais Casting.wav";
@@ -17,10 +18,15 @@ const Docufiction = () => {
 
   const Podcast1 = lang.startsWith("fr") ? podcast1FR : podcast1EN;
   return (
-    <div className="my-20 ">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
+    <div className="my-20 relative">
+      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase mb-10 relative z-10">
         Docu-fiction
       </h2>
+      <img
+        src={rainbow}
+        alt=""
+        className="absolute -top-10 -left-10 w-32 md:w-48 opacity-40 -z-0 pointer-events-none"
+      />
       <div className="lg:w-3/4 ">
         <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
           {" "}

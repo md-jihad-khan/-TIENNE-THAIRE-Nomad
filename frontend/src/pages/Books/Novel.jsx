@@ -13,6 +13,7 @@ import podcast3EN from "../../assets/audio/Podcast anglais Funérarium.wav";
 
 import i18next from "i18next";
 import { useEffect, useState } from "react";
+import rainbow from "../../assets/Home/rainbow.png";
 
 const Novel = () => {
   const { t } = useTranslation("global");
@@ -29,10 +30,15 @@ const Novel = () => {
   const Podcast2 = lang.startsWith("fr") ? podcast2FR : podcast2EN;
   const Podcast3 = lang.startsWith("fr") ? podcast3FR : podcast3EN;
   return (
-    <div className="my-20 ">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
+    <div className="my-20 relative">
+      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase mb-10 relative z-10">
         {t("books.novelTitle")}
       </h2>
+      <img
+        src={rainbow}
+        alt=""
+        className="absolute -top-10 -left-10 w-32 md:w-48 opacity-40 -z-0 pointer-events-none"
+      />
 
       <div className="flex gap-6 mb-10">
         <button
@@ -73,9 +79,16 @@ const Novel = () => {
       {/* LA 2003 */}
       {activeBook === 0 && (
         <div>
-          <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
-            {t("books.LLTitle")}
-          </h4>
+          <div className="relative">
+            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+              {t("books.LLTitle")}
+            </h4>
+            <img
+              src={rainbow}
+              alt=""
+              className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+            />
+          </div>
           <div className="flex gap-5">
             <img className="w-1/4 h-full" src={book1} alt="" />
 
@@ -278,10 +291,16 @@ const Novel = () => {
       {activeBook === 1 && (
         <div>
           <div className=" ml-auto">
-            <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
-              {" "}
-              {t("books.LLTitle2")}{" "}
-            </h4>
+            <div className="relative">
+              <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+                {t("books.LLTitle2")}
+              </h4>
+              <img
+                src={rainbow}
+                alt=""
+                className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+              />
+            </div>
 
             <div className="flex gap-5">
               <img className="w-1/4 h-full" src={book2} alt="" />
@@ -502,9 +521,16 @@ const Novel = () => {
       {/* FR 2009 */}
       {activeBook === 2 && (
         <div>
-          <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
-            {t("books.fTitle")}
-          </h4>
+          <div className="relative">
+            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+              {t("books.fTitle")}
+            </h4>
+            <img
+              src={rainbow}
+              alt=""
+              className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+            />
+          </div>
           <div className="flex gap-5 mx-auto items-center">
             <img className="w-1/4 h-full" src={book3} alt="" />
             <div>

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import rainbow from "../../assets/Home/rainbow.png";
 
 import Book1 from "../../assets/Books/book4.jpg";
 import Book2 from "../../assets/Books/book5.jpg";
@@ -7,10 +8,15 @@ import Book3 from "../../assets/Books/book6.jpg";
 const Documentary = () => {
   const { t } = useTranslation("global");
   return (
-    <div className="my-20 ">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary   uppercase mb-10">
+    <div className="my-20 relative">
+      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase mb-10 relative z-10">
         {t("BooksDocumentary.title")}
       </h2>
+      <img
+        src={rainbow}
+        alt=""
+        className="absolute -top-10 -left-10 w-32 md:w-48 opacity-40 -z-0 pointer-events-none"
+      />
 
       <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
         {t("BooksDocumentary.DSTitle")}

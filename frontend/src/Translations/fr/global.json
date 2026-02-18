@@ -39,21 +39,19 @@
       "submit": "Envoyer le message"
     },
     "subscribe": {
-      "title": "Abonnez-vous à notre chaîne",
+      "title": "Abonnez vous à ma chaîne",
       "channelName": "Nomad Black Sheep",
-      "merchandise": "Visitez notre boutique"
+      "merchandise": "Visitez la boutique Nomad Black Sheep"
     },
     "partners": {
       "title": "Partenaires"
     }
   },
-
   "biography": {
     "introDescription": "<bold>Naissance</bold> à Saint-Trond, neuf mois après une action concertée par mes très chers parents. La date restera secrète. Situons-la simplement à la fin de ce que les historiens appellent le baby-boom.",
     "introDescription2": "<bold>Enfance</bold> à Liège. C’est le temps du foot avec les gamins du quartier. Avec mon père, chaque samedi soir, j’assiste aux matchs du Standard. Le dimanche, ma mère me conduit au glacier Vica où je lèche des cornets vanille et chocolat qui coulent sur mes doigts. En semaine, je joue au foot avec les gamins du quartier. Époque bénie. Les gens heureux n'ont pas d'histoires. Ce qui n'empêche pas d'aimer en écouter, en lire, en raconter...",
     "caption1": "Légende des photos : Une jeune première lors d'un casting à Bruxelles. C'est my mum. Un jeune premier dans son jardin, c'est my dad. Mes racines. Ceux qui m’ont offert la vie.",
     "adolescence": "<bold>Adolescence. </bold>C’est le temps des premières passions musicales. C’est surtout le temps de l’amour, le temps des copains et de l’aventure. Il y a surtout Myriel. Le reste ne se raconte pas.",
-
     "studies": "<bold>Études.</bold> Il faut passer par là. J'hésite les romanes ou la psycho. Les romanes se justifient par l'ardent désir d’écrire des livres, la psycho par le fait que les histoires qui se bousculent dans ma tête touchent, toutes, de près ou de loin, à la folie. Faute de me décider, j'opte pour le... journalisme qui ne m'intéresse guère, mais qui permet une réussite aisée en trois mois de blocus, sans renoncer aux voyages et aux rencontres féminines.",
     "salvage": "Je sauve ce parcours estudiantin sans risque par l’enseignement d'Hadelin Trinon au Musée du Cinéma. D'Eisenstein à David Lynch, j'y apprends à décortiquer les films. Un diplôme me certifie donc \"Historien du Cinéma\".",
     "experiment": "Expérimentations de jeunesse. ",
@@ -74,13 +72,11 @@
     "homeTitle": "maison que je viens d’acheter.",
     "homeCaption": " Ma maison de la rue Naniot, à Liège. Le “petit bureau” se trouve au 2e étage à l’arrière. ",
     "homeDesc1": "C’est là un havre de paix et de concentration. Certes, je frôle à nouveau la schizophrénie en plongeant mes humeurs dans le personnage de Maleea Lori Hall, mais quand une muse prend le contrôle des opérations, elle tient son artiste en équilibre, elle lui indique sans relâche le cap à suivre.",
-
     "litteratureTitle": "L’entrée en Littérature",
     "litteratureDesc1": "Je mets un point final à La Langoureuse. La troisième version, définitive, reçoit le Prix d'aide à l'édition de l'Académie Royale de Langue française. Cet honneur me donne une certaine indépendance, moi qui rêve de tracer mon chemin en dehors du système. Des amis de longue date m’y attendent : Jean-Pierre Closson et sa confiance financière, Philippe Bachy et sa confiance littéraire.",
     "litteratureDesc2": "Plus besoin d’envoyer le manuscrit dans les boîtes aux lettres des éditeurs parisiens, pas besoin de se glisser dans les dîners mondains où se font les carrières, j’ai essayé dix ans plus tôt, j’ai détesté. En 2003, une parution aux modestes Éditions du Somnambule Équivoque me convient parfaitement.",
     "litteratureDesc3": "Tout s’enchaîne en rêve éveillé. L’écriture d'Alissia Lone me vient comme un cri féministe avec un style concis, sec et cru. J’ai trouvé ma patte littéraire: fini, le classicisme, place à une prose rugueuse, aride comme un tourment psychique. Si la forme s’affirme dans la contemporanéité, le fond, lui, consiste toujours à réaliser un portrait de femme à travers les méandres de pensées en mode “survie”",
     "litteratureDesc4": "Mais pour Alissia Lone, contrairement à Maleea Lori Hall, la violence (qui frappe l'héroïne) ne vient pas de l'intérieur, mais de trois mâles en rut. En somme, c’est un “viol en direct” que publie le Somnambule Équivoque en 2004. Le thème fera bien entendu polémique : un homme a-t-il le droit de se faire porte-parole du sexe opposé, d’un cerveau féminin, d’un vagin?",
-
     "cinemaCaption": "Place Saint Léonard à Liège. Photo © Samuel Nicolaï, à l’occasion de la sortie d’Alissia Lone",
     "cinemaDesc": "Loin de ces controverses stupides, je regrette sur le tard de ne pas avoir correctement fait mes adieux au cinéma. J’entame Casting, un travail de bénédictin qui vise à combler cette lacune et à clôturer en quelque sorte ma vie professionnelle de critique. Au-delà de sa thèse cinéphile, ce livre se lit comme un hommage aux femmes, aux actrices et à ma libellule. En 2006, le docu-fiction est encore édité par le Somnambule Équivoque, une maison qui m’est décidément chère, tant nous y formons une communauté d’écrivains (Nicolas Crousse, Fidéline Dujeu, Christine Aventin, Nathalie Gassel…) où la complicité règne sur la concurrence, où le travail du style et de la narration l’emporte sur la recherche d’une recette de best-seller.",
     "bookDesc": "Malgré mes postures de mouton noir, ces trois premiers livres me valent d’être repérés par des éditeurs situés dans le giron mainstream. Luc Pire, grand stratège de l’édition belge, et Pierre François, directeur du Standard de Liège, m’offrent la chance inouïe de chanter les louanges de mes dieux vivants en maillot rouge et blanc. Le documentaire, intitulé La Tribu des Rouches, sera un des succès de librairie de l’année 2007. ",
@@ -95,7 +91,6 @@
     "exitDesc2": "Tandis que Christina et moi déménageons du quartier Naniot au quartier de Péralta, je deviens nomade, et photographe par ricochet. Chaque panorama, chaque bâtiment, chaque jolie demoiselle croisée au détour d’un chemin deviennent prétexte à un cliché. Je me promène inlassablement, en chasse des belles inconnues et des couchers de soleil afin de capter des moments d’éternité. Cette nouvelle passion me force à marcher longuement et lentement, à regarder sans jamais se presser, à scruter le moindre détail, à sourire. ",
     "caption3": "Au Canada, à Sutton, en 2015. L’appareil photo a remplacé le bic.",
     "exitDesc3": "Au fond, la vie est belle. Ce qui est horrible, c’est de devoir la quitter un jour, ou de voir partir les gens qu’on aime. Entre ces peines indicibles, il faut s’amuser, il n’y a aucun autre choix possible!",
-
     "NBSTitle": "La mue en Nomad Black Sheep",
     "NBSDesc1": "Du plus loin que je m’en souvienne, j’ai toujours été un mouton noir. À l’école. À l’université. Par ma manière d’apprendre, autodidacte se formant désormais aux logiciels de retouche numérique et au montage vidéo. Par rapport au travail que les bien-pensants nomment “vertu” et que je considère comme un esclavage moderne avec des chaînes financières ayant remplacé les chaînes de métal.",
     "NBSDesc2": " À travers mes goûts cinéphiles, de Larry Clark à Harmony Korine. À travers mes goûts littéraires, d’Elfriede Jelinek à Chloé Delaume. Dans mes choix artistiques qui ne cherchent l’assentiment de personne. Dans mon refus d’utiliser les réseaux sociaux, préférant les alcôves secrètes aux scènes exposées.  ",
@@ -103,7 +98,6 @@
     "RLTitle": "Le retour en littérature",
     "RLDesc1": "L’intelligence aux aguets, la sensibilité à fleur de peau, Ana possède ce rare talent de muse qu’elle combine avec son propre talent de tattoo artist. La tatoueuse me fait comprendre que je n’ai peut-être pas tout dit lors de ma période littéraire, ou, à tout le moins, que j’étais parti en fuyant, sans présenter des adieux corrects, comme avec le cinéma jadis.",
     "RLDesc2": "Et puisque, seules les muses ont ce pouvoir de pousser à l’écriture, Ana m’inspire un roman si personnel que je l’écris au “Je masculin”. Je ne me cache plus sous un personnage de fiction, je me mets désormais à nu, l’âme terriblement exposée comme ma peau offerte au dermographe. Mais si la nudité des corps n’a rien de choquant, celle des âmes est bien plus troublante…",
-
     "TattooCaption": "La nudité physique ne devrait pas faire peur (‘Nude is not porn”). Ce qui est effrayant  en revanche, c’est de mettre à nu les âmes.",
     "endSection": "Je me partage alors entre écriture, photographie de voyage et restauration de photos anciennes. Accessoirement, j’inaugure une chaîne Youtube grâce à la réalisation d’un vidéoclip en hommage à… Siouxsie. Je me disperse. Sentimentalement, artistiquement… Est-ce là l’énergie cardinale qui permet de vivre plusieurs vies à la fois? Ou est-ce l’énergie du désespoir quand fouette le vent mauvais de l’âge qui avance?",
     "desireTitle": "Un désir de jeunesse éternelle",
@@ -123,15 +117,11 @@
     "LLDesc": "Le personnage de Maleea Lori Hall, une jeune femme blessée de l’intérieur, a cette particularité de prendre le lecteur à témoin : « Un fil, à l’intérieur de mon corps, retenait des furies. Le tirer, et je tombais dans un précipice ; le laisser, c’était une écorchure. Qu’auriez-vous fait à ma place ? ». Réponse, si réponse il y a, au bout du labyrinthe de ses pensées.",
     "LLDesc1": "Prix d’aide à l’édition du Fonds National de la Littérature, cuvée 2002, La Langoureuse reçoit la mention suivante de la part du jury.« exercice de narration virulent qui dénote d’un vrai tempérament romanesque ». Au-delà de ses thèmes (la dystopie familiale, la folie, l'anorexie), ce roman est avant tout un suspense psychologique haletant, porté par un style incisif, concis et rigoureux.",
     "LLDesc2": "Cela m’est venu subitement, comme un cri. Transgresser la frontière, aller vers le mal personnifié : ma\n\nmère. Je vivais avec un manque. La seule échappatoire\n\nconsistait à le combler. En guise d’avenir, la mort m’était\n\ntout de même annoncée à cause d’une combinaison de\n\nchromosomes. C’était une question d’y ou d’x : garçon,\n\nj’aurais pu devenir une star ; fille, j’étais vouée au gouffre,\n\naux adieux prématurés. La gitane m’avait laissé une chance\n\nà saisir et j’empoignai ce sort qui bascula le jour où mon\n\npère confisqua ma jonquille.\n\nEnfin, je ne regrette rien. Ou pas grand-chose. Les\n\nregrets s’abreuvent de larmes, rivières nées d’une défaite\n\nsans combat. J’en aurais éprouvés, et même des remords,\n\nsi je m’étais cantonnée dans l’espace sans langueur tel que\n\nlimité par le patriarche : la maison, l’école, l’académie de\n\ndanse, l’université, les amours de jeunesse, et plus tard le\n\nmari et l’amant… Au programme, il y avait un autre invité :\n\nl’atavisme, parce que j’étais née au féminin. Ce convive\n\ninattendu, le fameux Docteur Hall s’en moquait d’un\n\nhaussement d’épaules présomptueux. Pour lui, j’avais une\n\nsanté de fer et le reste correspondait à des galéjades de\n\nTziganes en manque de potins ! Par défi, j’avais accroché\n\nl’arbre généalogique entre deux cadres, Binoche dans\n\nCode Inconnu, Binoche dans Rendez-vous, regards croisés\n\nen ultime protection sur un témoignage de l’histoire\n\nqui démentait tout optimisme… De fait : quelle ironie,\n\ns’éteindre en pleine jeunesse, à petit feu, en dépit des\n\nremèdes d’un père médecin responsable par orgueil de la\n\nfêlure qui m’agonise !",
-
     "Presse": "Presse",
     "articleSep": "<strong>Article paru dans Le Carnet et les Instants, septembre 2003.</strong>\n\"Ce sont ses mots de femme blessée que suit le lecteur, ce sont ces mots-là, lucides et batailleurs, qui lui font très vite comprendre qu'il n'assiste ici qu'au dernier round d'un conflit titanesque, à l'issue incertaine, et dont personne ne sortira indemne.\" Par Pascal Leclercq.",
     "articleAug": "<strong>Article paru dans Le Vif-L'Express, hebdomadaire, août 2003.</strong>\n\"Si l'inceste illumine ce récit, renoncez à votre premier soupçon, celui d'une relation père-fille que la morale réprouve, le drame est ailleurs. Et Etienne Ethaire l'entretient d'une plume vigoureuse et poignante, avec une empathie d'écrivain au je féminin.\" Par Ghislain Cotton",
-
     "articleSep2": "<strong>Article paru dans C4 D'une certaine gaieté, septembre 2003.</strong>\n\"Il est sûr que je me souviendrai longtemps de l'anti-héroïne, la jeune Maleea Lori Hall, de son anorexie, de son mal de vivre. C'est dur, violent, impitoyable et Beau (avec un B majuscule).\" Par André Stas.",
-
     "articleNov": "<strong>Article paru dans Le Bibliothécaire, novembre 2003.</strong>\n\"Cette jeune femme qui refuse obstinément de se nourrir réussit à susciter l'empathie et à créer l'identification avec son personnage pourtant borderline.\" Par Michel Dagneau.",
-
     "articleDec": "<strong>Article paru dans La Dernière Heure, décembre 2003.</strong>\n\"Son suspense et son sens du découpage font penser à Hitchcock. Pas moins.\" Par Jean Jour.",
     "interview1Desc1": "<i>Il est assez déconcertant de voir un homme écrire au féminin. D'où vous vient cette curieuse pratique?<i>",
     "interview1Desc2": "Heureusement pour ma santé mentale, je n'écris au féminin que dans le cadre d'une histoire, d'une dérive imaginaire. C'est nettement plus intéressant, cela permet de ne pas subir les limites, les contraintes, de sa propre corporéité.",
@@ -166,14 +156,12 @@
     "ALextrait1": "Donc, non, ça n’arrive pas qu’aux autres… Je suis punie de mon inconscience, comme si le fait de présenter les infos au quotidien m’immunisait des monstruosités déversées sur les écrans de France avec une régularité de métronome. Je suis irresponsable. J’emmène mes enfants en terre de solitude, puis je les abandonne pour le besoin égoïste de promenades au clair de lune, Gilles et Lucas bercés dans la sagesse du sommeil. Une pensée d’épouvante m’étreint, jusqu’à griller mon cerveau qui hésite entre agitation et paralysie. Au lieu de s’en prendre à moi, Numéros 1, 2 et 3 auraient tout aussi bien pu forcer l’entrée du Pavillon Eldorado. Gilles et Lucas à leur merci, garçonnets sans défense. Neuf ans, sept ans. L’âge heureux de l’insouciance avec une perception du temps qui ne leur donne pas encore conscience de la brièveté de la vie, de son caractère aléatoire.",
     "ALextrait2": "Je dois les protéger. Me soumettre à la volonté des malabars, endurer le pire pour retrouver dès demain le meilleur. J’ai hélas des visions de films d’horreur qui surgissent, indésirables. Impossible de deviner si le viol suffira à ces salauds. Qui sait s’ils ne souhaitent pas prolonger leurs plaisirs sadiques en m’enfermant des jours entiers dans la maison qu’ils ont sans doute aperçue à flanc de falaise, interpellés par l’apaisante lumière du hall ? Faire de moi leur jouet, et de Gilles et Lucas les spectateurs traumatisés de leur perversité ? Face à une telle perspective, les lames d’acier qui valsent devant mes yeux ne sont plus rien, rien que des armes de pacotille, tout ce qui compte, c’est qu’ils ne touchent pas à un seul cheveu de mes chéris. ",
     "ALpress": "Alissia Lone d'Etienne Ethaire relate le traumatisme d'une présentatrice de télévision victime d'un viol par trois mâles en rut. Ce récit explore la dualité entre l'image publique parfaite de l'héroïne et sa détresse intérieure profonde.",
-
     "articleJully": "<strong> La Dernière Heure, quotidien, juillet 2004.</strong>\n\"Son propos avant tout est de proposer une réflexion sur la violence contemporaine et ses conséquences. \" Par Jean Jour.",
     "articleJune": "<strong> La Meuse, quotidien, juin 2004.</strong>\nMêlée à des propos encourageants sur la maisonnée des somnambules et sur la difficulté du métier d'éditeur, voici une chronique très positive d'un roman écrit par un Liégeois et situé sur les côtes bretonnes, une nuit de canicule. Par Guy Delhasse.",
     "articleApril": "<strong> La Tribune de Bruxelles, hebdomadaire, avril 2004.</strong>\n\"Un texte fort qui flirte avec le trash, haletant, comme les aime l'auteur qui avait déjà, dans La Langoureuse, abordé l'inceste et les liens sacrés du sexe et du sang.\"",
     "articleMay": "<strong> Vers l'Avenir, Le Jour, Le Courrier, mai 2004.</strong>\n\"Ce texte âpre, cru, évidemment douloureux, est maîtrisé de bout en bout\"Par Michel Paquot.",
     "articleMarch": "<strong>  Le Bibliothécaire, trimestriel, mars 2004.</strong>\n Notons d'abord le jeu sur les consonances. \"Après le personnage de Maleea Lori Hall dans La Langoureuse, Etienne Ethaire invente un autre superbe nom de femme, Alissia Lone. Jeu de mot sur la solitude ou référence durassienne (Détruire, dit-elle), chacun y trouvera son explication. \" Par Michel Dagneau.",
     "articleMay2": "<strong>  Antipode, mai 2004.</strong>\n\"Nous allons tout vivre: l'avant, le pendant, l'après. Avec les pensées de cette femme, d'une femme pour ses agresseurs, avec toute la crudité très réaliste de l'ignominieux, avec les ruses de cette femme pour tenir, ne pas trop ressentir, déjà se reconstruire et ne pas oublier. \" Par Denis Leduc.",
-
     "interview2Desc1": "<i>Votre deuxième roman est toujours écrit au féminin?<i>",
     "interview2Desc2": "Oui, à partir du moment où j'écris de la fiction, je me mets dans la peau d'une femme. C'est un processus irréversible, je crois. Un état d'esprit. Cela vient naturellement et me procure l'avantage automatique d'être à 100% dans l'imaginaire.",
     "interview2Desc3": "<i>C'est une volonté de vous préserver, de ne rien dévoiler de personnel?<i>",
@@ -199,16 +187,12 @@
     "interview2Desc23": "<i>Pratiqueriez-vous la littérature comme d'autres vont en psychanalyse?<i>",
     "interview2Desc24": "Je ne crois pas même s'il y a une forme d'exutoire dans l'acte d'écrire. C'est un déchaînement. Mais, pourtant, je me sens équilibré. Je vis avec une compagne admirable. Je suis casanier et entouré de gens que j'aime. Je pense simplement que la vie est tellement belle qu'il est dommage qu'elle soit si courte ! S'il y a un démon qui me hante et qui doit être évacué sur le divan de la psychanalyse littéraire, il n'est que là...",
     "interview2Desc25": "Au niveau du style, votre écriture est cette fois plus crue...",
-    "interview2Desc26": "Le style va de pair avec le fond du récit, avec le sujet et ses nécessités. Il y a mon style d'écriture qui, je crois, se retrouve de La Langoureuse à Alissia Lone. Puis, il y a les particularités propres aux personnages. Quand Maleea Lori Hall parlait de sexe, elle le faisait finalement avec une éducation fort bourgeoise. Alissia Lone est quelqu'un qui a plus \"vécu\". Elle parle donc plus sèchement, et de façon d'autant plus crue qu'elle est en plein dans \"l'événement\". Il n'y a pas le recul. Tandis que Maleea Lori Hall écrivait des années après et prenait donc plus le temps de choisir ses mots.",
-
+    "interview2Desc26": "Le style va de pair avec le fond du récit, avec le sujet et ses nécessités. Il y a mon style d'écriture qui, je crois, se retrouve de <i> La Langoureuse à Alissia Lone</i>. Puis, il y a les particularités propres aux personnages. Quand Maleea Lori Hall parlait de sexe, elle le faisait finalement avec une éducation fort bourgeoise. Alissia Lone est quelqu'un qui a plus \"vécu\". Elle parle donc plus sèchement, et de façon d'autant plus crue qu'elle est en plein dans \"l'événement\". Il n'y a pas le recul. Tandis que Maleea Lori Hall écrivait des années après et prenait donc plus le temps de choisir ses mots.",
     "interview2podcast": "podcast",
     "interview2commander": "commander",
-
     "fTitle": "Funérarium (2009)",
     "fDesc1": "En vrac, Étienne Éthaire aime les libellules et les chats, les gourmandises et les gourgandines, les grains de beauté et les grains de folie, Louise Brooks et P.J. Harvey, les voyages et les grands espaces. Ça, c’est dans la vraie vie. Parce que dans ses fictions, il privilégie plutôt les atmosphères étouffantes en huis clos. Histoire de tisser des portraits de femmes au bord de la crise de nerfs.",
-
     "Fpress1": "Le troisième roman d'Étienne Éthaire, Funérarium, relate les trois jours et demi séparant le décès d'un père de son inhumation. À travers un entretien audio et des extraits du roman, on découvre le portrait de Laetitia, une femme introvertie confrontée à la brutalité des démarches administratives et des rituels funéraires. Le récit explore le contraste entre la trivialité de l'organisation logistique, comme le choix d'un cercueil, et la profondeur d'un deuil intime marqué par des souvenirs d'enfance. L'auteur utilise cette période de transition pour révéler la vérité psychologique de son héroïne face à une perte irréversible. Cette immersion dans les pensées de la narratrice souligne la difficulté de communiquer sa souffrance dans une société régie par des conventions sociales rigides.",
-
     "interview3Desc1": "<i>Funérarium est annoncé comme un roman. Est-ce une fiction qui cache une part d’autobiographie ?<i>",
     "interview3Desc2": "Une petite part, disons. Il y a en effet une part de moi dans le personnage de Laetitia et une part de mon père dans le personnage de feu Jacques Telatin. J’ai voulu que ce texte soit un hommage à mon père, mais j’ai aussi voulu me démarquer de la réalité par bien des aspects. J’ai d’ailleurs à nouveau choisi d’écrire au « Je féminin » ce qui oblige forcément, pour un homme, à une part d’invention.",
     "interview3Desc3": "Le livre raconte les trois jours et demi qui suivent le décès du père, c’est-à-dire qu’on suit les personnages, et particulier Laetitia, fille unique, jusqu’à l’inhumation. Puis, le texte s’arrête abruptement…",
@@ -226,28 +210,30 @@
   },
   "BooksDocu-fiction": {
     "desc1": "Les actrices font corps avec le cinéma. L’auteur leur rend un amoureux hommage à travers l’histoire et la géographie du cinéma. Perce une conception du 7e Art. S’égrènent des anecdotes qui illustrent la magie du coup de foudre, tantôt pour le sourire volcanique de Louise Brooks, tantôt pour le sein, entraperçu, d’Elodie Bouchez, tantôt pour les radiations slaves de Katerina Golubeva, tantôt pour le magnétisme de Déborah François, tantôt pour la persévérance rageuse d'Emilie Dequenne. Par le biais de ces portraits d'actrices, montés à la manière d'un film avec des plans et des séquences, se perçoit en filigrane une déclaration d'amour aux femmes.",
-    "desc2": "cover - interview - presse - extrait - commander",
-
+    "ExtraitDesc1": "Insert en hommage à …<br/> Louise Brooks et au fantasme fondateur",
+    "ExtraitDesc2": "« Pendant 69 ans, j'ai été frénétiquement à la recherche de moi-même. Et voilà que vous me dites que je suis un<br/> \"mythe\".<br/>Quelle grâce ! Désormais, je me désagrègerai confortablement au lit avec mes livres, cigarettes, café, pain et<br/>confitures d'abricots.»<b> <br/>Louise Brooks,<br/>correspondance avec Guido Crepax <b/>",
+    "ExtraitDesc3": "Les actrices sont des fantasmes, disais-je en préambule. Cet aveu trouve son origine chez une ensorceleuse, Louise Brooks. Dont le sortilège perdure. Dont la présence magique rôde dans le territoire des mémoires, de ma mémoire. Diva des plateaux en théorie, écorchée vive en pratique. Sex-appeal de rebelle et petits seins de bakélite que n’auraient pas reniés Gainsbourg. Décolletés d’avant-garde et poitrine menue offerte en cadeau, sans menaces, pas comme des obus militaires, des armes enrubannées dans les coussinets d’un wonderbra. Je le précise d’entrée : mon amour immodéré des actrices me porte vers des libertines aux formes discrètes, jamais vers des Béatrice Dalle exhibant leurs soutiens-gorge XXL, des Pamela Anderson siliconées, des Marilyn Monroe aux lèvres charnues, toutes les ogresses trop en chair, ou sinon trop maquillées, pour dégager le charme du naturel.",
+    "ExtraitDesc4": "Louise Brooks, elle, insufflait de l’érotisme. De croustillantes anecdotes la révèlent sulfureuse : ainsi une « collègue » refusa soudain de jouer une scène lesbienne à cause de la réputation de l’incandescente partenaire. Tout le monde n’osait pas s’afficher en compagnie de cette « extravagante » pour qui, selon le bon mot de Scott Fitzgerald, aucune fête n’était jamais finie avant qu’elle ne soit trop fatiguée pour s’en soucier. Ses apparitions à l’écran faisaient tout autant jaser. Après les figurations de lancement, elle étrenne sa carrière avec <i> American Venus</i>. Hymne à une jeunesse délurée qui parcourt les concours de miss et se dénude à la limite de la décence, le film de Tuttle ressemble aujourd’hui à une anodine carte postale défraîchie et sépia. Mais des photos circulent, font scandale. Et Brooksie traînera toute sa vie une renommée libertine dont elle ne se défendra jamais, l’attisant au contraire par la franchise de ses mémoires : «<i> J’ai eu une liaison avec lui durant deux beaux mois d’été. C’était un amant raffiné. </i>» L’amant en question s’appelait Charlie Chaplin. Il y en eut beaucoup d’autres. Et quelques femmes, par goût de l’hédonisme. Et deux mariages aussi, parce que les stars, comme tout le monde, font des erreurs de parcours.",
+    "ExtraitDesc5": "Fine observatrice du monde comme il allait, Louise Brooks était en avance sur son temps. Du monde comme il allait « mal », déjà, au début du XX e siècle. Dans Loulou, tourné par G.W. Pabst en 1929, l’actrice incarne une jouisseuse amorale qui détruit les hommes sur son passage, au sens propre ou figuré selon les cas. Elle y fait étalage d’un jeu à rebrousse-poil des standards du muet : un non-jeu, en fait. Chez Brooksie, la légèreté et la nonchalance sont privilégiées par rapport à la sophistication et au pathos. Les sentiments se lisent sur l’expression du visage, sans ostentation. Cette Loulou évite ainsi les excès habituels du théâtre. Ce que refuse de comprendre le public qui lui reproche de « ne rien faire »…<i> Journal d'une fille perdue </i>, dirigé par G.W. Pabst, perpétue la technique du naturel. Loulou se fond dans la peau d’une adolescente violemment heurtée par « le mode de pensée comme il faut » : grossesse précoce, rejet de la famille, maison de correction, mort du bébé placé chez une nourrice, adoption par une famille tenant une maison close... Ce <i>Journal</i> n'a rien d'une comptine pour enfants sages. Copieusement mutilé par une censure déchaînée, le film de Pabst ressemble à la carrière de Louise Brooks. Ou surtout à sa vie en dents de scie.",
+    "ExtraitDesc6": "Car la carrière est celle d’une étoile. D’une fulgurance. Entrée en cinéma en 1925 avec <i>the Street of Forgotten men </i>, Louise Brooks en sort en 1938, claquant définitivement les talons au seuil des studios qui ne trouvent plus rien de mieux à lui offrir que des rôles de cow-girl. Treize ans face à la caméra, six ans dans les prestigieux studios de la Paramount, deux ans d’apogée, c’est peu... Mais assez pour épicer les souvenirs de tous les ingrédients d’une légende.",
+    "ExtraitDesc7": "Comme toutes les légendes, celle-ci commence par une date de naissance officielle à défaut d’être certaine : le 14 novembre 1906. Cherryvale, Kansas, United States. Les différentes biographies recensent ensuite plusieurs dates-clés. Mary Louise a quatre ans. Elle débute comme danseuse. Mary Louise a huit ans. Elle danse la valse-hésitation à l’opéra et devient professionnelle des arts de la scène. Mary Louise a dix ans. Elle adopte la coiffure à la Jeanne d’Arc. Mary Louise a douze ans. Elle se produit dans des clubs masculins. C’est une lolita d’avant Nabokov. L’adolescente tient d’ailleurs un journal intime qui augure de sa passion pour l’écriture. Qui montre aussi ses premiers démêlés avec la censure tant elle a effacé de nombreux passages pour échapper à la surveillance de son frère. Qui affiche déjà indépendance d’esprit et de corps. De-ci de-là rejetée du cursus scolaire pour cause d’insurrection à la bienséance, « Casque noir » obtient dès ses quinze ans de quitter le Kansas natal pour tenter sa chance à New York. Ce n’est plus une lolita, c’est déjà une femme !",
+    "ExtraitDesc8": "« <i>Je suis une blonde aux cheveux noirs</i> », affirme-t-elle en 1925, rendue confiante en son physique par une formation à deux étages : d’abord l’école de danse de Denis Shawn d’où elle finit par être renvoyée pour cause de flirts trop poussés, ensuite l’engagement comme « girl » aux Ziegfeld Follies. Championne de charleston, elle rêvait d’une carrière de danseuse à la Martha Graham… Mais l’attend un autre destin. Elle est happée par les producteurs rôdant dans les coulisses de Broadway. En cette époque où, malgré Griffith, Gance et Eisenstein, le muet n’est pas encore considéré comme un art, mais comme un simple divertissement, la plupart des actrices sont recrutées dans les revues. Elles sont en fait embrigadées sous contrat exclusif avec une maison de production qui, éventuellement, les loueront à d’autres studios. Brooksie remise ses rêves de pointes et d’entrechats parce qu’elle pressent que les caméras immortaliseront l’irradiante clarté de son teint, cette luminosité qu’elle génère à cent mille volts. La mode de la deuxième moitié des années 20 se révèle d’ailleurs sa meilleure alliée. Les robes amples suivent le mouvement des jambes, des hanches, du buste. Les décolletés ne font pas dans la dentelle. Chez Louise Brooks qui les porte à merveille, ils soulignent une poitrine plate, ils libèrent une amoralité innocente, ils dégagent du trouble.<br/> Fille intelligente qui lisait Aldous Huxley quand ses consœurs se contentaient de pulps, Louise Brooks emboîte la mode des « flappers ». Les héroïnes qu’elle incarne, dans les studios new-yorkais de la Paramount puis à Los Angeles, puis à Berlin, témoignent par leur look et leur comportement d’un mépris des conventions. C’est cela, une flapper, une fille qui revendique sa liberté. Une effrontée. Robe de satin et chapeau cloche. L’élégance et le caprice élevés au rang de règle d’or. Louise Brooks excelle dans ce double art, à la vie comme à l’écran. Avec sa coupe à la Jeanne d’Arc, elle fait fureur. Elle défie le monde entier de lui tenir tête. Et si quiconque fait mine d’opposer de la résistance, elle a la langue perfide et un humour dévastateur. Ainsi va Loulou, sur fond d’ambiguïté et de bisexualité.",
+    "ExtraitDesc9": "<b>Caméra subjective</b> <br/> <i>Comment s’empêcher d’être attiré par elle ? Que je visionne ses films, et je deviens fou, un fauve, une bête en <br/> rut ! <br/>Ma libellule le sait. Elle sait que je pourrais passer mille et un pornos, et que jamais ne viendrait d’excitation ! <br/> Mais que Louise Brooks, … il fut une prime jeunesse où je n’arrêtais pas de fantasmer sur elle… </i>",
+    "ExtraitDesc10": "Après Love <i>‘Em and leave ‘Em et It’s the Old army game</i>, Scubbie, selon un autre de ses surnoms, se rend compte que les meilleurs rôles lui échappent. Howard Hawks, avec <i> Une fille dans chaque port</i>, et William Wellman,<i> avec les Mendiants de la vie</i>, rehaussent aussitôt le niveau de sa filmographie et propagent son image de femme-sujet… Elle signe une prestation d’acrobate de foire pour Hawks. Elle ose se vêtir en homme pour Wellman comme elle osa se dévêtir pour Tuttle. Cette insolente composition de travestie lui vaut d’être appelée par G.W. Pabst. Poussée par la Paramount où elle n’est plus en odeur de sainteté, Louise Brooks accepte… et fait le chemin inverse des comédiennes européennes, croisant Berlinoises et Scandinaves qui rêvent des sunlights hollywoodiens. Ressent-elle la mutation du cinéma devenu sonore ? Ou le krach boursier de 1929 qui change la donne économique ?",
+    "ExtraitDesc11": "Sans doute pas, hélas ! Après <i>Loulou et Journal d’une jeune fille perdue</i>, elle décide de rentrer aux States. Et tout ça pour subir une humiliation… La Paramount lui refuse une augmentation sous prétexte que sa voix n’a pas encore fait ses preuves. Vexée, Brooksie repart en France où l’attend un rôle idéal, le titre en témoigne,<i> Prix de beauté</i>, sous la direction de l’italien Augusto Genina. Elle y est partagée entre la fidélité à son mari jaloux et le luxe d’une carrière de Miss. Mais l’avènement du parlant s’accélère et pousse les studios à doubler leurs films muets. Schulberg, le producteur, la rappelle à Los Angeles. Elle fait la sourde oreille. L’échange de télégrammes se termine par un ultimatum : « <i>Revenez ou vous ne travaillerez plus à Hollywood ! » A quoi la personnalité querelleuse de Brooksie répond du tac au tac : « Mais qui a envie de travailler à Hollywood ?</i> »",
+    "ExtraitDesc12": "Loulou pensait claquer la porte de la Paramount, pas celle du cinéma. Mais le réalisateur Malcolm St Clair ordonne de doubler la voix de la rebelle sur <i> the Canary murder case.</i> Et Schulberg répand le (faux) bruit d’une voix inadéquate au parlant. Hélas, les mauvaises réputations sont plus coriaces que les bonnes. De rebelle, Louise Brooks devient paria. Entre alcoolisme naissant et désespoir, elle ne reçoit plus que des rôles de pacotille jusqu’à un western de série B, en 1938, où elle partage l’affiche avec John Wayne. La médiocrité <i>d’Overland stage raiders </i> a raison de sa fierté. Sur la paille, après avoir amassé les dollars sans économiser un cent, l’androgyne fille à la coupe au carré se retire des feux de la rampe chers à son ami Chaplin. <br/>Oubliée d’Hollywood qui l’a placée sur liste noire, et trop orgueilleuse pour faire le premier pas, elle survit en donnant des cours de charleston et de fox-trot, en gagnant des prix de danse de salon et même en faisant l’escort girl ! Elle réussit enfin sa reconversion en racontant avec verve les potins de la Paramount. Il a fallu vingt-cinq ans de traversée du désert pour que le phœnix renaisse de ses cendres. Son culte s’est développé en souterrain. Il éclate au grand jour dès les sixties. Guido Creepax, le dessinateur, la transforme en héroïne de BD prénommée Valentina. Hugo Pratt la vénère au point de la transformer en Polonaise portant le nom de Louise Brooksovitch. Après la bande dessinée, la mode s’empare de l’icône. Jean-Louis Gaultier griffe une collection en son honneur. Cacharel crée un parfum à son effigie. La qualité littéraire de ses écrits fait le reste pour épicer un souvenir qui, en fin de compte, traverse les époques. Louise Brooks n’a rien d’une mode. Elle est un style ! En 1986, Patrick Mosconi rend hommage au mythe par l’écriture d’un polar,<i> Louise Brooks est morte.</i> C’est hélas vrai. L’étoile s’est éteinte à Rochester le 9 août 1985. Il reste des danses, des photographies, des livres. Il reste un jeu lumineusement expressif, l’obsédante image d’une Jeanne d’Arc qui ne serait pas pucelle, d’une Jeanne d’Arc des temps déjà modernes.",
     "PresseDesc1": "Casting, un ouvrage littéraire de Étienne Éthaire, est composé comme un film avec ses plans, ses séquences, ses flash-backs, son montage. Tout en racontant l’histoire et la géographie du cinéma, ce docu-fiction explore la cinégénie à travers le portrait de nombreuses actrices légendaires. L’auteur y mêle des réflexions personnelles et des analyses techniques pour célébrer la force de l’image et l’essence du septième art. De l'époque du muet avec Lilian Gish aux figures contemporaines comme Isabelle Huppert ou Chloe Sevigny, le récit met en lumière la relation complexe entre la mise en scène et le corps féminin. Éthaire examine comment le regard d'un réalisateur parvient à transformer une interprète en une icône immortelle. Manifestement passionné par le charisme de certaines actrices (et aussi par les physiques minces, les poitrines menues, Louise Brooks en égérie principale, l’auteur rend ainsi un hommage vibrant à la dimension érotique et psychologique des femmes qui habitent l'écran.",
-
     "PresseSept": "<strong>La Libre Belgique, quotidien, septembre 2006</strong>\n\" Un portrait complet qui évoque les trois premiers livres de l'écrivain. Par Marie Liégeois",
     "PresseJune": "<strong>Télékila, hebdomadaire, juin 2006</strong>\n\"  La télé fait rarement bon ménage avec le ciné... Mais parfois, oui. La preuve: cette chronique de Casting dans le TéléKila. Par Michel Paquot",
     "PresseMarch": "<strong>Le Soir, quotidien, mars 2006</strong>\n\" Pour Étienne Éthaire, rien ne vaut l'hommage de ses pairs. Les Somnambules peuvent donc le dire, cette chronique signée par une (ex) collègue critique de cinéma de notre auteur, lui a fait chaud au cœur. Par Fabienne Bradfer.",
-
     "PresseMarch2": "<strong> Revue Générale, mensuel, mars 2006</strong>\n\" Une critique enthousiaste pour un livre enthousiaste. Toute la pertinence et la saveur des mots de l'écrivain Jean-François Grégoire pour souligner les mots d'Étienne Éthaire. Par Jean-François Grégoire",
-
     "PresseApril": "<strong>Le Jour, quotidien, avril 2006</strong>\nFine et sensible, la journaliste du Jour a bien perçu les enjeux cachés de ce Casting : un hommage aux femmes à la façon de François Truffaut dans le film \"L'homme qui aimait les femmes\"… Par Ingrid Otto.",
-
     "PresseApril2": "<strong> Télé Liège, tv, avril 2006</strong>\n Une interview de cinq minutes d'Étienne Éthaire dans le Focus du journal de Télé Liège. Par Françoise Bonivert",
-
     "PresseMarch3": "<strong>Antipode, radio, mars 2006</strong>\n Le texte de la chronique très enthousiaste livrée par la plus culturelle (hors RTBF) des radios belges. Par Denis Leduc",
     "PresseMarch4": "<strong> Le Bibliothécaire, trimestriel, mars 2006</strong>\n  Il y a un scoop dans ce bref article. Mais le scoop annoncé se produira-t-il? Wait and see... Par Michel Dagneau",
     "PresseMarch5": "<strong>  La Meuse, quotidien, mars 2006</strong>\n   Une approche originale et intéressante, un angle liégeois qui, comme tous les chemins, mène au cinéma. Quand Prosper, l'infatigable promeneur liégeois, croise un écrivain sur le pont d'Ougrée, un écrivain fils du Standard et de Liège. Par Guy Delhasse",
-
     "PresseMarch6": "<strong> La Dernière Heure, quotidien, mars 2006</strong>\n  Même si notre maison se demande où le journaliste a pu pêcher l'idée que Casting contenait 32 portraits ou des interviews (le livre n'est pas du tout conçu sur ce mode), voici une intéressante rencontre avec Étienne Éthaire peu de temps avant son départ pour le Salon du Livre de Paris. Par Jean Jour",
-
     "PresseApril3": "<strong>  D'une Certaine Gaieté, bimestriel, avril 2006</strong>\n   Quelques mots dans la traditionnelle Stas Académy toujours prompte à faire mention d'un panel de livres pas comme les autres. Par André Stas.",
-
     "interviewDesc1": "La première réflexion qui vient à l’esprit à la lecture de Casting, c’est que c’est un livre inclassable. On ne sait pas trop si le livre tient de l’histoire du cinéma, de l’essai, de la galerie de portraits, voire de l’autofiction ?",
     "interviewDesc2": " D’accord! … Et je ne vois aucune raison de trancher.",
     "interviewDesc3": "C’est un cri d’amour envers les actrices, en tout cas. Mais ce qui frappe aussi, c’est le caractère personnel des choix, et même de l’écriture ?",
@@ -281,44 +267,58 @@
   "BooksDocumentary": {
     "title": "Documentaires",
     "commander": "Commander",
-
     "DSTitle": "Diva Siouxsie (2007)",
     "DSDesc": "Ayant accédé au statut d'icône du temps des mythiques Banshees, Siouxsie Sioux s'est taillée une place enviable sur le rocher de la rock music. Originellement, à la tête d'un groupe paradoxal, bordélique, en mutation perpétuelle, la diva à la voix mystérieuse n'en a pas moins bâti, sur ce socle improbable, trente ans d'une carrière qui l'a provisoirement amenée à se retirer dans les laboratoires des Creatures, puis à renaître en solo, tel un phoenix majestueux. En revisitant une vingtaine d'albums, en décortiquant les concerts, en confrontant l'univers musical aux charnières biographiques, l'écrivain Étienne Éthaire, connu pour alterner fictions intimistes et oeuvres au profil documentaire, part en quête de l'identité d'une chanteuse aux personnalités multiples.",
+    "DSInterview1": "<i>Pouvez-vous raconter comment est né ce projet de biographie de Siouxsie Sioux?</i>",
+    "DSInterview2": "C’est un ami liégeois, journaliste et auteur, Guy Delhasse, qui m’a introduit pour la première fois auprès des éditeurs du Camion Blanc. Guy est un passionné de guitare et de chanson française tandis que le Camion Blanc, au fil du temps, est devenu l’éditeur qui véhicule le rock. Les gens de Camion Blanc avaient découvert mes romans. Ils cherchaient des plumes. Et j’ai donc accepté d’écrire ce premier livre pour eux.",
+    "DSInterview3": "<i>Mais c’est vous qui avez choisi de présenter une chanteuse plus alternative que mainstream.</i>",
+    "DSInterview4": "Oui les éditeurs de Camion Blanc laissent beaucoup de liberté à leurs auteurs. Ils veulent de la passion, ils s’adressent à des fans. Donc, ils souhaitent que ce choix éditorial se répercute autant dans les artistes du catalogue que dans l’approche stylistique.",
+    "DSInterview5": "<i>Et Siouxsie vous est apparue comme une évidence?</i>",
+    "DSInterview6": "Absolument! J’ai suivi le groupe depuis mon adolescence. J’ai fait partie de la cohorte des groupies avec tout l’attirail du teenager branché new wave, le noir gothique en signe de ralliement des rebelles de ma génération. J’ai même porté la chemise à jabots, j’ai même mis mes cheveux en pétard, ha ha, c’était une autre époque!\nEnsuite, au début des années 2000, alors que je travaillais comme critique de cinéma au journal Le Matin, j’apportais parfois mon éclairage à la cellule “musique”. C’est ainsi que j’ai pu rencontrer Siouxsie, l’interviewer longuement. Comme cette rencontre s’était très bien passée, écrire la bio fut ensuite un enchaînement naturel.",
+    "DSInterview7": "<i>Qu’en reste-t-il aujourd’hui?</i>",
+    "DSInterview8": "Une grande influence qui dépasse de loin le mouvement underground. Siouxsie avait au départ une fanbase inconditionnelle. Aujourd’hui, on se rend compte à quel point sa musique et son look ont traversé le temps. Cette chanteuse a vraiment marqué l’histoire par son comportement, sa présence scénique, ses atmosphères dark. On retrouve même du Siouxsie aujourd’hui chez Lady Gaga ou Billie Eilish qui sont pourtant des artistes grand public. Ses morceaux les plus emblématiques ont imprégné le cinéma, notamment les films de Sofia Coppola, ou encore les séries américaines comme Wednesday dont la danse emblématique est directement inspirée par la gestuelle siouxsienne. C’est la force du groupe d’avoir résisté aux modes malgré des débuts trop vite catalogués de punk.",
+    "DSInterview9": "<i>À lire votre biographie, la vie du rockband n’a pourtant pas toujours été une histoire tranquille…</i>",
+    "DSInterview10": "C’est certain, mais Siouxsie a toujours préservé son identité. Elle avait un caractère en acier trempé, elle n’était pas la plus douée en diplomatie. Ainsi, elle a par exemple toujours épuisé ses guitaristes qui ne tenaient en général pas plus de deux albums ou de deux tournées. Il y a eu des tensions, il y a eu des histoires amoureuses qui se sont greffées entre les membres du band, il y a eu des sideprojects. Siouxsie et Budgie ont par exemple lancé The Creatures, un duo beaucoup plus axé sur la batterie. Toujours en quête d’innovations, Siouxsie a voulu explorer du côté des rythmes tribaux puis du côté du Japon. Cela s’est inévitablement répercuté sur la productivité des Banshees. ",
+    "DSInterview11": "<i>Elle s’est même lancée dans une aventure solo ensuite…</i>",
+    "DSInterview12": "Oui, le temps d’un album en guise d’au revoir. Un bel album d’ailleurs où sa voix fait toujours des merveilles et donne toujours autant la chair de poule. Et lors de ses concerts, on a vu qu’elle se maintient toujours en forme, qu’elle bougeait toujours avec autant d’énergie. Malgré tout, je crois que, intérieurement, elle n’avait plus la même énergie. Elle n’avait plus la rage, plus ce besoin de crier. Et son chant, c’était d’abord un cri: Scream, comme le disait son premier album. Donc après ce dernier disque solo, elle a pu se retirer, satisfaite du parcours accompli.",
+    "DSInterview13": "<i>Est-ce que vous écoutez toujours Siouxsie aujourd’hui?</i>",
+    "DSInterview14": "Oui, bien sûr. Sa voix est intemporelle. Son énergie brute aussi. Je prends toujours beaucoup de plaisir à écouter tous ses disques. Je n’écoute plus exclusivement Siouxsie comme à l’époque de mon adolescence, je me suis beaucoup diversifié, j’ai découvert d’autres musiques passionnantes dans des genres aussi divers que l'électro, le hip-hop ou la soul, mais Siouxsie restera toujours ma racine musicale. J’adore par exemple toutes les musiques chill, à écouter affalé on son canapé, en dégustant un space cake. Eh bien, Siouxsie, au-delà de ses hymnes dark wave endiablés, a écrit quelques chansons “chill”, planantes, absolument admirables, comme Let go, Dazzle ou encore Melt.",
+    "DSInterview15": "<i>Vous teniez à dire un dernier mot, je crois.</i>",
+    "DSInterview16": "Oui, cette biographie a été rendue possible grâce à la participation d’un ami, Philippe Guisset, qui m’a aidé à décrypter toutes les chansons de ma diva adorée. Je tiens à le dire et à le remercier car ce fan de Siouxsie est d’abord un spécialiste de musique classique. Il adore… Beethoven! Ce choc culturel constitue une preuve supplémentaire que Siouxsie et ses Banshees ont développé un art qui dépasse à la fois la génération des eighties et le créneau du rock new wave.",
+    "DSExtrait": "La vie du groupe continue d’être un soap opera. Il y a de la friture sur la ligne entre un triumvirat soudé et un John Mac Geoch tellement talentueux qu’il pourrait s’écouter en solo. Lors du <i>Dreamhouse Tour</i>, les relations se dégradent subitement. La déglingue ne met pas deux mois. Les Banshees ne prêtent pas l’attention nécessaire à leur guitariste qui déjeune en buvant des bouteilles de vin, ce qui témoigne d’un sérieux problème avec l’alcool. Lors d’un concert, il arrive sur scène ivre mort et se trompe, enchaînant avec <i>Happy House</i> quand ses camarades jouent <i>Spellbound</i>. Cette saoulerie de trop ne plait pas à Siouxsie, jamais avare d’une sortie arrosée, mais intransigeante envers tout manque de professionnalisme. En fait, John Mac Geoch se sent mal pour des raisons avant tout privées : il couve une dépression et doit rentrer en ses pénates pour se remettre d’aplomb. La Sioux n’a jamais été, ne sera jamais quelqu’un de tendre, elle qui dit éprouver de la pitié pour les gens qui atteignent leur but par la sympathie. Bref, elle prend la plume, non pour écrire un futur tube, mais pour envoyer une lettre de licenciement à son musicien fatigué, celui qui restera néanmoins à jamais le meilleur guitariste des Banshees… « C’était une erreur, une fâcheuse précipitation. Nous n’avons pas apprécié John à sa juste valeur », avoue aujourd’hui la Dominatrix assagie. Avant d’ajouter : « Mais à l’époque, nous n’aimions personne. Et encore moins nous-mêmes ».",
     "LTDTitle": "La Tribu des Rouches (2008)",
     "LTDDesc1": "Étienne Éthaire est 1) un supporter du Standard, 2) un supporter du Standard, 3) un supporter du Standard. Ensuite, un amateur de football. Ce \"documentaire\" exalté raconte ma passion pour un club volcanique qui possède ce que pas un autre club en Belgique, et même des plus fortunés, et même des plus titrés, ne possède : une âme. Rassemblant des portraits de vieilles légendes, de dirigeants, d'employés, de joueurs et de supporters, ce recueil se doit de servir talisman. Un encouragement littéraire pour présager le retour du Standard sur une route à nouveau consacrée et le faire entrer au Panthéon de la Culture.",
     "LTDDesc2": "\"Tout ce que je sais de plus sûr à propos de la morale et des obligations des hommes, c'est au football que je le dois \" <strong>Albert Camus<strong/>",
     "LTDDesc3": "Vous qui étiez connu comme un écrivain intellectuel, volontiers provocateur, trash dans le choix de ces thématiqus, comment vous est venu l’idée de ce livre. ",
-
     "LTDDesc4": "Je dois ce livre à mes lectures de Nick Hornby, un écrivain anglais exceptionnel, un intellectuel qui clame son amour du football, jusqu'à encenser les joies tribales du clan, l'osmose d'une foule qui chante à l'unisson, avec frissons. Supporter acharné d'Arsenal, l'écrivain anglais a, vingt ans avant moi, rédigé, sous forme de roman autobiographique, un vrai livre de fan qui fut pour beaucoup dans mon désir, un jour ou l'autre, d'aborder le thème footballistique. La Tribu des Rouches n'existerait certainement pas sans Fever Pitch auquel les références sont nombreuses.",
     "LTDDesc5": "Que partagez-vous en commun avec Nick Horby?",
-
     "LTDDesc6": "Nous avons d’abord une grande différence. Il supporte Arsenal. Je supporte le Standard, tin que le Standard, même si, en Angleterre, j’aime aussi l’équipe d’Ipswich Town (rires). Mais dans <i>Fever Pitch<i>, Nick Hornby déclare qu'il est d'abord un supporter de son club avant d'être un amateur de football. Je suis tout à fait d’accord avec ce principe. Il pense, vit et écrit comme un supporter. C’est pareil pour moi et La tribu des Rouches est sorti comme un geyser puissant. ",
-
     "LTDDesc7": "Nick Hornby pense, vit et écrit comme un supporter. \"<i>De 1968 à 1973, les samedis étaient les points culminants de la semaine, ce qui se passait à l'école ou à la maison ne tirait guère à conséquence, pas plus que des entractes interrompant la représentation d'un grand match. A l'époque, le football était la vie et il ne s'agit pas d'une métaphore. Je l'éprouvais dans ma chair\"<i>.",
-
     "LTDDesc8": "Pensez-vous qu’il est possible d’établir un lien entre football et littérature?",
     "LTDDesc9": "Mais bien entendu! Le sport roi entretient une relation d'amour, parfois torride, avec quelques écrivains à la plume alerte. Il n’y a pas que Nick Hornby! La seule Angleterre connaît d’autres écrivains atteints par la folie du foot. Tim Parks s'est pourtant exilé dans une autre patrie footballistique, l'Italie. Tout au long de son œuvre, il n'hésite pas à rappeler sa dévotion au football. Lui, son club, c'est l'Hellas Vérone. Ses personnages, tout en étant en proie aux affres des relations humaines, décrivent les coulisses du monde du ballon rond, y compris les hordes de supporters... Une saison à Vérone capte l'âme de ces spécimens prêts à avaler un millier de kilomètres pour suivre leur équipe... Ce roman restitue tous les petits bonheurs éprouvés à vivre en bande, sans rien cacher des dérives possibles. Il y a aussi John King… Au cours d'une soufflante trilogie, Foot Factory - La Meute - Aux couleurs de l'Angleterre il pénètre, lui, au cœur du phénomène, versant hooliganisme. L'amour du ballon rond n'en transparaît pas moins à chaque page. Au même titre que la bêtise des relents de haine qui ont été - et sont encore parfois - véhiculés par un trop-plein de passion pour le combat viril des athlètes.",
-
     "LTDDesc10": "L'Amérique Latine aussi est une terre de passions. Jorge Valdano, buteur providentiel de l'Argentine en finale de la Coupe du Monde 86, a réussi un incroyable transfert en littérature. Dans le pays voisin, l'Uruguay, un écrivain, Eduardo Galeano, a commis Football, ombre et lumière. Il y chante les louanges de ce dieu laïc, de cet opium du peuple qui fait du bien par là où il passe",
     "LTDDesc11": "En remontant le fil du temps, le football a connu ses gardiens. Au sens propre. Montherlant (soi-dit en passant, un romancier à l'écriture niaise et gentiment collaborationniste), Camus (en existentialiste soft) et Nabokov (en homme de goût) ont tous occupé le poste du keeper, homme solitaire entre ses perches, canard noir de l'équipe avec son maillot distinctif et une concession reçue : toucher le ballon des mains, comme il est permis aux enfants pas sages de cultiver le vice des bonbons pour empêcher toute turbulence exacerbée.",
     "LTDDesc12": "D'une manière plus surprenante, mon écrivain de chevet, Marguerite Duras a également contribué à hisser une passerelle entre sport de haut niveau et art. Au-delà des courses folles du ballon rond, de ses arabesques, elle aimait une technique, une stratégie, surtout une solidarité au profit de l'équipe. Sa rencontre avec Michel Platini a valu aux mondes des lettres et du football enfin réunis quelques pages d'anthologie, un croustillant dialogue entre absurde et dévotion. Dans Qu'est-ce que ce jeu-là ?, elle écrit à Platini :  \"Dans le football, je vois un angélisme. Je retrouve les gens, les hommes, dans le sens de l'humanité, dans une pureté que rien n'arrête et qui m'émeut énormément. Et je pense que c'est ça le principal de mon émotion quand je vois du football. Parce que j'en vois, du football, je t'ai vu à Mexico. C'était Mexico, non ? Oui, je t'ai vu, je t'ai vu souffrir, je voulais tuer Maradona aussi. Tu vois, j'ai fonctionné complètement.\"",
-
     "LTDDesc13": "Vous-même, avez-vous joué au football?",
-
     "LTDDesc14": "Comme tout gamin liégeois qui se respecte, j'ai été affilié au Standard. J'y ai marqué quelques buts, donné quelques assists, j'étais plutôt un numéro dix, un pied gauche déroutant, une bonne vista, mais trop frêle au duel. Je n'aimais pas courir, je n'aimais pas sauter, je n'aimais pas patauger dans la boue. Un rhume plus tard, j'ai arrêté le football en crampons, je me suis mis au football en porte-voix. Le Standard, je lui serais plus utile dans les tribunes avec l'écharpe autour du cou, le bonnet sur la tête, et le blason du club cousu par maman sur mon chandail à col roulé. Je m’en souviens comme si c’était hier: c'était la glorieuse époque de la bande à Happel, puis de la bande à Goethals, ponctuée par une coupe au Heysel, par deux titres de champions, et par des ivresses européennes interrompues à Barcelone à cause d'un home referee. C'était les parades acrobatiques, cheveux au vent, de Michel Preud'homme, c'était la hargne d'Eric Gérets qui arpentait comme un diable \"rouche\" son flanc droit, c'était les dribbles divins de Simon Tahamata, c'était une des versions possibles du bonheur.",
-
     "LTDDesc15": "C’est pour ça que vous considérez le stade comme une seconde maison? ",
-
     "LTDDesc16": "Oui, il restera toujours un attachement, une symbiose, une foi, une fidélité éternelle envers l'atmosphère du stade, ce chaudron de Sclessin, exutoire de cris toujours aussi vivaces. Le Standard a le meilleur public de Belgique, c'est un peuple rouge en communion. Les tifos font le spectacle avant-match, aux joueurs ensuite de prendre le relais, enivrés des chants des supporters. Chaque victoire est fêtée comme il se doit. Et quand un titre de champion vient couronner la saison, Liège s'embrase de fêtes populaires qui donnent aux rues de la ville des couleurs et des passions de férias. Mon livre, La Tribu des Rouches, je l'ai écrit comme un trèfle à quatre feuilles sur une route qui devait à nouveau être consacrée... et qui le fut, grâce à l'audace d'une bande de jeunots doués, auteurs d'un parcours sans fausse note.",
-
     "LTDDesc17": "Les temps ont changé depuis lors?",
     "LTDDesc18": "Oui, le football est fait de cycles. Hélas, depuis que Luciano D’Onofrio a été obligé de revendre le club, c’est plutôt une terrible spirale négative qui s’est enclenchée. J’espère simplement que cette mise à jour, en 2026, s’accompagne enfin d’un renouveau porté par des gens, Giacomo Angelini, Pierre François, Marc Wilmots éprouvent le même amour que moi pour le club.",
-
     "LTDpresse": "La Tribu des Rouches  se présente comme un documentaire sportif écrit par l'auteur liégeois Étienne Éthaire, et véritable hommage au Standard de Liège, club de football emblématique de sa ville. Publié par Luc Pire en 2007, cet ouvrage s'éloigne du journalisme sportif traditionnel en offrant le regard subjectif et poétique d'un supporter de toujours, écrivain reconnu pour ses romans La Langoureuse et Alissia Lone. Le récit s'articule autour d'une trentaine de portraits de personnalités emblématiques du club, parmi lesquelles des joueurs comme Sergio Conceição, des membres du staff, des dirigeants et des supporters passionnés. Illustré par les photographies de Christophe Smets, La Tribu des Rouches met en lumière l'identité et l'âme uniques de l'équipe, au-delà de son seul palmarès. En définitive, ce livre célèbre la famille entière du Standard et de sa communauté. Enthousiaste, parfois lyrique, Étienne Éthaire y dévoile une écriture faite de fidélité, de ferveur et de passion selon la devise des supporters du club.",
-
     "FDRTitle": "Patti Smith, fille de Rimbaud (2013)",
-
-    "FDRDesc": "Née à Chicago et adoptée par New York, Patti Smith est une pionnière : la première à avoir écrit en lettres de noblesse les aspirations d'un rock au féminin. Dans la foulée du blues de Janis Joplin, son rock pur et engagé a cumulé l'énergie des Rolling Stones et la poésie de Rimbaud. De ce vivier, il est ressorti des paroles et des sonorités uniques qui ont marqué pour toujours l'histoire du rock. Mais au-delà du talent qui nous a valu des tubes comme “Because the Night” et des albums parfaitement accomplis comme le mythique Horses, la « fille de Rimbaud » est aussi une femme de tempérament. Dès lors, c'est aujourd'hui son combat pour faire avancer le monde (le pacifisme, la solidarité, l'écologie) qu'elle veut mettre en avant. Étienne Éthaire, auteur des romans Funérarium, Alissia Lone ou encore La Langoureuse, retrace la vie de cette légende vivante tout en jetant un regard critique, bien que toujours admiratif, sur une œuvre riche de treize albums."
+    "FDRExtrait": "Le 30 décembre 1946, à Chicago, dans l’Illinois, naît un bébé à la constitution fragile. C’est la fille du poète Arthur Rimbaud, sa réincarnation peut-être. Son berceau ressemble à un <i>Bateau ivre</i>, sa chambre sert d’écrin à des <i>Illuminations</i>, et la ferveur religieuse de sa génitrice annonce déjà quelques <i>Saisons en Enfer</i>. À la musique, un poème dans lequel Rimbaud décrit son mal de vivre, annonce, quant à lui, à quelle discipline artistique s’adresseront les futures prières de Patti.\n\nPatti. Ainsi se nomme l’enfant Rimbaud. De son nom complet Patricia Lee Smith.",
+    "FDRDesc": "Née à Chicago et adoptée par New York, Patti Smith est une pionnière : la première à avoir écrit en lettres de noblesse les aspirations d'un rock au féminin. Dans la foulée du blues de Janis Joplin, son rock pur et engagé a cumulé l'énergie des Rolling Stones et la poésie de Rimbaud. De ce vivier, il est ressorti des paroles et des sonorités uniques qui ont marqué pour toujours l'histoire du rock. Mais au-delà du talent qui nous a valu des tubes comme “Because the Night” et des albums parfaitement accomplis comme le mythique Horses, la « fille de Rimbaud » est aussi une femme de tempérament. Dès lors, c'est aujourd'hui son combat pour faire avancer le monde (le pacifisme, la solidarité, l'écologie) qu'elle veut mettre en avant. Étienne Éthaire, auteur des romans Funérarium, Alissia Lone ou encore La Langoureuse, retrace la vie de cette légende vivante tout en jetant un regard critique, bien que toujours admiratif, sur une œuvre riche de treize albums.",
+    "FDRInterview1": "<i>On vous avait découvert avec vos romans, puis avec une biographie de Siouxsie, et maintenant vous revenez avec une biographie de Patti Smith…</i>",
+    "FDRInterview2": "Il y a une continuité entre tous ces livres. Mes romans sont des portraits de femmes, je dirais même qu’il s’agit de femmes rebelles. De mon personnage de Maleea Lori Hall à Patti Smith aujourd’hui, toutes ces femmes sont des guerrières. Patti Smith et Siouxsie sont vraiment deux des premières et fières représentantes du Girl Power. Ce sont des pionnières. On pourra sans doute en trouver d’autres, mais elles ont toutes deux exercé une influence majeure sur la scène rock au niveau artistique et sur la scène féministe au niveau sociétal.",
+    "FDRInterview3": "<i>Ah, voilà donc le fil conducteur! C’est important pour vous ce combat féministe?</i>",
+    "FDRInterview4": "Le terme féministe est galvaudé aujourd’hui, il est devenu conflictuel, peut-être parce qu’il est vraiment devenu l’enjeu majeur de nos sociétés contemporaines. Mais Patti Smith incarne parfaitement le mouvement féministe auquel j’aspire, un élan de liberté qui vise à la libération complète de toutes les composantes de la société, ce qui passe inévitablement tant par une égalité de droits et de salaires que par une abolition des jugments moralisateurs sur le droit au plaisir.",
+    "FDRInterview5": "<i>En quoi considérez-vous que Patti Smith représente ce mouvement? </i>",
+    "FDRInterview6": "Elle est une figure d’émancipation depuis sa jeunesse. Issue d’un milieu catholique, elle est partie s’installer seule à New York. Elle a été en couple et en amitié avec Robert Mapplethorpe, le célèbre photographe homosexuel. Elle a porté haut et fort la présence féminine au sein d’un mouvement rock dominé par les hommes. Elle s’est imposée. Elle a levé des barrières, puis elle a résisté au temps qui passe pour prendre une position progressiste en faveur de toutes les luttes sociales.",
+    "FDRInterview7": "<i>Son rock est dès lors rebelle?</i>",
+    "FDRInterview8": "Oui, et il le reste aujourd’hui dans des tonalités plus folk. À l’origine, c’était absolument rebelle, il y avait chez Patti Smith un héritage rock classique fait de riffs de guitare et de lignes de basse soutenus par une batterie puissante, mais elle y a ajouté sa poésie personnelle, un côté gladiateur au féminin.",
+    "FDRInterview9": "<i>Vous employez ici le mot “poésie” et votre titre de biographie la classe en héritière de Rimbaud. On suppose donc que le texte est très important chez Patti.</i>",
+    "FDRInterview10": "À égalité avec la rock attitude. Sans aucun doute! L’éducation de Patti Smith a fait d’elle une “intellectuelle américaine” et quand elle a découvert Rimbaud, puis la scène underground du New York des années 70, elle a mixé tous ses éléments pour élaborer des textes inventifs, lyriques, dévorés par une rage intérieure et un appétit de vivre. Patti Smith peut s’écouter. Patti Smith peut se lire. Elle est présente corps et âme sur les deux versants de l’art : musique et littérature."
   },
   "TravelData": [
     {
@@ -519,7 +519,6 @@
         {
           "src": "/CountryImages/CAMBODGE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/CAMBODGE/image5.webp"
         }
@@ -544,7 +543,6 @@
         {
           "src": "/CountryImages/CANADA/image3.jpg"
         },
-
         {
           "src": "/CountryImages/CANADA/image5.jpg"
         }
@@ -587,11 +585,9 @@
         {
           "src": "/CountryImages/CHINE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/CHINE/image5.jpg"
         },
-
         {
           "src": "/CountryImages/CHINE/image3.jpg"
         }
@@ -628,7 +624,6 @@
         {
           "src": "/CountryImages/COSTA RICA/image6.jpg"
         },
-
         {
           "src": "/CountryImages/COSTA RICA/image2.jpg"
         }
@@ -728,7 +723,6 @@
         {
           "src": "/CountryImages/ÉMIRATS ARABES UNIS/image1.jpg"
         },
-
         {
           "src": "/CountryImages/ÉMIRATS ARABES UNIS/image5.jpg"
         },
@@ -750,7 +744,6 @@
         {
           "src": "/CountryImages/ESPAGNE/image2.jpg"
         },
-
         {
           "src": "/CountryImages/ESPAGNE/image4.jpg"
         },
@@ -782,16 +775,13 @@
         {
           "src": "/CountryImages/ÉTATS-UNIS/image5.jpg"
         },
-
         {
           "src": "/CountryImages/ÉTATS-UNIS/image2.jpg"
         },
-
         {
           "src": "/CountryImages/ÉTATS-UNIS/image4.jpg",
           "caption": "Vingt ans plus tard à Chicago, je suis enfin devenu un bon photographe, le regard aiguisé, l’appareil toujours en bandoulière"
         },
-
         {
           "src": "/CountryImages/ÉTATS-UNIS/image3.jpg"
         },
@@ -840,15 +830,12 @@
         {
           "src": "/CountryImages/FRANCE/image9.jpg"
         },
-
         {
           "src": "/CountryImages/FRANCE/image5.jpg"
         },
-
         {
           "src": "/CountryImages/FRANCE/image6.jpg"
         },
-
         {
           "src": "/CountryImages/FRANCE/image2.jpg"
         }
@@ -864,7 +851,6 @@
         {
           "src": "/CountryImages/GAMBIE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/GAMBIE/image3.jpg"
         }
@@ -958,11 +944,9 @@
         {
           "src": "/CountryImages/HONG KONG/image6.jpg"
         },
-
         {
           "src": "/CountryImages/HONG KONG/image2.jpg"
         },
-
         {
           "src": "/CountryImages/HONG KONG/image4.jpg"
         },
@@ -1005,15 +989,12 @@
         {
           "src": "/CountryImages/INDONÉSIE/image9.jpg"
         },
-
         {
           "src": "/CountryImages/INDONÉSIE/image3.jpg"
         },
-
         {
           "src": "/CountryImages/INDONÉSIE/image5.jpg"
         },
-
         {
           "src": "/CountryImages/INDONÉSIE/image2.jpg"
         }
@@ -1068,14 +1049,12 @@
         {
           "src": "/CountryImages/ITALIE/image5.jpg"
         },
-
         {
           "src": "/CountryImages/ITALIE/image3.jpg"
         },
         {
           "src": "/CountryImages/ITALIE/image6.jpg"
         },
-
         {
           "src": "/CountryImages/ITALIE/image9.jpg"
         },
@@ -1106,7 +1085,6 @@
         {
           "src": "/CountryImages/JAMAÏQUE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/JAMAÏQUE/image5.jpg"
         },
@@ -1249,7 +1227,6 @@
         {
           "src": "/CountryImages/MALDIVES/image2.jpg"
         },
-
         {
           "src": "/CountryImages/MALDIVES/image4.jpg"
         }
@@ -1277,7 +1254,6 @@
         {
           "src": "/CountryImages/MALTE/image2.jpg"
         },
-
         {
           "src": "/CountryImages/MALTE/image4.jpg"
         }
@@ -1293,7 +1269,6 @@
         {
           "src": "/CountryImages/MAROC/image5.jpg"
         },
-
         {
           "src": "/CountryImages/MAROC/image2.jpg"
         },
@@ -1622,7 +1597,6 @@
         {
           "src": "/CountryImages/RÉPUBLIQUE DOMINICAINE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/RÉPUBLIQUE DOMINICAINE/image3.jpg"
         },
@@ -1638,7 +1612,6 @@
         {
           "src": "/CountryImages/ROUMANIE/image3.jpg"
         },
-
         {
           "src": "/CountryImages/ROUMANIE/image4.jpg"
         },
@@ -1704,7 +1677,6 @@
         {
           "src": "/CountryImages/SEYCHELLES/image6.jpg"
         },
-
         {
           "src": "/CountryImages/SEYCHELLES/image5.jpg"
         },
@@ -1733,7 +1705,6 @@
         {
           "src": "/CountryImages/SINGAPOUR/image5.jpg"
         },
-
         {
           "src": "/CountryImages/SINGAPOUR/image3.jpg"
         },
@@ -1866,7 +1837,6 @@
         {
           "src": "/CountryImages/TCHÉQUIE/image1.jpg"
         },
-
         {
           "src": "/CountryImages/TCHÉQUIE/image3.jpg"
         }

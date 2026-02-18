@@ -60,3 +60,16 @@ body {
 .swiper-custom-theme .swiper-pagination-bullet-active {
   background: #0c331c;
 }
+
+/* Ensure dropdown content doesn't intercept clicks when closed */
+.dropdown:not(.dropdown-open):not(:focus-within) .dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

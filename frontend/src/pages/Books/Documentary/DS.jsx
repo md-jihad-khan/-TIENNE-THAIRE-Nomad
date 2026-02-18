@@ -20,6 +20,7 @@ import podcast1EN from "../../../assets/audio/Podcast anglais Casting.wav";
 import { motion, AnimatePresence } from "framer-motion";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
+import rainbow from "../../../assets/Home/rainbow.png";
 
 const DS = () => {
   const { t } = useTranslation("global");
@@ -37,18 +38,52 @@ const DS = () => {
   // ✅ BUTTON CLASS FUNCTION
   const getButtonClass = (tabKey) =>
     `px-6 py-2 rounded-full font-medium transition-all duration-300 w-fit
-     ${
-       activeTab === tabKey
-         ? "bg-primary text-white shadow-xl scale-105 hover:shadow-xl active:scale-95"
-         : "border-2 border-green-900 text-primary hover:bg-[#0c331c] hover:!text-white hover:shadow-xl hover:scale-105 active:scale-95"
-     }`;
+     ${activeTab === tabKey
+      ? "bg-primary text-white shadow-xl scale-105 hover:shadow-xl active:scale-95"
+      : "border-2 border-green-900 text-primary hover:bg-[#0c331c] hover:!text-white hover:shadow-xl hover:scale-105 active:scale-95"
+    }`;
 
   return (
-    <div className="mt-10">
-      <div className="flex gap-5">
-        <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic ">
-          Diva Siouxsie <small>(2007)</small>
-        </h4>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="mt-10 flex gap-10"
+    >
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="flex flex-col gap-5 w-1/3"
+      >
+        <div className="relative">
+          <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic relative z-10">
+            Diva Siouxsie <small>(2007)</small>
+          </h4>
+          <img
+            src={rainbow}
+            alt=""
+            className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+          />
+        </div>
+        {/* ===== LEFT IMAGE ===== */}
+        <motion.img
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          src={book1}
+          alt=""
+          className="   shadow-xl "
+        />
+      </motion.div>
+
+      {/* ================= IMAGE + CONTENT ================= */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className=" items-start w-3/4"
+      >
         <div className="flex flex-wrap gap-3 mb-5">
           <button
             className={getButtonClass("cover")}
@@ -64,12 +99,6 @@ const DS = () => {
             Extrait
           </button>
 
-          <button
-            className={getButtonClass("press")}
-            onClick={() => setActiveTab("press")}
-          >
-            Presse
-          </button>
 
           <button
             className={getButtonClass("interview")}
@@ -89,19 +118,9 @@ const DS = () => {
             {t("BooksDocumentary.commander")}
           </button>
         </div>
-      </div>
-
-      {/* ================= IMAGE + CONTENT ================= */}
-      <div className="flex gap-10 items-start">
-        {/* ===== LEFT IMAGE ===== */}
-        <img
-          src={book1}
-          alt=""
-          className="w-1/4 h-auto sticky top-24  shadow-xl"
-        />
 
         {/* ===== RIGHT CONTENT PANEL ===== */}
-        <div className="flex-1 min-h-[500px]">
+        <div className="flex-1 h-[450px]">
           <AnimatePresence mode="wait">
             {/* ================= COVER ================= */}
             {activeTab === "cover" && (
@@ -111,11 +130,14 @@ const DS = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 80 }}
                 transition={{ duration: 0.3 }}
-                className="bg-primary text-white p-8 rounded-3xl shadow-2xl"
+                className="  h-full overflow-y-auto"
               >
                 <div>
+                  <h4 className="font-jost md:text-3xl lg:text-4xl text-primary font-bold uppercase italic tracking-wider mb-8">
+                    4ème de couv'
+                  </h4>
                   <p
-                    className="font-jost  md:text-xl lg:text-2xl mb-10"
+                    className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-10"
                     style={{ whiteSpace: "pre-line" }}
                   >
                     {t("BooksDocumentary.DSDesc")}
@@ -124,7 +146,6 @@ const DS = () => {
               </motion.div>
             )}
 
-            {/* ================= EXTRAIT ================= */}
             {activeTab === "extrait" && (
               <motion.div
                 key="extrait"
@@ -132,31 +153,23 @@ const DS = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 80 }}
                 transition={{ duration: 0.3 }}
-                className="bg-primary text-white p-8 rounded-3xl shadow-2xl"
+                className="  h-full overflow-y-auto"
               >
                 <div>
-                  {/* <p className="font-jost md:text-xl lg:text-2xl mt-5  w-full ">
-                    {t("books.LLDesc2")}
-                  </p> */}
+                  <h4 className="font-jost md:text-3xl lg:text-4xl text-primary font-bold uppercase italic tracking-wider mb-8">
+                    Extrait
+                  </h4>
+                  <p
+                    className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-10 [&_i]:text-primary/60"
+                    style={{ whiteSpace: "pre-line" }}
+                    dangerouslySetInnerHTML={{
+                      __html: t("BooksDocumentary.DSExtrait"),
+                    }}
+                  />
                 </div>
               </motion.div>
             )}
 
-            {/* ================= PRESS ================= */}
-            {activeTab === "press" && (
-              <motion.div
-                key="press"
-                initial={{ opacity: 0, x: 80 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 80 }}
-                transition={{ duration: 0.3 }}
-                className="bg-primary text-white p-8 rounded-3xl shadow-2xl"
-              >
-                <h4 className="font-jost  md:text-2xl  lg:text-3xl font-bold uppercase mb-5">
-                  {t("books.Presse")}
-                </h4>
-              </motion.div>
-            )}
 
             {/* ================= INTERVIEW ================= */}
             {activeTab === "interview" && (
@@ -166,11 +179,69 @@ const DS = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 80 }}
                 transition={{ duration: 0.3 }}
-                className="bg-primary text-white p-8 rounded-3xl shadow-2xl space-y-5"
+                className="  h-full overflow-y-auto"
               >
-                <p className="md:text-xl lg:text-2xl mb-10 uppercase">
-                  Interview
-                </p>
+                <div className="flex flex-col gap-5">
+                  <h4 className="font-jost md:text-3xl lg:text-4xl text-primary font-bold uppercase italic tracking-wider mb-8">
+                    Interview
+                  </h4>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview1")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview2")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview3")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview4")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview5")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview6")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview7")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview8")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview9")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview10")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview11")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview12")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview13")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview14")}
+                  </p>
+
+                  <p className="font-jost md:text-xl lg:text-2xl font-bold italic mb-2">
+                    <Trans i18nKey={t("BooksDocumentary.DSInterview15")} />
+                  </p>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-8">
+                    {t("BooksDocumentary.DSInterview16")}
+                  </p>
+                </div>
               </motion.div>
             )}
 
@@ -182,12 +253,16 @@ const DS = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 80 }}
                 transition={{ duration: 0.3 }}
-                className="bg-primary text-white p-8 rounded-3xl shadow-2xl text-center"
+                className="  h-full overflow-y-auto"
               >
-                <p className="text-xl lg:text-2xl mb-6 uppercase text-center">
-                  Podcast
-                </p>
-
+                <div>
+                  <h4 className="font-jost md:text-3xl lg:text-4xl text-primary font-bold uppercase italic tracking-wider mb-8">
+                    Podcast
+                  </h4>
+                  <p className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-10 uppercase">
+                    Podcast
+                  </p>
+                </div>
                 {/* <audio key={Podcast1} controls className="w-full">
                   <source src={Podcast1} type="audio/mpeg" />
                 </audio> */}
@@ -195,7 +270,7 @@ const DS = () => {
             )}
           </AnimatePresence>
         </div>
-      </div>
+      </motion.div>
       {/* news paper reviews */}
       {/* News paper reviews */}
       <AnimatePresence>
@@ -296,7 +371,7 @@ const DS = () => {
           </>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 
