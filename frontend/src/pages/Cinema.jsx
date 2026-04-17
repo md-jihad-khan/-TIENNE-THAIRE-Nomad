@@ -6,7 +6,7 @@ import rainbowSticker from "../assets/rainbow_sticker.png";
 import { useTranslation } from "react-i18next";
 
 const Cinema = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("global");
   const categories = useMemo(() => {
     return [...new Set(cinemaData.map((m) => m.category))].filter(Boolean);
   }, []);
