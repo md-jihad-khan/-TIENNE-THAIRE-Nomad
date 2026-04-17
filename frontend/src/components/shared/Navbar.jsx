@@ -29,6 +29,7 @@ const Navbar = () => {
             { title: "La Langoureuse", path: "/books/novel/la-langoureuse" },
             { title: "Alissia Lone", path: "/books/novel/alissia-lone" },
             { title: "Funérarium", path: "/books/novel/funerarium" },
+            { title: "La Muse", path: "/books/novel/la-muse" },
           ],
         },
         {

@@ -188,7 +188,7 @@ const FN = () => {
                     className="font-jost md:text-xl lg:text-2xl leading-relaxed mb-10"
                     style={{ whiteSpace: "pre-line" }}
                   >
-                    {t("books.fpress")}
+                    {t("books.Fpress1")}
                   </p>
                 </div>
                 <div className="columns-2 sm:columns-3 lg:columns-4 gap-5">

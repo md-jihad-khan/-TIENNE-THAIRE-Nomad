@@ -84,11 +84,11 @@ const Hero = () => {
               ))}
             </Swiper>
           </div>
-          <div className="">
-            <p className="font-jhost text-sm text-right md  text-green-900 ">
+          <div className="mt-2 text-right">
+            <p className="font-jost text-[8px] md:text-[10px] opacity-40 hover:opacity-100 hover:text-xs transition-all duration-300 text-green-900">
               © Samuel Nicolaï
-            </p>{" "}
-            <p className=" font-jhost text-sm italic">
+            </p>
+            <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic">
               {t("home.carouselCaption")}
             </p>
           </div>

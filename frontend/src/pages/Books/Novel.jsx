@@ -14,6 +14,7 @@ import podcast3EN from "../../assets/audio/Podcast anglais Funérarium.wav";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
 import rainbow from "../../assets/Home/rainbow.png";
+import LaMuse from "./Novel/LaMuse";
 
 const Novel = () => {
   const { t } = useTranslation("global");
@@ -73,6 +74,17 @@ const Novel = () => {
   `}
         >
           Funérarium (2009)
+        </button>
+        <button
+          onClick={() => setActiveBook(3)}
+          className={`btn text-xl rounded-full p-5
+    transition-all duration-100 ease-in-out
+    hover:scale-105 
+    active:scale-95
+    ${activeBook === 3 ? "text-white bg-primary " : "text-primary"}
+  `}
+        >
+          La Muse
         </button>
       </div>
 
@@ -626,6 +638,8 @@ const Novel = () => {
           </audio>
         </div>
       )}
+      {/* La Muse */}
+      {activeBook === 3 && <LaMuse />}
     </div>
   );
 };

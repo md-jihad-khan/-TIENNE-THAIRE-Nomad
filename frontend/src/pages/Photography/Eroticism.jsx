@@ -32,6 +32,7 @@ import State4 from "../../assets/Eroticism/State4.jpg";
 import State5 from "../../assets/Eroticism/State5.jpg";
 import State6 from "../../assets/Eroticism/State6.jpg";
 import State7 from "../../assets/Eroticism/State7.jpg";
+import LazyLoadSection from "../../components/shared/LazyLoadSection";
 
 // Helper function to render a gallery section
 const ImageGallerySection = ({ title, images }) => (
@@ -42,15 +43,17 @@ const ImageGallerySection = ({ title, images }) => (
     {/* Modern Grid Layout: Responsive columns, gap, and aspect ratio for uniform images */}
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-8">
       {images.map((imgObj, index) => (
-        <div key={index} className="  rounded-lg shadow-lg ">
-          <img
-            src={imgObj.src}
-            alt={`${title}-${index + 1}`}
-            className="w-full h-full object-cover transition duration-500 rounded-lg ease-in-out hover:scale-105"
-            loading="lazy"
-          />
-          <p className="mt-2   text-center text-sm italic">{imgObj.credit}</p>
-        </div>
+        <LazyLoadSection key={index} minHeight="200px">
+          <div className="  rounded-lg shadow-lg ">
+            <img
+              src={imgObj.src}
+              alt={`${title}-${index + 1}`}
+              className="w-full h-full object-cover transition duration-500 rounded-lg ease-in-out hover:scale-105"
+              loading="lazy"
+            />
+            <p className="mt-2   text-center text-sm italic">{imgObj.credit}</p>
+          </div>
+        </LazyLoadSection>
       ))}
     </div>
   </div>

@@ -19,6 +19,8 @@ import Casting from "../pages/Books/Docufiction/Casting";
 import DS from "../pages/Books/Documentary/DS";
 import PS from "../pages/Books/Documentary/PS";
 import LT from "../pages/Books/Documentary/LT";
+import LaMuse from "../pages/Books/Novel/LaMuse";
+import Cinema from "../pages/Cinema";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "/books/novel/funerarium",
         element: <FN />,
+      },
+      {
+        path: "/books/novel/la-muse",
+        element: <LaMuse />,
       },
       {
         path: "/books/docu-fiction/casting",
@@ -89,6 +95,10 @@ export const router = createBrowserRouter([
       {
         path: "/nomadblacksheep",
         element: <NBS />,
+      },
+      {
+        path: "/cinema",
+        element: <Cinema />,
       },
     ],
   },

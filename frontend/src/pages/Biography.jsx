@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 import img1 from "../assets/Biography/img1.png";
 import img2 from "../assets/Biography/img2.png";
 import img3 from "../assets/Biography/img3.png";
@@ -8,6 +9,7 @@ import img6 from "../assets/Biography/img6.png";
 import img7 from "../assets/Biography/img7.png";
 import img8 from "../assets/Biography/img10.jpg";
 import img9 from "../assets/Biography/img11.jpg";
+import sheepSticker from "../assets/black_sheep_sticker.png";
 import caruselImg1 from "../assets/Biography/image1.jpg";
 import caruselImg4 from "../assets/Biography/image2.jpg";
 import caruselImg3 from "../assets/Biography/image3.jpg";
@@ -26,8 +28,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { useState } from "react";
-
+import "swiper/css/effect-fade";
 const images = [
   caruselImg1,
   caruselImg2,
@@ -40,29 +41,46 @@ const images = [
   caruselImg9,
 ];
 
-// Define names for the slides corresponding to the images array
-const slideNames = [
-  "Right Arm",
-  "Left Arm",
-  "Side View",
-  "Upper Back",
-  "Side View",
-  "Leg",
-  "Leg",
-  "Leg",
-  "Full Body (Nude)", // The last slide
-];
+
 // Define constants for better readability
 const NUDE_SLIDE_INDEX = images.length - 1;
 
 const Biography = () => {
   const { t } = useTranslation("global");
 
+  useEffect(() => {
+    document.title = `${t("nav.biography")} - Étienne Éthaire`;
+  }, [t]);
+
+  // Helper for rendering HTML correctly
+  const renderHTML = (text) => {
+    if (!text) return { __html: "" };
+    const html = text
+      .replace(/<bold>/g, '<strong class="font-bold">')
+      .replace(/<\/bold>/g, '</strong>')
+      .replace(/<italic>/g, '<em class="italic">')
+      .replace(/<\/italic>/g, '</em>');
+    return { __html: html };
+  };
+
   // State for the carousel's active index and modal status
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasConsented, setHasConsented] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  // Define names for the slides corresponding to the images array
+  const slideNames = [
+    t("biography.slides.rightArm"),
+    t("biography.slides.leftArm"),
+    t("biography.slides.sideView"),
+    t("biography.slides.upperBack"),
+    t("biography.slides.sideView"),
+    t("biography.slides.leg"),
+    t("biography.slides.leg"),
+    t("biography.slides.leg"),
+    t("biography.slides.fullBodyNude"),
+  ];
 
   // Function to handle slide change and intercept the nude slide
   const handleSlideChange = (swiper) => {
@@ -94,420 +112,233 @@ const Biography = () => {
   };
 
   return (
-    <div className="my-10 ">
-      <h2 className="font-eb-garamond text-3xl md:text-6xl md:text-center text-primary  mb-10">
-        Biographie
+    <div className="my-6 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
+      <h2 className="font-eb-garamond text-3xl md:text-6xl md:text-center text-primary mb-4">
+        {t("nav.biography")}
       </h2>
 
-      <p className="font-jost text-md md:text-xl md:text-center mt-5 italic">
-        “Le temps d’apprendre à vivre, il est déjà trop tard”,{" "}
-        <b>Louis Aragon</b>
-      </p>
-      <p className="font-jost  md:text-center md:text-md lg:text-xl my-5 italic mb-10">
-        « Ça, c'est la grande connerie des hommes, on se dit toujours qu'on a le
-        temps, ... Et puis tout meurt. On se retrouve à suivre des cercueils. »
-        <b> Philippe Claudel</b>
-      </p>
+      <p className="font-jost text-md md:text-xl md:text-center mt-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.quote1"))} />
+      <p className="font-jost md:text-center md:text-md lg:text-xl my-2 italic mb-6" dangerouslySetInnerHTML={renderHTML(t("biography.quote2"))} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-2 ">
-        <div className="">
-          <p className="font-jost  md:text-xl lg:text-2xl ">
-            {" "}
-            <Trans
-              i18nKey={t("biography.introDescription")}
-              components={{
-                bold: <strong className="font-bold" />,
-                italic: <em className="italic" />,
-              }}
-            />
-          </p>
-          <p className="font-jost  md:text-xl lg:text-2xl mt-5 ">
-            {" "}
-            <Trans
-              i18nKey={t("biography.introDescription2")}
-              components={{
-                bold: <strong className="font-bold" />,
-                italic: <em className="italic" />,
-              }}
-            />
-          </p>
-        </div>
-
-        <div className="lg:w-1/2 lg:ml-auto ">
-          <div className="grid grid-cols-2 md:flex justify-end items-center ">
-            <img src={img2} alt="" />
-            <img className="" src={img1} alt="" />
+      {/* Intro section */}
+      <div className="clearfix mb-6">
+        <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4">
+          <div className="flex">
+            <img src={img2} alt="" className="w-1/2 object-cover" />
+            <img src={img1} alt="" className="w-1/2 object-cover" />
           </div>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1 text-right">
+            {t("biography.caption1")}
+          </p>
+          <div className="bg-[#22c55e] ml-auto w-1/3 mt-2 h-1 rounded-full"></div>
         </div>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.introDescription"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.introDescription2"))} />
       </div>
-      <p className="font-jhost text-sm w-1/2 md:text-lg ml-auto italic mt-5">
-        {" "}
-        {t("biography.caption1")}
-      </p>
-
-      <div className="bg-primary ml-auto w-1/6 mt-3 h-2"></div>
 
       {/* adolescence */}
-      <p className="font-jost  md:text-xl lg:text-2xl lg:w-1/3 my-20 leading-7">
-        {" "}
-        <Trans
-          i18nKey={t("biography.adolescence")}
-          components={{
-            bold: <strong className="font-bold" />,
-          }}
-        />
-      </p>
+      <p className="font-jost md:text-xl lg:text-2xl mb-6" dangerouslySetInnerHTML={renderHTML(t("biography.adolescence"))} />
 
-      <div className="font-jost  md:text-xl lg:text-2xl  ml-auto lg:w-10/12 ">
-        <p className="mb-5">
-          <Trans
-            i18nKey={t("biography.studies")}
-            components={{
-              bold: <strong className="font-bold" />,
-            }}
-          />
-        </p>
-        <p>{t("biography.salvage")}</p>
+      <div className="font-jost md:text-xl lg:text-2xl mb-6">
+        <p className="mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.studies"))} />
+        <p dangerouslySetInnerHTML={renderHTML(t("biography.salvage"))} />
       </div>
-      <p className="font-jost  md:text-xl lg:text-2xl lg:w-1/3 mt-20 mb-10 font-bold leading-7">
-        {t("biography.experiment")}
-      </p>
+
+      <p className="font-jost md:text-xl lg:text-2xl mt-6 mb-4 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.experiment"))} />
 
       {/* cinema */}
-      <p className="font-jost  md:text-xl lg:text-2xl lg:w-1/3 mb-20 leading-7">
-        {" "}
-        <Trans
-          i18nKey={t("biography.cinema")}
-          components={{
-            bold: <strong className="font-bold" />,
-          }}
-        />
-      </p>
-
-      {/* <div className="font-jost  md:text-xl lg:text-2xl  ml-auto lg:w-10/12 ">
-        <p className="mb-5">
-          <Trans
-            i18nKey={t("biography.litterature")}
-            components={{
-              bold: <strong className="font-bold" />,
-            }}
-          />
-        </p>
-        <p>
-          <Trans
-            i18nKey={t("biography.cinema2")}
-            components={{
-              bold: <strong className="font-bold" />,
-            }}
-          />
-        </p>
-      </div> */}
+      <p className="font-jost md:text-xl lg:text-2xl mb-6" dangerouslySetInnerHTML={renderHTML(t("biography.cinema"))} />
 
       {/* img 3 */}
-      <div className="grid grid-cols-2">
-        <div className="">
-          <img className="" src={img3} alt="" />
-          <p className="font-jhost text-sm  md:text-lg italic mt-5">
-            {" "}
+      <div className="clearfix mb-6">
+        <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
+          <img className="w-full" src={img3} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
             {t("biography.youthCaption")}
           </p>
-          <div className="bg-primary mr-auto w-1/6 my-10 h-2"></div>
+          <div className="bg-[#22c55e] mr-auto w-1/3 mt-2 h-1 rounded-full"></div>
         </div>
-        <div className="font-jost  md:text-xl lg:text-2xl  ">
-          <p className="mb-5">
-            <Trans
-              i18nKey={t("biography.litterature")}
-              components={{
-                bold: <strong className="font-bold" />,
-              }}
-            />
-          </p>
-          <p>
-            <Trans
-              i18nKey={t("biography.cinema2")}
-              components={{
-                bold: <strong className="font-bold" />,
-              }}
-            />
-          </p>
+        <div className="font-jost md:text-xl lg:text-2xl">
+          <p className="mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.litterature"))} />
+          <p className="mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.cinema2"))} />
         </div>
       </div>
 
       {/* youth */}
-
-      <div className="lg:w-4/5 mr-auto mt-5">
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-          {t("biography.experimentYouthTitle")}
+      <div className="mb-6">
+        <p className="font-jost md:text-xl lg:text-2xl mb-4 font-bold">
+          <span dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthTitle"))}></span>
+          <img src={sheepSticker} className="inline-block align-middle ml-3 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
         </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.experimentYouthDesc1")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.experimentYouthDesc2")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.experimentYouthDesc3")}
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc3"))} />
       </div>
 
       {/* adult hood */}
-      <div className="lg:w-4/5 ml-auto mt-30">
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-          {t("biography.adultTitle")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-          {t("biography.adultTitle2")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.adultDescription1")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.adultDescription2")}
-        </p>
+      <div className="mb-6">
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription2"))} />
       </div>
 
       {/* Home */}
-
-      <div className="grid grid-cols-2 gap-5">
-        {/* adult part 2 */}
-        <div className=" mr-auto mt-20">
-          <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-            {t("biography.adultTitle3")}
-          </p>
-          <p className="font-jost  md:text-xl lg:text-2xl mb-5 ">
-            {t("biography.adultDescription3")}
-          </p>
-        </div>
-        <div className="  ml-auto">
-          <img className="mx-auto " src={img4} alt="" />
-          <p className="font-jost  md:text-xl lg:text-2xl text-center my-5">
+      <div className="clearfix mb-6">
+        <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
+          <img className="w-full mx-auto" src={img4} alt="" />
+          <p className="font-jost md:text-lg lg:text-xl text-center font-bold mt-2">
             {t("biography.homeTitle")}
           </p>
-          <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-center mt-1">
             {t("biography.homeCaption")}
           </p>
         </div>
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle3"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription3"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.homeDesc1"))} />
       </div>
-      <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-        {t("biography.homeDesc1")}
-      </p>
 
       {/* litterature */}
-      <div className="lg:w-3/4 mr-auto my-20">
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5 font-bold">
-          {t("biography.litteratureTitle")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.litteratureDesc1")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.litteratureDesc2")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.litteratureDesc3")}
-        </p>
-        <p className="font-jost  md:text-xl lg:text-2xl mb-5">
-          {t("biography.litteratureDesc4")}
-        </p>
+      <div className="mb-6">
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc3"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc4"))} />
       </div>
-      {/* cinema books */}
 
-      <div className="grid grid-cols-2 gap-10 mb-10 items-center">
-        <div className="">
-          <img className="rounded-2xl" src={img5} alt="" />
-          <p className="font-jhost text-sm  md:text-lg italic mt-5 mb-10">
+      {/* cinema books */}
+      <div className="clearfix mb-6">
+        <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
+          <img className="w-full rounded-2xl" src={img5} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
             {t("biography.cinemaCaption")}
           </p>
         </div>
-
-        <p className=" font-jost  md:text-xl lg:text-2xl ">
-          {t("biography.cinemaDesc")}
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.cinemaDesc"))} />
       </div>
 
       {/* father section*/}
-
-      <div className="grid grid-cols-2 gap-10 items-center">
-        <p className="  font-jost  md:text-xl lg:text-2xl">
-          {t("biography.bookDesc")}
-        </p>
-        <img className="ml-auto rounded-2xl " src={img6} alt="" />
-      </div>
-
-      <div className="mb-20 mt-5 ">
-        <p className="font-jhost text-sm  md:text-lg   italic mb-10">
-          {t("biography.caption2")}
-        </p>
-
-        <p className="lg:w-4/5 mr-auto font-jost  md:text-xl lg:text-2xl mt-20 mb-10">
-          {t("biography.novelDesc")}
-        </p>
+      <div className="clearfix mb-6">
+        <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
+          <img className="w-full rounded-2xl" src={img6} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-right italic mt-1">
+            {t("biography.caption2")}
+          </p>
+        </div>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.bookDesc"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.novelDesc"))} />
       </div>
 
       {/*began writing */}
-      <div className="my-10">
-        <div className="grid items-center grid-cols-2 gap-10 ">
-          <img src={img7} alt="" />
-          <p className=" font-jost  md:text-xl lg:text-2xl">
-            {t("biography.inspiration")}
+      <div className="clearfix mb-6">
+        <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
+          <img className="w-full rounded-2xl" src={img7} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
+            {t("biography.writingCaption")}
           </p>
         </div>
-
-        <p className="font-jhost text-sm  md:text-lg mt-5  italic mb-10">
-          {t("biography.writingCaption")}
-        </p>
-
-        <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl mt-20 mb-10">
-          {t("biography.writingDesc1")}
-        </p>
-        <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl">
-          {t("biography.writingDesc2")}
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.inspiration"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.writingDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.writingDesc2"))} />
       </div>
 
       {/* exit leterature */}
-      <div className="lg:w-4/5 mr-auto my-20">
-        <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold  mb-5">
-          {t("biography.exitTitle")}
-        </h5>
-
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.exitDesc1")}
-        </p>
+      <div className="mb-6">
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.exitTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc1"))} />
       </div>
-      <div className="my-20 ">
-        <div className="grid grid-cols-2 gap-10 items-center">
-          <div>
-            <img className="ml-auto  rounded-2xl" src={img8} alt="" />
-            <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
-              {t("biography.caption3")}
-            </p>
-          </div>
 
-          <p className="font-jost  md:text-xl lg:text-2xl">
-            {t("biography.exitDesc2")}
+      <div className="clearfix mb-6">
+        <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
+          <img className="w-full rounded-2xl" src={img8} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-right italic mt-1">
+            {t("biography.caption3")}
           </p>
         </div>
-
-        <p className="lg:w-4/5 ml-auto font-jost  md:text-xl lg:text-2xl  mb-10">
-          {t("biography.exitDesc3")}
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc3"))} />
       </div>
+
       {/* Nomad Black sheep */}
-      <div className="lg:w-3/4 ml-auto ">
-        <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold  mb-5">
-          {t("biography.NBSTitle")}
-        </h5>
-
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.NBSDesc1")}
-        </p>
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.NBSDesc2")}
-        </p>
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.NBSDesc3")}
-        </p>
+      <div className="mb-6">
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc3"))} />
       </div>
+
       {/* return Literature */}
-      <div className="lg:w-2/3 mr-auto lg:my-20">
-        <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
-          {t("biography.RLTitle")}
-        </h5>
-
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.RLDesc1")}
-        </p>
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.RLDesc2")}
-        </p>
+      <div className="mb-6">
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.RLTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.RLDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.RLDesc2"))} />
       </div>
+
       {/* Tatto Image */}
-      <div className=" mx-auto px-4 my-10">
-        <div className="flex flex-col md:flex-row gap-15 items-center">
-          {/* Text Paragraph */}
-          <p
-            className={`md:w-1/2 font-jost md:text-xl lg:text-2xl leading-relaxed`}
+      <div className="clearfix mb-6">
+        <div className="float-right w-full md:w-1/4 ml-0 md:ml-6 mb-4">
+          <Swiper
+            onSwiper={setSwiperInstance}
+            onSlideChange={handleSlideChange}
+            spaceBetween={30}
+            effect={"fade"}
+            centeredSlides={true}
+            navigation={true}
+            pagination={{ clickable: true }}
+            modules={[EffectFade, Navigation, Pagination]}
+            className="rounded-2xl shadow-xl w-full swiper-custom-theme"
           >
-            {t("biography.endSection")}
-          </p>
-
-          {/* Swiper Container */}
-          <div className="md:w-1/4 mx-auto">
-            <Swiper
-              onSwiper={setSwiperInstance} // Get the swiper instance
-              onSlideChange={handleSlideChange} // Intercept slide changes
-              spaceBetween={30}
-              effect={"fade"}
-              centeredSlides={true}
-              navigation={true}
-              pagination={{ clickable: true }}
-              modules={[EffectFade, Navigation, Pagination]}
-              className="rounded-2xl shadow-xl w-full swiper-custom-theme"
-            >
-              {images.map((src, index) => (
-                <SwiperSlide key={index}>
-                  <div className="relative overflow-hidden rounded-2xl">
-                    <div className="w-full pb-[177.77%] relative">
-                      <img
-                        src={src}
-                        alt={`Tattoo slide ${index + 1}`}
-                        className="absolute inset-0 w-full h-full object-cover"
-                      />
-                    </div>
+            {images.map((src, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative overflow-hidden rounded-2xl">
+                  <div className="w-full pb-[177.77%] relative">
+                    <img
+                      src={src}
+                      alt={`Tattoo slide ${index + 1}`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Slide Name Display */}
-            <p className="text-center font-bold text-lg mt-4 text-[#0c331c]">
-              {slideNames[activeIndex]}
-            </p>
-          </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <p className="text-center font-bold text-lg mt-2 text-[#0c331c]">
+            {slideNames[activeIndex]}
+          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-center mt-1">
+            {t("biography.TattooCaption")}
+          </p>
         </div>
-
-        {/* Caption */}
-        <p
-          className={`font-jost text-sm md:text-lg mt-4 italic text-gray-700 text-center`}
-        >
-          {t("biography.TattooCaption")}
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.endSection"))} />
       </div>
 
       {/* --- Nude Content Consent Modal --- */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/50  flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
-            {/* Title: Use the new theme color for the warning text for contrast */}
             <h3 className="text-2xl font-bold text-[#0c331c] mb-4">
-              ⚠️ Cautious: Naked Picture to follow.
+              {t("biography.modalTitle")}
             </h3>
-
-            <p className="text-gray-700 mb-6">
-              The next image in the progression is a **full-body photograph**
-              intended to display the entirety of the tattoo work. As this image
-              contains **nudity**, we require your explicit consent to view it.
-            </p>
+            <div className="text-gray-700 mb-6">
+              <span dangerouslySetInnerHTML={renderHTML(t("biography.modalDescription"))} />
+            </div>
             <p className="text-gray-700 mb-8 font-semibold">
-              Click only if you are 18 or over.
+              {t("biography.modalConsent")}
             </p>
-
             <div className="flex justify-center space-x-4">
-              {/* YES Button: Use the new theme color for the primary action */}
               <button
                 onClick={() => handleConsent(true)}
-                className=" btn px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md  hover:bg-opacity-90 transition duration-300"
+                className="btn px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-300"
               >
-                Yes, Show Me
+                {t("biography.modalYes")}
               </button>
-
-              {/* NO Button: Keep it neutral for the secondary action */}
               <button
                 onClick={() => handleConsent(false)}
                 className="px-6 py-3 border btn border-gray-300 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
               >
-                No, Keep Me Here
+                {t("biography.modalNo")}
               </button>
             </div>
           </div>
@@ -515,55 +346,26 @@ const Biography = () => {
       )}
 
       {/* desire for youth */}
-      <div className="lg:w-2/3 mr-auto lg:mt-16">
-        <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
-          {t("biography.desireTitle")}
-        </h5>
-
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.desireDesc1")}
-        </p>
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.desireDesc2")}
-        </p>
-      </div>
-      <div className="lg:w-2/3 ml-auto mb-20">
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.desireDesc3")}
-        </p>
-        <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-          {t("biography.desireDesc4")}
-        </p>
+      <div className="mb-6">
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc3"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc4"))} />
       </div>
 
-      {/* pure love */}
-      <div className="grid grid-cols-2 lg:mt-32 gap-10">
-        <div>
-          <h5 className=" font-jost  md:text-xl lg:text-2xl font-bold mb-5">
-            {t("biography.loveTitle")}
-          </h5>
-
-          <p className=" font-jost  md:text-xl lg:text-2xl  mb-5">
-            {t("biography.loveDesc1")}
-          </p>
-        </div>
-        <div>
-          <img className=" rounded-2xl" src={img9} alt="" />
-          <p className="font-jhost text-sm  md:text-lg mt-5 text-right italic mb-10">
+      {/* pure love & Nora */}
+      <div className="clearfix mb-6">
+        <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
+          <img className="w-full rounded-2xl" src={img9} alt="" />
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-center italic mt-1">
             {t("biography.caption4")}
           </p>
         </div>
-      </div>
-      {/* Nora */}
-      <div className="mt-10 mb-20 grid  ">
-        <div>
-          <p className=" font-jost  md:text-xl lg:text-2xl  mb-10">
-            {t("biography.noraDesc1")}
-          </p>
-          <p className=" font-jost  md:text-xl lg:text-2xl  mb-10">
-            {t("biography.noraDesc2")}
-          </p>
-        </div>
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.loveTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.loveDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.noraDesc1"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.noraDesc2"))} />
       </div>
     </div>
   );
