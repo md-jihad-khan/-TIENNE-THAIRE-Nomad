@@ -335,6 +335,24 @@
     "FDRInterview9": "<i>Vous employez ici le mot “poésie” et votre titre de biographie la classe en héritière de Rimbaud. On suppose donc que le texte est très important chez Patti.</i>",
     "FDRInterview10": "À égalité avec la rock attitude. Sans aucun doute! L’éducation de Patti Smith a fait d’elle une “intellectuelle américaine” et quand elle a découvert Rimbaud, puis la scène underground du New York des années 70, elle a mixé tous ses éléments pour élaborer des textes inventifs, lyriques, dévorés par une rage intérieure et un appétit de vivre. Patti Smith peut s’écouter. Patti Smith peut se lire. Elle est présente corps et âme sur les deux versants de l’art : musique et littérature."
   },
+  "cinema": {
+    "title": "Ma Bibliothèque Cinéma",
+    "quote": "\"Le cinéma, c'est l'écriture moderne dont l'encre est la lumière.\" — Jean Cocteau",
+    "searchPlaceholder": "Rechercher un film, réalisateur...",
+    "noMovies": "Aucun film trouvé pour cette recherche.",
+    "footer": "© {{year}} – Nomad Black Sheep Cinema Archive",
+    "categories": {
+      "Cinéma Muet": "Cinéma Muet",
+      "Cinéma Américain": "Cinéma Américain",
+      "Canada anglophone": "Canada anglophone",
+      "Canada francophone": "Canada francophone",
+      "Cinéma français": "Cinéma français",
+      "Cinéma latino-américain": "Cinéma latino-américain",
+      "Asie": "Asie",
+      "Océanie": "Océanie",
+      "ANIMATION": "ANIMATION"
+    }
+  },
   "TravelData": [
     {
       "country": "Albanie",

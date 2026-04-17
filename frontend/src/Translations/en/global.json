@@ -126,6 +126,24 @@
       "fullBodyNude": "Full Body (Nude)"
     }
   },
+  "cinema": {
+    "title": "My Cinema Library",
+    "quote": "\"Cinema is the modern writing whose ink is light.\" — Jean Cocteau",
+    "searchPlaceholder": "Search for a movie, director...",
+    "noMovies": "No movies found for this search.",
+    "footer": "© {{year}} – Nomad Black Sheep Cinema Archive",
+    "categories": {
+      "Cinéma Muet": "Silent Cinema",
+      "Cinéma Américain": "American Cinema",
+      "Canada anglophone": "Anglophone Canada",
+      "Canada francophone": "Francophone Canada",
+      "Cinéma français": "French Cinema",
+      "Cinéma latino-américain": "Latin American Cinema",
+      "Asie": "Asia",
+      "Océanie": "Oceania",
+      "ANIMATION": "Animation"
+    }
+  },
   "TravelData": [
     {
       "country": "Albania",

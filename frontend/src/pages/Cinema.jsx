@@ -3,9 +3,10 @@ import cinemaData from "../cinema_data.json";
 import { motion, AnimatePresence } from "motion/react";
 import blackSheepSticker from "../assets/black_sheep_sticker.png";
 import rainbowSticker from "../assets/rainbow_sticker.png";
-
+import { useTranslation } from "react-i18next";
 
 const Cinema = () => {
+  const { t } = useTranslation();
   const categories = useMemo(() => {
     return [...new Set(cinemaData.map((m) => m.category))].filter(Boolean);
   }, []);
@@ -38,7 +39,7 @@ const Cinema = () => {
           animate={{ opacity: 1, y: 0 }}
           className="font-eb-garamond text-4xl md:text-6xl text-primary mb-4 tracking-tight"
         >
-          Ma Bibliothèque Cinéma
+          {t("cinema.title")}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -46,7 +47,7 @@ const Cinema = () => {
           transition={{ delay: 0.2 }}
           className="font-jost text-lg md:text-xl text-gray-400 italic max-w-3xl leading-relaxed"
         >
-          "Le cinéma, c'est l'écriture moderne dont l'encre est la lumière." — Jean Cocteau
+          {t("cinema.quote")}
         </motion.p>
       </header>
 
@@ -64,7 +65,7 @@ const Cinema = () => {
                     : "bg-gray-50 text-gray-400 hover:bg-gray-100 border border-gray-100"
                   }`}
               >
-                {cat}
+                {t(`cinema.categories.${cat}`, cat)}
               </button>
             ))}
           </div>
@@ -75,7 +76,7 @@ const Cinema = () => {
           <div className="relative w-full max-w-md group">
             <input
               type="text"
-              placeholder="Rechercher un film, réalisateur..."
+              placeholder={t("cinema.searchPlaceholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-5 pr-12 py-3 rounded-full border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none font-jost transition-all shadow-sm group-hover:shadow-md bg-white"
@@ -139,7 +140,7 @@ const Cinema = () => {
                   {/* Text Overlay on hover */}
                   <div className="absolute z-20 inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4 text-white transform translate-y-4 group-hover:translate-y-0">
                     <span className="inline-block px-2 py-1 bg-white/20 backdrop-blur-md rounded text-[10px] uppercase tracking-widest mb-2 w-fit">
-                      {movie.category}
+                      {t(`cinema.categories.${movie.category}`, movie.category)}
                     </span>
                     <p className="font-jost text-[10px] uppercase tracking-widest text-gray-300 mb-1 opacity-80">
                       {decodeHTML(movie.director)}
@@ -174,13 +175,13 @@ const Cinema = () => {
 
       {filteredMovies.length === 0 && (
         <div className="text-center py-20">
-          <p className="font-jost text-xl text-gray-400">Aucun film trouvé pour cette recherche.</p>
+          <p className="font-jost text-xl text-gray-400">{t("cinema.noMovies")}</p>
         </div>
       )}
 
       <footer className="mt-20 pt-10 border-t border-gray-100 text-center">
         <p className="font-jost text-sm text-gray-400">
-          © {new Date().getFullYear()} – Nomad Black Sheep Cinema Archive
+          {t("cinema.footer", { year: new Date().getFullYear() })}
         </p>
       </footer>
     </div>
