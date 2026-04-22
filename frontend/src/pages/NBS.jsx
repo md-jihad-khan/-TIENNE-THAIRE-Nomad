@@ -4,6 +4,8 @@ import img3 from "../assets/NBS/image3.png";
 import img4 from "../assets/NBS/image4.jpg";
 import img5 from "../assets/NBS/image5.jpg";
 import sheepSticker from "../assets/black_sheep_sticker.png";
+import globeSticker from "../assets/globe_sticker.png";
+import filmReelSticker from "../assets/film_reel_sticker.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,16 +13,19 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 import { Autoplay, EffectFade } from "swiper/modules";
+import rainbow from "../assets/Home/rainbow.png";
 
 const images = [img4, img3];
 
 const NBS = () => {
   return (
     <div className="my-10 px-4 max-w-6xl mx-auto">
-      <div className="w-full text-center">
-        <h2 className="font-eb-garamond text-3xl md:text-5xl text-primary mb-10">
+      <div className="w-full text-center mb-10">
+        <h2 className="relative inline-block font-eb-garamond text-3xl md:text-5xl text-primary">
           NOMAD BLACK SHEEP PRODUCTIONS
-          <img src={sheepSticker} className="inline-block align-middle ml-4 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
+          <img src={sheepSticker} className="absolute -top-10 -left-12 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
+
+          <img src={filmReelSticker} className="absolute -bottom-8 -right-20 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
         </h2>
       </div>
 
@@ -94,12 +99,13 @@ const NBS = () => {
       </div>
 
       {/* Part 2 */}
-      <div className="clearfix mb-6">
+      <div className="clearfix mb-6 relative">
         <p className="font-jost md:text-xl lg:text-2xl mb-5">
           Enfin, bref, je ne vais pas retracer ici l’historique de ce qui est
           vite devenu une maison de production à part entière. Ma biographie
           évoque déjà la genèse et l’évolution d’un projet qui est de toute
           façon présenté en détail sur le site Nomad Black Sheep.
+          <img src={rainbow} className="inline-block align-middle ml-4 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-80 pointer-events-none -rotate-12" alt="" />
         </p>
         <p className="font-jost md:text-xl lg:text-2xl mb-5">
           En revanche, ce que je souhaite exprimer sur cette page, c’est la
@@ -127,9 +133,6 @@ const NBS = () => {
           un média! Nous ne l’utilisons pas en réseau social et nous récusons
           cette appellation. De même, le site internet se conçoit comme un
           catalogue accessible au monde entier.
-          <br /> Et, de mon côté, j’ai naturellement pris le contrôle du
-          management artistique où mon sens critique, mon degré d’exigence et ma
-          culture générale servent de guidance.
         </p>
       </div>
 
@@ -191,7 +194,7 @@ const NBS = () => {
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/3 lg:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full rounded-2xl shadow-xl" src={img5} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-center mt-2">
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic w-full mt-2">
             Nous vivons dans une société de plus en plus normée, où il faut
             lisser toutes les aspérités, tout ce qui dépasse. Nous faisons face
             à la bien-pensance et au politiquement correct. Nous faisons face au

@@ -4,29 +4,40 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import img1 from "../assets/Travel/image1.jpg";
-import { useEffect, useRef } from "react";
+import photoCameraSticker from "../assets/photo_camera_sticker.png";
+import globeSticker from "../assets/globe_sticker.png";
 import twemoji from "twemoji";
 import { useTranslation } from "react-i18next";
 
 const Photography = () => {
   const { t } = useTranslation("global");
   const travelData = t("TravelData", { returnObjects: true }) || [];
-  const ref = useRef(null);
 
-  useEffect(() => {
-    if (!ref.current) return; // <-- 🛠 IMPORTANT FIX
-
-    twemoji.parse(ref.current, {
-      folder: "svg",
-      ext: ".svg",
-    });
-  }, []);
+  // Helper function to render flag emojis as Twemoji images
+  const renderFlag = (flag) => {
+    if (!flag) return "";
+    try {
+      // Handle both default and property-based export
+      const parse = twemoji.parse || twemoji;
+      return parse(flag, {
+        folder: "svg",
+        ext: ".svg",
+        base: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/",
+      });
+    } catch (e) {
+      return flag;
+    }
+  };
 
   return (
     <div className=" py-10">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary text-center  uppercase mb-10">
-        Photographie et Voyages
-      </h2>
+      <div className="text-center mb-10">
+        <h2 className="relative inline-block font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase">
+          Photographie et Voyages
+          <img src={photoCameraSticker} className="absolute -top-6 -left-16 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
+          <img src={globeSticker} className="absolute -top-10 -right-20 w-24 h-24 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+        </h2>
+      </div>
       <div className="font-jost  md:text-xl lg:text-2xl   lg:w-10/12 ">
         <p className="mb-5 ">
           Autant le dire d’emblée, je ne suis pas photographe professionnel,
@@ -92,12 +103,11 @@ const Photography = () => {
         </div>
       </div>
 
-      <div ref={ref} className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5">
         {travelData.map((country, index) => (
           <div key={index} className="mb-16">
-            <h2 className="text-lg font-semibold mb-6 flex items-center  gap-2">
-              {country.country}{" "}
-              <span className=" w-8 h-8 mt-2">{country.flag}</span>
+            <h2 className="text-lg font-semibold mb-6 flex items-center gap-2">
+              {country.country} <span dangerouslySetInnerHTML={{ __html: renderFlag(country.flag) }} />
             </h2>
 
             <Swiper

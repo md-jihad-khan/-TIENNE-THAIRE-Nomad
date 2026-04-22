@@ -3,6 +3,8 @@ import cinemaData from "../cinema_data.json";
 import { motion, AnimatePresence } from "motion/react";
 import blackSheepSticker from "../assets/black_sheep_sticker.png";
 import rainbowSticker from "../assets/rainbow_sticker.png";
+import filmCameraSticker from "../assets/film_camera_sticker.png";
+import filmReelSticker from "../assets/film_reel_sticker.png";
 import { useTranslation } from "react-i18next";
 
 const Cinema = () => {
@@ -34,13 +36,18 @@ const Cinema = () => {
   return (
     <div className="min-h-screen py-6 px-4 md:px-10 bg-white">
       <header className="mb-6 text-center md:text-left border-b border-gray-100 pb-6">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="font-eb-garamond text-4xl md:text-6xl text-primary mb-4 tracking-tight"
-        >
-          {t("cinema.title")}
-        </motion.h1>
+        <div className="flex flex-col md:flex-row items-center md:items-end gap-4 mb-4">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="relative inline-block font-eb-garamond text-4xl md:text-6xl text-primary tracking-tight"
+          >
+            {t("cinema.title")}
+            <img src={filmCameraSticker} className="absolute -top-4 -right-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+
+          </motion.h1>
+
+        </div>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -61,8 +68,8 @@ const Cinema = () => {
                 key={cat}
                 onClick={() => setActiveTab(cat)}
                 className={`px-5 py-2 rounded-full font-jost text-sm font-medium transition-all duration-300 ${activeTab === cat
-                    ? "bg-primary text-white shadow-lg scale-105"
-                    : "bg-gray-50 text-gray-400 hover:bg-gray-100 border border-gray-100"
+                  ? "bg-primary text-white shadow-lg scale-105"
+                  : "bg-gray-50 text-gray-400 hover:bg-gray-100 border border-gray-100"
                   }`}
               >
                 {t(`cinema.categories.${cat}`, cat)}
@@ -106,17 +113,17 @@ const Cinema = () => {
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="group"
             >
-              <div 
+              <div
                 className="relative aspect-[2/3] shadow-lg transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 bg-[#161616] flex items-center justify-center rounded-[4px] border border-[#2a2a2a]"
               >
                 {/* CSS Film Holes - Left */}
-                <div 
+                <div
                   className="absolute left-[4px] sm:left-[6px] top-2 bottom-2 w-[4px] sm:w-[6px]"
                   style={{ backgroundImage: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 8px, #fff 8px, #fff 16px)' }}
                 ></div>
-                
+
                 {/* CSS Film Holes - Right */}
-                <div 
+                <div
                   className="absolute right-[4px] sm:right-[6px] top-2 bottom-2 w-[4px] sm:w-[6px]"
                   style={{ backgroundImage: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 8px, #fff 8px, #fff 16px)' }}
                 ></div>

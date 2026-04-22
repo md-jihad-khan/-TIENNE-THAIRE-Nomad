@@ -1,4 +1,7 @@
 import rainbow from "../../../assets/Home/rainbow.png";
+import globeSticker from "../../../assets/globe_sticker.png";
+import quillSticker from "../../../assets/quill_sticker.png";
+import photoCameraSticker from "../../../assets/photo_camera_sticker.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
@@ -17,29 +20,30 @@ const images = [img1, img2];
 const Hero = () => {
   const { t } = useTranslation("global");
   return (
-    <section className=" mt-10">
-      <div className="relative">
-        <h2 className="font-eb-garamond text-3xl md:text-5xl md:text-center text-primary  ">
+    <section className=" mt-6">
+      <div className="relative md:text-center">
+        <h2 className="relative inline-block font-eb-garamond text-3xl md:text-5xl text-primary  ">
           {t("home.heroDescription")}
+          {/* Stickers */}
+          <img src={globeSticker} className="absolute -top-10 -left-12 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.1] opacity-80 pointer-events-none -rotate-12" alt="" />
+          <img src={quillSticker} className="absolute -bottom-10 -right-6 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.1] opacity-80 pointer-events-none rotate-12" alt="" />
+          <img src={photoCameraSticker} className="absolute top-0 -right-16 w-14 h-14 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.1] opacity-80 pointer-events-none -rotate-[20deg] hidden lg:block" alt="" />
         </h2>
-        <Link to={"/biography"} className="w-auto">
-          <FaArrowUpLong className="ml-8 rotate-45 text-gray-200 " />
-          <p className="z-10 text-gray-200 text-xs ml-3 font-jhost">
-            {" "}
-            {t("home.biographyTitle")}
-          </p>
-          <img
-            className="absolute hidden lg:flex w-20 left-0 -bottom-8 -z-10"
-            src={rainbow}
-            alt=""
-          />
-        </Link>
+
+
+
+        <img
+          className="absolute hidden lg:flex w-20 left-0 -bottom-8 -z-10"
+          src={rainbow}
+          alt=""
+        />
+
       </div>
-      <p className="font-jost text-xl md:text-xl md:text-center mt-10 italic">
+      <p className="font-jost text-xl md:text-xl md:text-center mt-6 italic">
         “Le temps d’apprendre à vivre, il est déjà trop tard”,{" "}
         <b>Louis Aragon</b>
       </p>
-      <p className="font-jost  md:text-center md:text-xl lg:text-xl my-5 italic mb-10 ">
+      <p className="font-jost  md:text-center md:text-xl lg:text-xl my-4 italic mb-6 ">
         “Dans la citation précédente, remplacez le verbe “vivre” par écrire,
         photographier, filmer, ou par tout autre verbe illustrant vos passions,
         et la même vérité vous reviendra à la gueule, comme un boomerang.”,
@@ -59,35 +63,39 @@ const Hero = () => {
             />
           </div>
 
-          <div className="mt-8 aspect-video w-full">
-            <Swiper
-              spaceBetween={30}
-              effect={"fade"}
-              centeredSlides={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay, EffectFade, Navigation, Pagination]}
-              className="mySwiper rounded-2xl"
-            >
-              {images.map((src, index) => (
-                <SwiperSlide key={index}>
-                  <div className="aspect-video w-full overflow-hidden relative">
-                    <img
-                      src={src}
-                      alt={`slide-${index}`}
-                      className="absolute aspect-video inset-0 w-full  object-cover"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <div className="relative mt-4">
+            <div className="absolute -right-14 top-1/2 -translate-y-1/2 -rotate-90 whitespace-nowrap">
+              <p className="font-jost text-[8px] md:text-[10px] opacity-40 hover:opacity-100 hover:text-xs transition-all duration-300 text-green-900">
+                © Samuel Nicolaï
+              </p>
+            </div>
+            <div className="aspect-video w-full">
+              <Swiper
+                spaceBetween={30}
+                effect={"fade"}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay, EffectFade, Navigation, Pagination]}
+                className="mySwiper rounded-2xl"
+              >
+                {images.map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="aspect-video w-full overflow-hidden relative">
+                      <img
+                        src={src}
+                        alt={`slide-${index}`}
+                        className="absolute aspect-video inset-0 w-full  object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
           <div className="mt-2 text-right">
-            <p className="font-jost text-[8px] md:text-[10px] opacity-40 hover:opacity-100 hover:text-xs transition-all duration-300 text-green-900">
-              © Samuel Nicolaï
-            </p>
             <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic">
               {t("home.carouselCaption")}
             </p>

@@ -2,6 +2,8 @@ import { Trans, useTranslation } from "react-i18next";
 import rainbow from "../../../assets/Home/rainbow.png";
 import bookCover from "../../../assets/Books/LaMuse.jpg";
 import authorImage from "../../../assets/Books/LaMuse_Author.jpg";
+import typewriterSticker from "../../../assets/typewriter_sticker.png";
+import quillSticker from "../../../assets/quill_sticker.png";
 import { motion, AnimatePresence } from "framer-motion";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
@@ -38,8 +40,10 @@ const LaMuse = () => {
                 className="flex flex-col gap-5 w-1/3"
             >
                 <div className="relative">
-                    <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic relative z-10">
+                    <h4 className="font-jost md:text-2xl lg:text-3xl text-primary font-bold uppercase italic relative z-20">
                         La Muse
+                        <img src={typewriterSticker} className="absolute -top-10 -left-10 w-16 h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12 z-0" alt="" />
+                        <img src={quillSticker} className="absolute -bottom-6 -right-6 w-16 h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12 z-0" alt="" />
                     </h4>
                     <img
                         src={rainbow}

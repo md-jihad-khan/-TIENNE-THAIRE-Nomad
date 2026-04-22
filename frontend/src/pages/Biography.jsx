@@ -20,6 +20,9 @@ import caruselImg7 from "../assets/Biography/Leg Tattoo 2.jpg";
 import caruselImg8 from "../assets/Biography/Leg Tattoo 3.jpg";
 
 import caruselImg9 from "../assets/Biography/image6.jpg";
+import rainbow from "../assets/Home/rainbow.png";
+import typewriterSticker from "../assets/typewriter_sticker.png";
+import quillSticker from "../assets/quill_sticker.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
@@ -56,7 +59,7 @@ const Biography = () => {
   const renderHTML = (text) => {
     if (!text) return { __html: "" };
     const html = text
-      .replace(/<bold>/g, '<strong class="font-bold">')
+      .replace(/<bold>/g, '<strong class="font-bold italic">')
       .replace(/<\/bold>/g, '</strong>')
       .replace(/<italic>/g, '<em class="italic">')
       .replace(/<\/italic>/g, '</em>');
@@ -113,9 +116,13 @@ const Biography = () => {
 
   return (
     <div className="my-6 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
-      <h2 className="font-eb-garamond text-3xl md:text-6xl md:text-center text-primary mb-4">
-        {t("nav.biography")}
-      </h2>
+      <div className="md:text-center mb-10">
+        <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary">
+          {t("nav.biography")}
+          <img src={typewriterSticker} className="absolute -top-6 -left-18 md:-left-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
+          <img src={quillSticker} className="absolute -bottom-8 -right-18 md:-right-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+        </h2>
+      </div>
 
       <p className="font-jost text-md md:text-xl md:text-center mt-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.quote1"))} />
       <p className="font-jost md:text-center md:text-md lg:text-xl my-2 italic mb-6" dangerouslySetInnerHTML={renderHTML(t("biography.quote2"))} />
@@ -127,10 +134,15 @@ const Biography = () => {
             <img src={img2} alt="" className="w-1/2 object-cover" />
             <img src={img1} alt="" className="w-1/2 object-cover" />
           </div>
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1 text-right">
-            {t("biography.caption1")}
-          </p>
-          <div className="bg-[#22c55e] ml-auto w-1/3 mt-2 h-1 rounded-full"></div>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1 text-left" dangerouslySetInnerHTML={renderHTML(t("biography.caption1"))} />
+          <div className="relative mt-5">
+            <div className="bg-[#22c55e] ml-auto w-full h-2 rounded-full"></div>
+            <img
+              src={sheepSticker}
+              className="absolute -top-10 -left-2 w-16 h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -scale-x-100"
+              alt=""
+            />
+          </div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.introDescription"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.introDescription2"))} />
@@ -144,7 +156,10 @@ const Biography = () => {
         <p dangerouslySetInnerHTML={renderHTML(t("biography.salvage"))} />
       </div>
 
-      <p className="font-jost md:text-xl lg:text-2xl mt-6 mb-4 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.experiment"))} />
+      <p className="font-jost md:text-xl lg:text-2xl mt-6 mb-4 font-bold italic flex items-center flex-wrap gap-3">
+        <span dangerouslySetInnerHTML={renderHTML(t("biography.experiment"))}></span>
+        <img src={rainbow} className="inline-block align-middle w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-90 pointer-events-none" alt="" />
+      </p>
 
       {/* cinema */}
       <p className="font-jost md:text-xl lg:text-2xl mb-6" dangerouslySetInnerHTML={renderHTML(t("biography.cinema"))} />
@@ -153,9 +168,7 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full" src={img3} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
-            {t("biography.youthCaption")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.youthCaption"))} />
           <div className="bg-[#22c55e] mr-auto w-1/3 mt-2 h-1 rounded-full"></div>
         </div>
         <div className="font-jost md:text-xl lg:text-2xl">
@@ -166,10 +179,7 @@ const Biography = () => {
 
       {/* youth */}
       <div className="mb-6">
-        <p className="font-jost md:text-xl lg:text-2xl mb-4 font-bold">
-          <span dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthTitle"))}></span>
-          <img src={sheepSticker} className="inline-block align-middle ml-3 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
-        </p>
+        <p className="font-jost md:text-xl lg:text-2xl mb-4 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.experimentYouthDesc3"))} />
@@ -177,8 +187,8 @@ const Biography = () => {
 
       {/* adult hood */}
       <div className="mb-6">
-        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle"))} />
-        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle2"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription2"))} />
       </div>
@@ -187,21 +197,19 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full mx-auto" src={img4} alt="" />
-          <p className="font-jost md:text-lg lg:text-xl text-center font-bold mt-2">
+          <p className="font-jost md:text-lg lg:text-xl text-left font-bold mt-2 italic">
             {t("biography.homeTitle")}
           </p>
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-center mt-1">
-            {t("biography.homeCaption")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.homeCaption"))} />
         </div>
-        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle3"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle3"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription3"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.homeDesc1"))} />
       </div>
 
       {/* litterature */}
       <div className="mb-6">
-        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureTitle"))} />
+        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc3"))} />
@@ -212,9 +220,7 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img5} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
-            {t("biography.cinemaCaption")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.cinemaCaption"))} />
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.cinemaDesc"))} />
       </div>
@@ -223,9 +229,7 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img6} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-right italic mt-1">
-            {t("biography.caption2")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption2"))} />
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.bookDesc"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.novelDesc"))} />
@@ -235,9 +239,7 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img7} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1">
-            {t("biography.writingCaption")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.writingCaption"))} />
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.inspiration"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.writingDesc1"))} />
@@ -246,16 +248,14 @@ const Biography = () => {
 
       {/* exit leterature */}
       <div className="mb-6">
-        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.exitTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.exitTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc1"))} />
       </div>
 
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img8} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-right italic mt-1">
-            {t("biography.caption3")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption3"))} />
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc3"))} />
@@ -263,7 +263,10 @@ const Biography = () => {
 
       {/* Nomad Black sheep */}
       <div className="mb-6">
-        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic flex items-center flex-wrap gap-3">
+          <span dangerouslySetInnerHTML={renderHTML(t("biography.NBSTitle"))} />
+          <img src={sheepSticker} className="inline-block align-middle w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
+        </h5>
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.NBSDesc3"))} />
@@ -271,7 +274,7 @@ const Biography = () => {
 
       {/* return Literature */}
       <div className="mb-6">
-        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.RLTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.RLTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.RLDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.RLDesc2"))} />
       </div>
@@ -304,12 +307,10 @@ const Biography = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <p className="text-center font-bold text-lg mt-2 text-[#0c331c]">
+          <p className="text-center font-bold text-lg mt-2 text-[#0c331c] italic">
             {slideNames[activeIndex]}
           </p>
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-center mt-1">
-            {t("biography.TattooCaption")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.TattooCaption"))} />
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.endSection"))} />
       </div>
@@ -318,7 +319,7 @@ const Biography = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
-            <h3 className="text-2xl font-bold text-[#0c331c] mb-4">
+            <h3 className="text-2xl font-bold text-[#0c331c] mb-4 italic">
               {t("biography.modalTitle")}
             </h3>
             <div className="text-gray-700 mb-6">
@@ -347,7 +348,7 @@ const Biography = () => {
 
       {/* desire for youth */}
       <div className="mb-6">
-        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.desireTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.desireDesc3"))} />
@@ -358,11 +359,9 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img9} alt="" />
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-center italic mt-1">
-            {t("biography.caption4")}
-          </p>
+          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption4"))} />
         </div>
-        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.loveTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.loveTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.loveDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.noraDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.noraDesc2"))} />

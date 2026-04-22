@@ -14,6 +14,8 @@ import podcast3EN from "../../assets/audio/Podcast anglais Funérarium.wav";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
 import rainbow from "../../assets/Home/rainbow.png";
+import typewriterSticker from "../../assets/typewriter_sticker.png";
+import quillSticker from "../../assets/quill_sticker.png";
 import LaMuse from "./Novel/LaMuse";
 
 const Novel = () => {
@@ -32,14 +34,18 @@ const Novel = () => {
   const Podcast3 = lang.startsWith("fr") ? podcast3FR : podcast3EN;
   return (
     <div className="my-20 relative">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase mb-10 relative z-10">
-        {t("books.novelTitle")}
-      </h2>
-      <img
-        src={rainbow}
-        alt=""
-        className="absolute -top-10 -left-10 w-32 md:w-48 opacity-40 -z-0 pointer-events-none"
-      />
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
+        <h2 className="relative inline-block font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase z-10 w-max">
+          {t("books.novelTitle")}
+          <img src={typewriterSticker} className="absolute -top-12 -left-12 md:-left-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-[15deg]" alt="" />
+          <img src={quillSticker} className="absolute -bottom-8 -right-12 md:-right-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-[25deg]" alt="" />
+        </h2>
+        <img
+          src={rainbow}
+          alt=""
+          className="w-12 h-12 md:w-20 md:h-20 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-60 pointer-events-none"
+        />
+      </div>
 
       <div className="flex gap-6 mb-10">
         <button
@@ -91,14 +97,14 @@ const Novel = () => {
       {/* LA 2003 */}
       {activeBook === 0 && (
         <div>
-          <div className="relative">
-            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+          <div className="flex items-center gap-4 mb-5">
+            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase relative z-10">
               {t("books.LLTitle")}
             </h4>
             <img
               src={rainbow}
               alt=""
-              className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+              className="w-10 h-10 md:w-14 md:h-14 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-50 pointer-events-none rotate-12"
             />
           </div>
           <div className="flex gap-5">
@@ -303,14 +309,14 @@ const Novel = () => {
       {activeBook === 1 && (
         <div>
           <div className=" ml-auto">
-            <div className="relative">
-              <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+            <div className="flex items-center gap-4 mb-5">
+              <h4 className="font-jost md:text-2xl lg:text-4xl uppercase relative z-10">
                 {t("books.LLTitle2")}
               </h4>
               <img
                 src={rainbow}
                 alt=""
-                className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+                className="w-10 h-10 md:w-14 md:h-14 mix-blend-multiply opacity-50 pointer-events-none -rotate-12"
               />
             </div>
 
@@ -533,14 +539,14 @@ const Novel = () => {
       {/* FR 2009 */}
       {activeBook === 2 && (
         <div>
-          <div className="relative">
-            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase mb-5 relative z-10">
+          <div className="flex items-center gap-4 mb-5">
+            <h4 className="font-jost md:text-2xl lg:text-4xl uppercase relative z-10">
               {t("books.fTitle")}
             </h4>
             <img
               src={rainbow}
               alt=""
-              className="absolute -top-6 -left-6 w-20 opacity-40 z-0 pointer-events-none"
+              className="w-10 h-10 md:w-14 md:h-14 mix-blend-multiply opacity-50 pointer-events-none rotate-[30deg]"
             />
           </div>
           <div className="flex gap-5 mx-auto items-center">

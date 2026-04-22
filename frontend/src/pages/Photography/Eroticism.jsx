@@ -33,6 +33,8 @@ import State5 from "../../assets/Eroticism/State5.jpg";
 import State6 from "../../assets/Eroticism/State6.jpg";
 import State7 from "../../assets/Eroticism/State7.jpg";
 import LazyLoadSection from "../../components/shared/LazyLoadSection";
+import rainbow from "../../assets/Home/rainbow.png";
+import photoCameraSticker from "../../assets/photo_camera_sticker.png";
 
 // Helper function to render a gallery section
 const ImageGallerySection = ({ title, images }) => (
@@ -127,17 +129,19 @@ const Eroticism = () => {
   return (
     <div className="my-10 px-4 md:px-8 max-w-7xl mx-auto">
       {/* Header Section */}
-      <header className="mb-16">
-        <h2 className="font-eb-garamond text-5xl md:text-7xl md:text-center text-primary mb-6">
+      <header className="mb-16 text-center">
+        <h2 className="relative inline-block font-eb-garamond text-5xl md:text-7xl text-primary mb-6">
           Érotisme
+          <img src={photoCameraSticker} className="absolute -top-10 -left-12 md:-left-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
         </h2>
         <p className="font-jost text-md md:text-xl md:text-center italic text-gray-600">
           “L’érotisme réside dans la possibilité d’un geste. Il appartient au
           domaine du rêve.” <b>Jean-François Somain</b>
         </p>
-        <p className="font-jost text-md md:text-xl md:text-center mt-3 italic text-gray-600">
+        <p className="font-jost text-md md:text-xl md:text-center mt-3 italic text-gray-600 relative">
           “L’érotisme, ce triomphe du rêve sur la nature, est le haut refuge de
           l’esprit de poésie.” <b>Emmanuelle Arsan</b>
+          <img src={rainbow} className="absolute -bottom-8 -right-4 w-12 h-12 md:w-20 md:h-20 mix-blend-multiply opacity-80 pointer-events-none rotate-[20deg]" alt="" />
         </p>
 
         <p className="font-jost md:text-xl lg:text-2xl mt-8 text-center text-gray-800 leading-relaxed">

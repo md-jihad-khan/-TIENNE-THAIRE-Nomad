@@ -3,6 +3,8 @@ import Casting from "../../assets/Books/book7.jpg";
 import { useEffect, useState } from "react";
 import i18next from "i18next";
 import rainbow from "../../assets/Home/rainbow.png";
+import typewriterSticker from "../../assets/typewriter_sticker.png";
+import quillSticker from "../../assets/quill_sticker.png";
 
 import podcast1FR from "../../assets/audio/Podcast français Casting.m4a";
 import podcast1EN from "../../assets/audio/Podcast anglais Casting.wav";
@@ -19,14 +21,18 @@ const Docufiction = () => {
   const Podcast1 = lang.startsWith("fr") ? podcast1FR : podcast1EN;
   return (
     <div className="my-20 relative">
-      <h2 className="font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase mb-10 relative z-10">
-        Docu-fiction
-      </h2>
-      <img
-        src={rainbow}
-        alt=""
-        className="absolute -top-10 -left-10 w-32 md:w-48 opacity-40 -z-0 pointer-events-none"
-      />
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
+        <h2 className="relative inline-block font-semibold font-eb-garamond text-3xl md:text-7xl text-primary uppercase z-10 w-max">
+          Docu-fiction
+          <img src={typewriterSticker} className="absolute -top-10 -left-12 md:-left-20 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
+          <img src={quillSticker} className="absolute -bottom-8 -right-12 md:-right-20 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+        </h2>
+        <img
+          src={rainbow}
+          alt=""
+          className="w-12 h-12 md:w-20 md:h-20 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-60 pointer-events-none"
+        />
+      </div>
       <div className="lg:w-3/4 ">
         <h4 className="font-jost  md:text-2xl lg:text-4xl uppercase mb-5">
           {" "}

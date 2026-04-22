@@ -75,6 +75,7 @@ const Navbar = () => {
     },
 
     { title: t("nav.nbs"), path: "/nomadblacksheep" },
+    { title: t("nav.cinema"), path: "/cinema" },
   ];
 
   return (
