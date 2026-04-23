@@ -16,7 +16,7 @@ import { IoClose } from "react-icons/io5";
 const Travel = () => {
   const { t } = useTranslation("global");
   const travelData = t("TravelData", { returnObjects: true }) || [];
-  
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalPhotos, setModalPhotos] = useState([]);
   const [initialSlide, setInitialSlide] = useState(0);
@@ -30,7 +30,7 @@ const Travel = () => {
     setCurrentFlag(flag);
     setIsModalOpen(true);
     document.body.style.overflow = "hidden"; // Prevent scrolling
-    
+
     // Hide navbar if present
     const navbar = document.querySelector(".fixed.w-full.z-\\[1001\\]");
     if (navbar) navbar.style.display = "none";
@@ -39,7 +39,7 @@ const Travel = () => {
   const closeModal = () => {
     setIsModalOpen(false);
     document.body.style.overflow = "auto";
-    
+
     // Show navbar again
     const navbar = document.querySelector(".fixed.w-full.z-\\[1001\\]");
     if (navbar) navbar.style.display = "block";
@@ -74,24 +74,38 @@ const Travel = () => {
     }
   };
 
+  // Helper for rendering HTML correctly
+  const renderHTML = (text) => {
+    if (!text) return { __html: "" };
+    const html = text
+      .replace(/<bold>/g, '<strong class="font-bold">')
+      .replace(/<\/bold>/g, "</strong>")
+      .replace(/<italic>/g, '<em class="italic">')
+      .replace(/<\/italic>/g, "</em>");
+    return { __html: html };
+  };
+
   return (
     <div className="my-10 mt-20 px-4 md:px-0">
       <div className="md:text-center mb-10">
         <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary">
-          Voyage
-          <img src={globeSticker} className="absolute -top-10 -right-12 md:-right-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+          {t("photographyTravel.title")}
+          <img
+            src={globeSticker}
+            className="absolute -top-10 -right-12 md:-right-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12"
+            alt=""
+          />
         </h2>
       </div>
-      <p className="font-jost text-md md:text-xl md:text-center mt-5 italic relative">
-        "Comme tout ce qui compte dans la vie, un beau voyage est une œuvre
-        d'art" <b>André Suarès in Le Voyage de Condottiere.</b>
-        <img src={rainbow} className="absolute -bottom-2 -left-4 w-12 h-12 md:w-20 md:h-20 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-70 pointer-events-none -rotate-12" alt="" />
-      </p>
+      <p
+        className="font-jost text-md md:text-xl md:text-center mt-5 italic relative"
+        dangerouslySetInnerHTML={renderHTML(t("photographyTravel.quote"))}
+      />
+
+
       <div className="flex gap-2 mt-10 items-center justify-center lg:w-10/12 mx-auto">
         <p className="font-jhost text-sm  md:text-lg mx-auto italic ">
-          J’aimerais épingler les pays visités. En attendant, je propose de
-          faire un recensement photographique, pays par pays, dans l’ordre
-          alphabétique
+          {t("photographyTravel.intro")}
         </p>
         <div>
           <img className="" src={img1} alt="" />
@@ -161,10 +175,10 @@ const Travel = () => {
 
             {/* Header Info - Simplified and Centered at top */}
             <div className="absolute top-10 left-1/2 -translate-x-1/2 z-[10005] pointer-events-none text-center w-full">
-               <h3 className="font-eb-garamond text-2xl md:text-4xl font-bold text-primary uppercase tracking-[0.2em] flex items-center justify-center gap-4">
-                 {currentCountry} 
-                 <span dangerouslySetInnerHTML={{ __html: renderFlag(currentFlag) }} className="w-8 h-8 md:w-10 md:h-10" />
-               </h3>
+              <h3 className="font-eb-garamond text-2xl md:text-4xl font-bold text-primary uppercase tracking-[0.2em] flex items-center justify-center gap-4">
+                {currentCountry}
+                <span dangerouslySetInnerHTML={{ __html: renderFlag(currentFlag) }} className="w-8 h-8 md:w-10 md:h-10" />
+              </h3>
             </div>
 
             {/* Gallery Wrapper - Accounting for Navbar Height (h-16) + breathing room */}
@@ -174,9 +188,9 @@ const Travel = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
-                pagination={{ 
+                pagination={{
                   clickable: true,
-                  dynamicBullets: true 
+                  dynamicBullets: true
                 }}
                 modules={[Navigation, Pagination]}
                 className="w-full h-full modal-swiper shadow-none"
@@ -192,11 +206,11 @@ const Travel = () => {
                           className="max-w-full max-h-full object-contain shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] rounded-sm"
                         />
                       </div>
-                      
+
                       {/* Caption - Now below the photo */}
                       <AnimatePresence>
                         {photo.caption && (
-                          <motion.div 
+                          <motion.div
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             className="w-full py-6 flex justify-center"

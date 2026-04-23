@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // --- Image Imports ---
 import Modern1 from "../../assets/Eroticism/ModernDesires1.jpg";
 import Modern2 from "../../assets/Eroticism/ModernDesires2.jpg";
@@ -62,14 +63,27 @@ const ImageGallerySection = ({ title, images }) => (
 );
 
 const Eroticism = () => {
+  const { t } = useTranslation("global");
+
+  // Helper for rendering HTML correctly
+  const renderHTML = (text) => {
+    if (!text) return { __html: "" };
+    const html = text
+      .replace(/<bold>/g, '<strong class="font-bold">')
+      .replace(/<\/bold>/g, "</strong>")
+      .replace(/<italic>/g, '<em class="italic">')
+      .replace(/<\/italic>/g, "</em>");
+    return { __html: html };
+  };
+
   // Grouping images based on their names (corresponding to the French phrases)
   const galleryData = [
     {
-      title: "DÉSIRS MODERNES", // Modern Desires
+      title: t("photographyEroticism.sections.modernDesires"),
       images: [{ src: Modern1 }, { src: Modern2 }, { src: Modern3 }],
     },
     {
-      title: "TATTOO SEXYNESS", // Tattoo
+      title: t("photographyEroticism.sections.tattoo"),
       images: [
         { src: Tattoo1 },
         { src: Tattoo2 },
@@ -80,15 +94,15 @@ const Eroticism = () => {
       ],
     },
     {
-      title: "L’ÉROTIQUE DU REGARD", // The Eroticism of the Gaze
+      title: t("photographyEroticism.sections.gaze"),
       images: [{ src: Gaze1 }, { src: Gaze2 }, { src: Gaze3 }, { src: Gaze4 }],
     },
     {
-      title: "CHATTES", // Female Cats / Slang
+      title: t("photographyEroticism.sections.cats"),
       images: [{ src: Chattest1 }, { src: Chattest2 }],
     },
     {
-      title: "JAMBES EN L’AIR", // Legs in the Air
+      title: t("photographyEroticism.sections.legs"),
       images: [
         { src: Legs1, credit: " © Émile Savitry" },
         { src: Legs2 },
@@ -96,14 +110,14 @@ const Eroticism = () => {
       ],
     },
     {
-      title: "BARS", // Bars
+      title: t("photographyEroticism.sections.bars"),
       images: [
         { src: Bars1, credit: "© Vee Speers" },
         { src: Bars2, credit: "@ Ruben Jacob Fees" },
       ],
     },
     {
-      title: "CERTAINES PENSÉES À PROPOS DE L’AMOUR", // Thoughts about Love
+      title: t("photographyEroticism.sections.loveThoughts"),
       images: [
         { src: Love1 },
         { src: Love2 },
@@ -113,7 +127,7 @@ const Eroticism = () => {
       ],
     },
     {
-      title: "L’ÉTAT DE GRÂCE", // The State of Grace
+      title: t("photographyEroticism.sections.grace"),
       images: [
         { src: State1 },
         { src: State2, credit: "Credit: Divine Art" },
@@ -131,25 +145,32 @@ const Eroticism = () => {
       {/* Header Section */}
       <header className="mb-16 text-center">
         <h2 className="relative inline-block font-eb-garamond text-5xl md:text-7xl text-primary mb-6">
-          Érotisme
-          <img src={photoCameraSticker} className="absolute -top-10 -left-12 md:-left-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12" alt="" />
+          {t("photographyEroticism.title")}
+          <img
+            src={photoCameraSticker}
+            className="absolute -top-10 -left-12 md:-left-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12"
+            alt=""
+          />
         </h2>
-        <p className="font-jost text-md md:text-xl md:text-center italic text-gray-600">
-          “L’érotisme réside dans la possibilité d’un geste. Il appartient au
-          domaine du rêve.” <b>Jean-François Somain</b>
-        </p>
+        <p
+          className="font-jost text-md md:text-xl md:text-center italic text-gray-600"
+          dangerouslySetInnerHTML={renderHTML(t("photographyEroticism.quote1"))}
+        />
         <p className="font-jost text-md md:text-xl md:text-center mt-3 italic text-gray-600 relative">
-          “L’érotisme, ce triomphe du rêve sur la nature, est le haut refuge de
-          l’esprit de poésie.” <b>Emmanuelle Arsan</b>
-          <img src={rainbow} className="absolute -bottom-8 -right-4 w-12 h-12 md:w-20 md:h-20 mix-blend-multiply opacity-80 pointer-events-none rotate-[20deg]" alt="" />
+          <span
+            dangerouslySetInnerHTML={renderHTML(
+              t("photographyEroticism.quote2")
+            )}
+          />
+          <img
+            src={rainbow}
+            className="absolute -bottom-8 -right-4 w-12 h-12 md:w-20 md:h-20 mix-blend-multiply opacity-80 pointer-events-none rotate-[20deg]"
+            alt=""
+          />
         </p>
 
         <p className="font-jost md:text-xl lg:text-2xl mt-8 text-center text-gray-800 leading-relaxed">
-          Autant, je hais la pornographie, reflet répugnant de notre société,
-          grossière et vulgaire, autant je vénère l’érotisme, sa délicatesse,
-          son invitation à la fête de la vie. Puisque d’admirer la beauté,
-          jamais on ne peut se lasser, je vous présente quelques pièces
-          maîtresses de ma collection privée.
+          {t("photographyEroticism.intro")}
         </p>
       </header>
 
