@@ -14,17 +14,10 @@ const Cinema = () => {
   }, []);
 
   const [activeTab, setActiveTab] = useState(categories[0] || "");
-  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredMovies = useMemo(() => {
-    return cinemaData.filter((movie) => {
-      const matchesTab = movie.category === activeTab;
-      const matchesSearch =
-        movie.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (movie.director && movie.director.toLowerCase().includes(searchQuery.toLowerCase()));
-      return matchesTab && matchesSearch;
-    });
-  }, [activeTab, searchQuery]);
+    return cinemaData.filter((movie) => movie.category === activeTab);
+  }, [activeTab]);
 
   // Function to decode HTML entities
   const decodeHTML = (html) => {
@@ -59,10 +52,10 @@ const Cinema = () => {
       </header>
 
       {/* Tabs and Search Section */}
-      <div className="sticky top-16 z-20 bg-white/80 backdrop-blur-md py-6 mb-12 border-b border-gray-100 px-2 md:px-0">
+      <div className="sticky top-16 z-20 bg-white/80 backdrop-blur-md py-6 mb-8 border-b border-gray-100 px-2 md:px-0">
         {/* Tabs - One Line */}
-        <div className="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-200 pb-4 mb-4">
-          <div className="flex gap-4 md:gap-6 min-w-max px-4">
+        <div className="w-full pb-4">
+          <div className="flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start px-4">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -75,24 +68,6 @@ const Cinema = () => {
                 {t(`cinema.categories.${cat}`, cat)}
               </button>
             ))}
-          </div>
-        </div>
-
-        {/* Search Bar - Below Tabs */}
-        <div className="flex justify-center md:justify-start">
-          <div className="relative w-full max-w-md group">
-            <input
-              type="text"
-              placeholder={t("cinema.searchPlaceholder")}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-5 pr-12 py-3 rounded-full border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none font-jost transition-all shadow-sm group-hover:shadow-md bg-white"
-            />
-            <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
           </div>
         </div>
       </div>

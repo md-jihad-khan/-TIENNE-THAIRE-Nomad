@@ -86,25 +86,25 @@ const Travel = () => {
   };
 
   return (
-    <div className="my-10 mt-20 px-4 md:px-0">
-      <div className="md:text-center mb-10">
+    <div className="my-4 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
+      <div className="md:text-center">
         <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary">
           {t("photographyTravel.title")}
           <img
             src={globeSticker}
-            className="absolute -top-10 -right-12 md:-right-16 w-16 h-16 md:w-20 md:h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12"
+            className="absolute top-1/2 -translate-y-1/2 -right-16 md:-right-24 w-16 h-16 md:w-24 md:h-24 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12"
             alt=""
           />
         </h2>
       </div>
       <p
-        className="font-jost text-md md:text-xl md:text-center mt-5 italic relative"
+        className="font-jost text-md md:text-xl md:text-center italic relative"
         dangerouslySetInnerHTML={renderHTML(t("photographyTravel.quote"))}
       />
 
 
-      <div className="flex gap-2 mt-10 items-center justify-center lg:w-10/12 mx-auto">
-        <p className="font-jhost text-sm  md:text-lg mx-auto italic ">
+      <div className="flex flex-col md:flex-row gap-6 items-center justify-center lg:w-10/12 mx-auto">
+        <p className="font-jost text-sm md:text-lg italic">
           {t("photographyTravel.intro")}
         </p>
         <div>
@@ -113,11 +113,11 @@ const Travel = () => {
       </div>
 
       {/* travel carousel */}
-      <div className="grid grid-cols-4 gap-5 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {travelData.map((country, index) => (
-          <LazyLoadSection key={index} minHeight="300px">
-            <div className="mb-10">
-              <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+          <LazyLoadSection key={index} minHeight="200px">
+            <div>
+              <h2 className="text-lg font-semibold mb-2 flex items-center gap-2">
                 {country.country} <span dangerouslySetInnerHTML={{ __html: renderFlag(country.flag) }} />
               </h2>
 
@@ -141,11 +141,13 @@ const Travel = () => {
                       />
 
                       {/* Caption below image */}
-                      {photo.caption && (
-                        <p className="mt-3 text-center text-gray-700 text-[9px] font-medium ">
-                          {photo.caption}
-                        </p>
-                      )}
+                      <div className="h-5 md:h-6 overflow-hidden">
+                        {photo.caption && (
+                          <p className="text-left text-gray-700 text-[9px] md:text-[10px] font-medium italic opacity-70 line-clamp-1">
+                            {photo.caption}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}

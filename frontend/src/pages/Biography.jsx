@@ -196,11 +196,13 @@ const Biography = () => {
       {/* Home */}
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
-          <img className="w-full mx-auto" src={img4} alt="" />
-          <p className="font-jost md:text-lg lg:text-xl text-left font-bold mt-2 italic">
-            {t("biography.homeTitle")}
-          </p>
-          <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.homeCaption"))} />
+          <div className="flex flex-col w-fit max-w-full">
+            <img className="rounded-2xl" src={img4} alt="" />
+            <p className="font-jost md:text-lg lg:text-xl text-left font-bold mt-2 italic">
+              {t("biography.homeTitle")}
+            </p>
+            <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.homeCaption"))} />
+          </div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle3"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.adultDescription3"))} />
@@ -209,7 +211,10 @@ const Biography = () => {
 
       {/* litterature */}
       <div className="mb-6">
-        <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureTitle"))} />
+        <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic flex items-center flex-wrap gap-3">
+          <span dangerouslySetInnerHTML={renderHTML(t("biography.litteratureTitle"))} />
+          <img src={typewriterSticker} className="inline-block align-middle w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none" alt="" />
+        </h5>
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc1"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-2" dangerouslySetInnerHTML={renderHTML(t("biography.litteratureDesc3"))} />
