@@ -115,7 +115,7 @@ const Biography = () => {
   };
 
   return (
-    <div className="my-6 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
+    <div className="my-10 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
       <div className="md:text-center mb-10">
         <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary">
           {t("nav.biography")}
@@ -136,7 +136,7 @@ const Biography = () => {
           </div>
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic mt-1 text-left" dangerouslySetInnerHTML={renderHTML(t("biography.caption1"))} />
           <div className="relative mt-5">
-            <div className="bg-[#22c55e] ml-auto w-full h-2 rounded-full"></div>
+            <div className="bg-[#0E7D3A] ml-auto w-full h-2 rounded-full"></div>
             <img
               src={sheepSticker}
               className="absolute -top-10 -left-2 w-16 h-16 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -scale-x-100"

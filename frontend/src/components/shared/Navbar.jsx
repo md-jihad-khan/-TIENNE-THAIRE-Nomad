@@ -75,7 +75,39 @@ const Navbar = () => {
     },
 
     { title: t("nav.nbs"), path: "/nomadblacksheep" },
-    { title: t("nav.cinema"), path: "/cinema" },
+    {
+      title: t("nav.cinema"),
+      path: "/cinema",
+      subLinks: [
+        {
+          title: t("cinema.categories.Cinéma Muet"),
+          path: "/cinema/cinema-muet",
+        },
+        {
+          title: t("cinema.categories.Cinéma Américain"),
+          path: "/cinema/cinema-americain",
+        },
+        {
+          title: t("cinema.categories.Canada anglophone"),
+          path: "/cinema/canada-anglophone",
+        },
+        {
+          title: t("cinema.categories.Canada francophone"),
+          path: "/cinema/canada-francophone",
+        },
+        {
+          title: t("cinema.categories.Cinéma français"),
+          path: "/cinema/cinema-francais",
+        },
+        {
+          title: t("cinema.categories.Cinéma latino-américain"),
+          path: "/cinema/cinema-latino-americain",
+        },
+        { title: t("cinema.categories.Asie"), path: "/cinema/asie" },
+        { title: t("cinema.categories.Océanie"), path: "/cinema/oceanie" },
+        { title: t("cinema.categories.ANIMATION"), path: "/cinema/animation" },
+      ],
+    },
   ];
 
   return (

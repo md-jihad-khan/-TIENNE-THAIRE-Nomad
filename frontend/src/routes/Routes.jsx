@@ -100,6 +100,10 @@ export const router = createBrowserRouter([
         path: "/cinema",
         element: <Cinema />,
       },
+      {
+        path: "/cinema/:category",
+        element: <Cinema />,
+      },
     ],
   },
 ]);

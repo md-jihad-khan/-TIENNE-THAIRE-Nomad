@@ -21,6 +21,8 @@
   "home": {
     "heroDescription": "Author, Writer, Photographer, Videographer, Artistic Manager, Film Critic, Traveler…",
     "heroCaption": "You have to live as many experiences as possible. Getting a tattoo is definitely one of them.",
+    "quoteAragon": "“By the time you learn to live, it's already too late,” <b>Louis Aragon</b>",
+    "quoteEtienne": "“In the preceding quote, replace the verb ‘to live’ with write, photograph, film, or any other verb illustrating your passions, and the same truth will hit you back in the face, like a boomerang.”, <b>Étienne Éthaire</b>, always in search of the filter of immortality.",
     "biographyTitle": "Biography",
     "biographyDescription": "\"Writer of intimacy.\" Like a web marketing slogan, this concise phrase sums up the impulse behind a “narrative I” writing — an exploration of the soul and the body. Behind forms that are both beautiful and rebellious, liberated from both academies and laboratories, my novels dig underground tunnels into feminine psychology. I seek a fragment of truth, nothing more. My characters are not monolithic blocks. And neither am I…",
     "carouselCaption": "During a literary debate with Christine Aventin and Pascal Leclercq.",
@@ -130,7 +132,7 @@
   },
   "cinema": {
     "title": "My Cinema Library",
-    "quote": "\"Cinema is the modern writing whose ink is light.\" — Jean Cocteau",
+    "quote": "“Cinema is the modern writing whose ink is light.”, <bold>Jean Cocteau</bold>",
     "searchPlaceholder": "Search for a movie, director...",
     "noMovies": "No movies found for this search.",
     "footer": "© {{year}} – Nomad Black Sheep Cinema Archive",

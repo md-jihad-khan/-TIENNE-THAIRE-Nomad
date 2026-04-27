@@ -86,7 +86,7 @@ const Travel = () => {
   };
 
   return (
-    <div className="my-4 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
+    <div className="my-10 space-y-4 px-4 md:px-0 max-w-6xl mx-auto">
       <div className="md:text-center">
         <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary">
           {t("photographyTravel.title")}

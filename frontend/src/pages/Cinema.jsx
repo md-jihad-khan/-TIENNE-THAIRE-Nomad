@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import cinemaData from "../cinema_data.json";
 import { motion, AnimatePresence } from "motion/react";
 import blackSheepSticker from "../assets/black_sheep_sticker.png";
@@ -6,18 +6,62 @@ import rainbowSticker from "../assets/rainbow_sticker.png";
 import filmCameraSticker from "../assets/film_camera_sticker.png";
 import filmReelSticker from "../assets/film_reel_sticker.png";
 import { useTranslation } from "react-i18next";
+import { useParams, useNavigate, Link } from "react-router";
+
+const categorySlugMap = {
+  "cinema-muet": "Cinéma Muet",
+  "cinema-americain": "Cinéma Américain",
+  "canada-anglophone": "Canada anglophone",
+  "canada-francophone": "Canada francophone",
+  "cinema-francais": "Cinéma français",
+  "cinema-latino-americain": "Cinéma latino-américain",
+  "asie": "Asie",
+  "oceanie": "Océanie",
+  "animation": "ANIMATION",
+};
+
+const slugToCategory = (slug) => categorySlugMap[slug] || null;
+const categoryToSlug = (category) =>
+  Object.keys(categorySlugMap).find((key) => categorySlugMap[key] === category);
 
 const Cinema = () => {
   const { t } = useTranslation("global");
+  const { category: categorySlug } = useParams();
+  const navigate = useNavigate();
+
   const categories = useMemo(() => {
     return [...new Set(cinemaData.map((m) => m.category))].filter(Boolean);
   }, []);
 
-  const [activeTab, setActiveTab] = useState(categories[0] || "");
+  const activeTab = useMemo(() => {
+    return slugToCategory(categorySlug) || categories[0] || "";
+  }, [categorySlug, categories]);
+
+  useEffect(() => {
+    if (!categorySlug && categories.length > 0) {
+      const firstSlug = categoryToSlug(categories[0]);
+      if (firstSlug) {
+        navigate(`/cinema/${firstSlug}`, { replace: true });
+      }
+    }
+  }, [categorySlug, categories, navigate]);
 
   const filteredMovies = useMemo(() => {
     return cinemaData.filter((movie) => movie.category === activeTab);
   }, [activeTab]);
+
+  // Helper for rendering HTML correctly
+  const renderHTML = (text) => {
+    if (!text) return { __html: "" };
+    const html = text
+      .replace(/<bold>/g, '<strong class="font-bold italic">')
+      .replace(/<\/bold>/g, "</strong>")
+      .replace(/<b>/g, '<strong class="font-bold italic">')
+      .replace(/<\/b>/g, "</strong>")
+      .replace(/<italic>/g, '<em class="italic">')
+      .replace(/<\/italic>/g, "</em>");
+    return { __html: html };
+  };
 
   // Function to decode HTML entities
   const decodeHTML = (html) => {
@@ -28,48 +72,31 @@ const Cinema = () => {
 
   return (
     <div className="min-h-screen py-6 px-4 md:px-10 bg-white">
-      <header className="mb-6 text-center md:text-left border-b border-gray-100 pb-6">
-        <div className="flex flex-col md:flex-row items-center md:items-end gap-4 mb-4">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="relative inline-block font-eb-garamond text-4xl md:text-6xl text-primary tracking-tight"
-          >
-            {t("cinema.title")}
-            <img src={filmCameraSticker} className="absolute -top-4 -right-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12" alt="" />
+      <div className="md:text-center mb-10">
+        <h2 className="relative inline-block font-eb-garamond text-3xl md:text-6xl text-primary ">
+          {t("cinema.title")}
+          <img
+            src={filmReelSticker}
+            className="absolute -top-6 -left-18 md:-left-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none -rotate-12"
+            alt=""
+          />
+          <img
+            src={filmCameraSticker}
+            className="absolute -bottom-8 -right-18 md:-right-20 w-20 h-20 mix-blend-multiply contrast-125 brightness-[1.15] opacity-90 pointer-events-none rotate-12"
+            alt=""
+          />
+        </h2>
+      </div>
 
-          </motion.h1>
-
-        </div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="font-jost text-lg md:text-xl text-gray-400 italic max-w-3xl leading-relaxed"
-        >
-          {t("cinema.quote")}
-        </motion.p>
-      </header>
-
-      {/* Tabs and Search Section */}
-      <div className="sticky top-16 z-20 bg-white/80 backdrop-blur-md py-6 mb-8 border-b border-gray-100 px-2 md:px-0">
-        {/* Tabs - One Line */}
-        <div className="w-full pb-4">
-          <div className="flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start px-4">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveTab(cat)}
-                className={`px-5 py-2 rounded-full font-jost text-sm font-medium transition-all duration-300 ${activeTab === cat
-                  ? "bg-primary text-white shadow-lg scale-105"
-                  : "bg-gray-50 text-gray-400 hover:bg-gray-100 border border-gray-100"
-                  }`}
-              >
-                {t(`cinema.categories.${cat}`, cat)}
-              </button>
-            ))}
-          </div>
-        </div>
+      <p
+        className="font-jost text-md md:text-xl md:text-center mt-2 italic mb-10"
+        dangerouslySetInnerHTML={renderHTML(t("cinema.quote"))}
+      />
+      <div className="text-center mb-12">
+        <h3 className="font-eb-garamond text-2xl md:text-4xl text-primary ">
+          {t(`cinema.categories.${activeTab}`, activeTab)}
+        </h3>
+        <div className="w-24 h-1 bg-[#0E7D3A] mx-auto mt-4 rounded-full "></div>
       </div>
 
       {/* Movies Grid */}
@@ -161,11 +188,6 @@ const Cinema = () => {
         </div>
       )}
 
-      <footer className="mt-20 pt-10 border-t border-gray-100 text-center">
-        <p className="font-jost text-sm text-gray-400">
-          {t("cinema.footer", { year: new Date().getFullYear() })}
-        </p>
-      </footer>
     </div>
   );
 };

@@ -16,6 +16,19 @@ import { FaArrowUpLong } from "react-icons/fa6";
 const images = [img1, img2];
 const Hero = () => {
   const { t } = useTranslation("global");
+
+  const renderHTML = (text) => {
+    if (!text) return { __html: "" };
+    const html = text
+      .replace(/<bold>/g, '<strong class="font-bold italic">')
+      .replace(/<\/bold>/g, "</strong>")
+      .replace(/<b>/g, '<strong class="font-bold italic">')
+      .replace(/<\/b>/g, "</strong>")
+      .replace(/<italic>/g, '<em class="italic">')
+      .replace(/<\/italic>/g, "</em>");
+    return { __html: html };
+  };
+
   return (
     <section className=" mt-6">
       <div className="relative md:text-center">
@@ -40,16 +53,14 @@ const Hero = () => {
         </Link>
 
       </div>
-      <p className="font-jost text-xl md:text-xl md:text-center mt-6 italic">
-        “Le temps d’apprendre à vivre, il est déjà trop tard”,{" "}
-        <b>Louis Aragon</b>
-      </p>
-      <p className="font-jost  md:text-center md:text-xl lg:text-xl my-4 italic mb-6 ">
-        “Dans la citation précédente, remplacez le verbe “vivre” par écrire,
-        photographier, filmer, ou par tout autre verbe illustrant vos passions,
-        et la même vérité vous reviendra à la gueule, comme un boomerang.”,
-        <b>Étienne Éthaire</b>, toujours en quête du filtre de l’immortalité.
-      </p>
+      <p
+        className="font-jost text-xl md:text-xl md:text-center mt-6 italic"
+        dangerouslySetInnerHTML={renderHTML(t("home.quoteAragon"))}
+      />
+      <p
+        className="font-jost  md:text-center md:text-xl lg:text-xl my-4 italic mb-6 "
+        dangerouslySetInnerHTML={renderHTML(t("home.quoteEtienne"))}
+      />
 
       <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center ">
         <h4 className="font-jost  ml-auto md:text-xl lg:text-2xl md:w-1/2 ">
