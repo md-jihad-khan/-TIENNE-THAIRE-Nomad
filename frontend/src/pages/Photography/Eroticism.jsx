@@ -153,10 +153,10 @@ const Eroticism = () => {
           />
         </h2>
         <p
-          className="font-jost text-md md:text-xl md:text-center italic text-gray-600"
+          className="font-jost text-md md:text-xl md:text-center italic"
           dangerouslySetInnerHTML={renderHTML(t("photographyEroticism.quote1"))}
         />
-        <p className="font-jost text-md md:text-xl md:text-center mt-3 italic text-gray-600 relative">
+        <p className="font-jost text-md md:text-xl md:text-center mt-3 italic relative">
           <span
             dangerouslySetInnerHTML={renderHTML(
               t("photographyEroticism.quote2")
@@ -169,7 +169,7 @@ const Eroticism = () => {
           />
         </p>
 
-        <p className="font-jost md:text-xl lg:text-2xl mt-8 text-center text-gray-800 leading-relaxed">
+        <p className="font-jost md:text-xl lg:text-2xl mt-8 text-center leading-relaxed">
           {t("photographyEroticism.intro")}
         </p>
       </header>

@@ -92,6 +92,29 @@ const Cinema = () => {
         className="font-jost text-md md:text-xl md:text-center mt-2 italic mb-10"
         dangerouslySetInnerHTML={renderHTML(t("cinema.quote"))}
       />
+      {/* Tabs Section */}
+      <div className="sticky top-16 z-20 bg-white/80 backdrop-blur-md py-4 mb-8 border-b border-gray-100 px-2 md:px-0">
+        <div className="w-full">
+          <div className="flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start px-4">
+            {categories.map((cat) => {
+              const slug = categoryToSlug(cat);
+              return (
+                <button
+                  key={cat}
+                  onClick={() => slug && navigate(`/cinema/${slug}`)}
+                  className={`px-5 py-2 rounded-full font-jost text-sm font-medium transition-all duration-300 ${activeTab === cat
+                    ? "bg-primary text-white shadow-lg scale-105"
+                    : "bg-gray-50 text-gray-400 hover:bg-gray-100 border border-gray-100"
+                    }`}
+                >
+                  {t(`cinema.categories.${cat}`, cat)}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       <div className="text-center mb-12">
         <h3 className="font-eb-garamond text-2xl md:text-4xl text-primary ">
           {t(`cinema.categories.${activeTab}`, activeTab)}
@@ -188,6 +211,11 @@ const Cinema = () => {
         </div>
       )}
 
+      <footer className="mt-20 pt-10 border-t border-gray-100 text-center">
+        <p className="font-jost text-sm text-gray-400">
+          {t("cinema.footer", { year: new Date().getFullYear() })}
+        </p>
+      </footer>
     </div>
   );
 };

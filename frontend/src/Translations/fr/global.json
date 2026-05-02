@@ -12,7 +12,8 @@
     "photography_sub": {
       "introduction": "Introduction",
       "travel": "Voyage",
-      "eroticism": "Érotisme"
+      "eroticism": "Érotisme",
+      "portraits": "Portraits"
     },
     "nbs": "Nomad Black Sheep",
     "cinema": "Filmothèque"
@@ -112,7 +113,7 @@
     "desireDesc4": "Ces goûts renouvelés, tendance chill music, se retrouvent sur ma chaîne Youtube qui, sans le faire exprès, a pris de l’ampleur au point que je ne crée plus les vidéos moi-même! Désormais, je délègue à des monteurs plus doués que moi, meilleurs techniciens. Un rôle de manager artistique me convient mieux. Ainsi Nomad Black Sheep devient une maison de production qui organise des tournages et peaufine même son branding en créant des vêtements.",
     "loveTitle": "Le pur amour",
     "loveDesc1": "Être businessman, comme être artiste, n’a de toute façon aucun autre intérêt que la recherche éphémère du plaisir. Sinon, ce n’est que vanité… En revanche, ce qui s’oppose à la vanité, c’est un événement de janvier 2023… Nora est entrée dans ma vie de misanthrope. Elle est la petite chienne que j’ai toujours voulu avoir, celle qui forme avec moi le parfait binôme, et qui m’oblige à des responsabilités inédites. Et avec Christina, que je ne qualifierais plus de muse mais plutôt d’éternelle complice, nous formons une meute. Nous voilà désormais unis et réunis par ce qu’il y a de plus pur, de plus respectueux, de plus loyal: l’amour d’un chien.",
-    "caption4": "Nora: beauté, intelligence et gentillesse réunis dans un seul être. Les chiens devraient diriger le monde, pas les hommes!",
+    "caption4": "Intelligence et gentillesse réunis dans un seul être. Les chiens devraient diriger le monde, pas les hommes!",
     "noraDesc1": "Un dernier mot, en conclusion. Pour ceux qui recherchent une biographie moins subjective et moins émotionnelle, ils peuvent éventuellement se référer à une page Wikipedia ou à l’ultra-compétence d’une intelligence artificielle.",
     "noraDesc2": "Je ne confirme ni n’infirme ce qui peut y être écrit, en fait, je ne le sais pas, je n’ai jamais osé lire. Je m’en tiens à cette biographie-ci que je compléterai au fur et à mesure, le plus longtemps, vraiment le plus longtemps possible. Et quand je n’aurai plus rien à espérer, il y aura in fine un ultime espoir, celui de mourir par suicide. Date prévue, qui sait?, à tenir secrète, comme le jour de naissance.",
     "modalTitle": "⚠️ Attention : Photo de nu à suivre.",
@@ -120,6 +121,7 @@
     "modalConsent": "Cliquez uniquement si vous avez 18 ans ou plus.",
     "modalYes": "Oui, montre-moi",
     "modalNo": "Non, garde-moi ici",
+    "nudeWarning": "la photo suivante représente un nu intégral afin de montrer le corps tatoué en (presque) entier. bien que cette image n’ait rien de scandaleux, nous avertissons notre public qui aurait moins de 18 ans ou qui ne consentirait pas à la nudité qu’il peut arrêter le diaporama ici.",
     "slides": {
       "rightArm": "Bras droit",
       "leftArm": "Bras gauche",
@@ -339,18 +341,18 @@
     "FDRInterview10": "À égalité avec la rock attitude. Sans aucun doute! L’éducation de Patti Smith a fait d’elle une “intellectuelle américaine” et quand elle a découvert Rimbaud, puis la scène underground du New York des années 70, elle a mixé tous ses éléments pour élaborer des textes inventifs, lyriques, dévorés par une rage intérieure et un appétit de vivre. Patti Smith peut s’écouter. Patti Smith peut se lire. Elle est présente corps et âme sur les deux versants de l’art : musique et littérature."
   },
   "cinema": {
-    "title": "Ma Bibliothèque Cinéma",
+    "title": "Ma Filmothèque",
     "quote": "“Le cinéma, c’est l’écriture moderne dont l’encre est la lumière.”, <bold>Jean Cocteau</bold>",
     "searchPlaceholder": "Rechercher un film, réalisateur...",
     "noMovies": "Aucun film trouvé pour cette recherche.",
-    "footer": "© {{year}} – Nomad Black Sheep Cinema Archive",
+    "footer": "© {{year}} – Nomad Black Sheep Film Archive",
     "categories": {
-      "Cinéma Muet": "Cinéma Muet",
-      "Cinéma Américain": "Cinéma Américain",
+      "Cinéma Muet": "Muet",
+      "Cinéma Américain": "Américain",
       "Canada anglophone": "Canada anglophone",
       "Canada francophone": "Canada francophone",
-      "Cinéma français": "Cinéma français",
-      "Cinéma latino-américain": "Cinéma latino-américain",
+      "Cinéma français": "Français",
+      "Cinéma latino-américain": "Latino-américain",
       "Asie": "Asie",
       "Océanie": "Océanie",
       "ANIMATION": "ANIMATION"
@@ -373,7 +375,8 @@
     "p8": "Ensuite, un second objectif dépasse mon ambition personnelle et rejoint celle d’une collectivité d’artistes désormais regroupés sous le label Nomad Black Sheep. Il s’agit d’un objectif sociétal qui représente des valeurs et illustre des combats de plus en plus nécessaires dans une société où les frontières, les nationalismes, les revendications identitaires et les abus de pouvoir font davantage que nous effrayer.",
     "p9": "Que ce soit clair: Nomad Black Sheep ne fait pas de politique. Ni de droite, ni de gauche, un mouton noir déteste autant les fascismes, les communismes, les intégrismes, tous les autoritarismes volontairement cités ici au pluriel. Il ne marche jamais au pas, il ne souscrit à aucune idéologie. Il traverse le monde, à sa guise et à son rythme, en luttant pour toutes les libertés d’expression, pour l’égalité des genres et pour un art débarrassé des volontés de censure qui sévissent au détour de ses vertes prairies..",
     "caption3": "Nous vivons dans une société de plus en plus normée, où il faut lisser toutes les aspérités, tout ce qui dépasse. Nous faisons face à la bien-pensance et au politiquement correct. Nous faisons face au manque de gentillesse, au manque de solidarité, au manque de générosité. À ces constats terrifiants, nous opposons ce “Fuck normality” comme un slogan amusant et iconoclaste.",
-    "p10": "Il y a des dizaines de façons d’être un mouton noir. Si l’état d’esprit affiché sur cette page vous touche, si “liberté”, “tolérance” et “générosité” figurent parmi vos mots préférés du dictionnaire, alors, nous pouvons travailler ensemble et construire des passerelles. De notre côté, notre promesse sera de maintenir un standard de qualité professionnelle et de pratiquer des prix accessibles. À vous de jouer pour le début d’une collaboration."
+    "p10": "Il y a des dizaines de façons d’être un mouton noir. Si l’état d’esprit affiché sur cette page vous touche, si “liberté”, “tolérance” et “générosité” figurent parmi vos mots préférés du dictionnaire, alors, nous pouvons travailler ensemble et construire des passerelles. De notre côté, notre promesse sera de maintenir un standard de qualité professionnelle et de pratiquer des prix accessibles. À vous de jouer pour le début d’une collaboration.",
+    "filmLink": "Film"
   },
   "photographyEroticism": {
     "title": "Érotisme",
@@ -390,6 +393,11 @@
       "loveThoughts": "CERTAINES PENSÉES À PROPOS DE L’AMOUR",
       "grace": "L’ÉTAT DE GRÂCE"
     }
+  },
+  "photographyPortraits": {
+    "title": "Portraits",
+    "quote1": "\u201cUn portrait n\u2019est pas une ressemblance. Dès qu\u2019une émotion ou un fait est transformé en photographie, ce n\u2019est plus un fait mais une opinion.\u201d <bold>Richard Avedon</bold>",
+    "quote2": "\u201cChaque visage raconte une histoire qu\u2019aucun mot ne peut pleinement exprimer.\u201d <bold>Steve McCurry</bold>"
   },
   "photographyTravel": {
     "title": "Voyage",

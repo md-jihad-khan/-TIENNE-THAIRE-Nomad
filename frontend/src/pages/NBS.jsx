@@ -15,6 +15,8 @@ import "swiper/css/effect-fade";
 
 import { Autoplay, EffectFade } from "swiper/modules";
 import rainbow from "../assets/Home/rainbow.png";
+import { Link } from "react-router";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const images = [img4, img3];
 
@@ -67,7 +69,12 @@ const NBS = () => {
       {/* Part 1 */}
       <div className="clearfix mb-6">
         <div className="float-right w-1/2 md:w-1/3 lg:w-1/4 ml-6 mb-4 mt-2">
-          <div className="aspect-square">
+          <div className="aspect-square relative">
+            <div className="absolute -right-14 top-1/2 -translate-y-1/2 -rotate-90 whitespace-nowrap">
+              <p className="font-jost text-[8px] md:text-[10px] opacity-40 hover:opacity-100 hover:text-xs transition-all duration-300 text-green-900">
+                © Ana Serafim
+              </p>
+            </div>
             <Swiper
               spaceBetween={30}
               effect={"fade"}
@@ -110,11 +117,6 @@ const NBS = () => {
       <div className="clearfix mb-6 relative">
         <p className="font-jost md:text-xl lg:text-2xl mb-5">
           {t("nbsPage.p3")}
-          <img
-            src={rainbow}
-            className="inline-block align-middle ml-4 w-12 h-12 md:w-16 md:h-16 mix-blend-multiply contrast-[1.1] brightness-[1.1] opacity-80 pointer-events-none -rotate-12"
-            alt=""
-          />
         </p>
         <p className="font-jost md:text-xl lg:text-2xl mb-5">
           {t("nbsPage.p4")}
@@ -172,6 +174,21 @@ const NBS = () => {
         <p className="font-jost md:text-xl lg:text-2xl mb-5">
           {t("nbsPage.p10")}
         </p>
+      </div>
+
+      {/* Film Link CTA */}
+      <div className="relative mt-10 mb-10">
+        <Link to={"/cinema"} className="relative w-auto group">
+          <FaArrowUpLong className="ml-8 rotate-45 text-gray-200 group-hover:text-primary transition-colors duration-300" />
+          <p className="z-10 text-gray-200 text-xs ml-6 font-jost absolute lg:flex w-20 left-0 group-hover:text-primary transition-colors duration-300">
+            {t("nbsPage.filmLink")}
+          </p>
+          <img
+            className="absolute hidden lg:flex w-20 left-0 -bottom-8 -z-10"
+            src={rainbow}
+            alt=""
+          />
+        </Link>
       </div>
     </div>
   );

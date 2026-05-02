@@ -12,7 +12,8 @@
     "photography_sub": {
       "introduction": "Introduction",
       "travel": "Travel",
-      "eroticism": "Eroticism"
+      "eroticism": "Eroticism",
+      "portraits": "Portraits"
     },
     "nbs": "Nomad Black Sheep",
     "cinema": "Film Library"
@@ -113,14 +114,15 @@
     "desireDesc4": "These renewed tastes, chill music trend, are found on my Youtube channel which, without doing it on purpose, has gained momentum to the point that I no longer create the videos myself! Now, I delegate to more gifted editors than me, better technicians. A role of artistic manager suits me better. Thus Nomad Black Sheep becomes a production house that organizes shootings and even refines its branding by creating clothes.",
     "loveTitle": "Pure love",
     "loveDesc1": "Being a businessman, like being an artist, has anyway no other interest than the ephemeral search for pleasure. Otherwise, it's only vanity… On the other hand, what opposes vanity is an event of January 2023… Nora entered my misanthropic life. She is the little dog I always wanted to have, the one who forms the perfect duo with me, and who forces me to unprecedented responsibilities. And with Christina, whom I would no longer qualify as a muse but rather as an eternal accomplice, we form a pack. We are now united and reunited by what is pure, most respectful, most loyal: the love of a dog.",
-    "caption4": "Nora: beauty, intelligence and kindness gathered in a single being. Dogs should rule the world, not men!",
+    "caption4": "Intelligence and kindness gathered in a single being. Dogs should rule the world, not men!",
     "noraDesc1": "A last word, in conclusion. For those who are looking for a less subjective and less emotional biography, they can eventually refer to a Wikipedia page or to the ultra-competence of an artificial intelligence.",
     "noraDesc2": "I neither confirm nor infirm what may be written there, in fact, I don't know, I have never dared to read. I stick to this biography that I will complete as I go, for the longest, truly the longest possible. And when I have nothing more to hope for, there will be in fine an ultimate hope, that of dying by suicide. Scheduled date, who knows?, to be kept secret, like the day of birth.",
     "modalTitle": "⚠️ Caution: Naked Picture to follow.",
-    "modalDescription": "The next image in the progression is a <bold>full-body photograph</bold> intended to display the entirety of the tattoo work. As this image contains <bold>nudity</bold>, we require your explicit consent to view it.",
+    "modalDescription": "The next image contains <bold>nudity</bold>, we require your explicit consent to view it.",
     "modalConsent": "Click only if you are 18 or over.",
     "modalYes": "Yes, Show Me",
     "modalNo": "No, Keep Me Here",
+    "nudeWarning": "the following photo shows a full nude in order to display the tattooed body in (almost) its entirety. although this image is not scandalous, we advise our audience under 18 or those who do not consent to nudity that they may stop the slideshow here.",
     "slides": {
       "rightArm": "Right Arm",
       "leftArm": "Left Arm",
@@ -131,18 +133,18 @@
     }
   },
   "cinema": {
-    "title": "My Cinema Library",
+    "title": "My Film Library",
     "quote": "“Cinema is the modern writing whose ink is light.”, <bold>Jean Cocteau</bold>",
     "searchPlaceholder": "Search for a movie, director...",
     "noMovies": "No movies found for this search.",
-    "footer": "© {{year}} – Nomad Black Sheep Cinema Archive",
+    "footer": "© {{year}} – Nomad Black Sheep Film Archive",
     "categories": {
-      "Cinéma Muet": "Silent Cinema",
-      "Cinéma Américain": "American Cinema",
+      "Cinéma Muet": "Silent",
+      "Cinéma Américain": "American",
       "Canada anglophone": "Anglophone Canada",
       "Canada francophone": "Francophone Canada",
-      "Cinéma français": "French Cinema",
-      "Cinéma latino-américain": "Latin American Cinema",
+      "Cinéma français": "French",
+      "Cinéma latino-américain": "Latin American",
       "Asie": "Asia",
       "Océanie": "Oceania",
       "ANIMATION": "Animation"
@@ -165,7 +167,8 @@
     "p8": "Next, a second goal goes beyond my personal ambition and joins that of a collective of artists now grouped under the Nomad Black Sheep label. It is a societal goal that represents values and illustrates struggles that are increasingly necessary in a society where borders, nationalisms, identity claims, and abuses of power do more than just scare us.",
     "p9": "Let it be clear: Nomad Black Sheep is not involved in politics. Neither right-wing nor left-wing, a black sheep hates fascisms, communisms, fundamentalisms, and all authoritarianisms—intentionally cited here in the plural—equally. He never marches in step; he subscribes to no ideology. He traverses the world, as he pleases and at his own pace, fighting for all freedoms of expression, for gender equality, and for an art freed from the desires for censorship that lurk around its green meadows...",
     "caption3": "We live in an increasingly standardized society, where all rough edges and anything that stands out must be smoothed over. We face self-righteousness and political correctness. We face a lack of kindness, a lack of solidarity, a lack of generosity. Against these terrifying observations, we oppose this 'Fuck normality' as an amusing and iconoclastic slogan.",
-    "p10": "There are dozens of ways to be a black sheep. If the mindset displayed on this page touches you, if 'freedom', 'tolerance', and 'generosity' are among your favorite words in the dictionary, then we can work together and build bridges. On our side, our promise will be to maintain a professional quality standard and practice accessible prices. It's your move to start a collaboration."
+    "p10": "There are dozens of ways to be a black sheep. If the mindset displayed on this page touches you, if 'freedom', 'tolerance', and 'generosity' are among your favorite words in the dictionary, then we can work together and build bridges. On our side, our promise will be to maintain a professional quality standard and practice accessible prices. It's your move to start a collaboration.",
+    "filmLink": "Film"
   },
   "photographyEroticism": {
     "title": "Eroticism",
@@ -182,6 +185,11 @@
       "loveThoughts": "SOME THOUGHTS ABOUT LOVE",
       "grace": "THE STATE OF GRACE"
     }
+  },
+  "photographyPortraits": {
+    "title": "Portraits",
+    "quote1": "\u201cA portrait is not a likeness. The moment an emotion or fact is transformed into a photograph it is no longer a fact but an opinion.\u201d <bold>Richard Avedon</bold>",
+    "quote2": "\u201cEvery face tells a story that no words can fully express.\u201d <bold>Steve McCurry</bold>"
   },
   "photographyTravel": {
     "title": "Travel",

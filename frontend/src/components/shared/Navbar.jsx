@@ -71,6 +71,10 @@ const Navbar = () => {
           title: t("nav.photography_sub.eroticism"),
           path: "/photography/eroticism",
         },
+        {
+          title: t("nav.photography_sub.portraits"),
+          path: "/photography/portraits",
+        },
       ],
     },
 

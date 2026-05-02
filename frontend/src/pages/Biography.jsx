@@ -20,6 +20,7 @@ import caruselImg7 from "../assets/Biography/Leg Tattoo 2.jpg";
 import caruselImg8 from "../assets/Biography/Leg Tattoo 3.jpg";
 
 import caruselImg9 from "../assets/Biography/image6.jpg";
+import tattooWarningImg from "../assets/Biography/tattoo_warning.jpg";
 import rainbow from "../assets/Home/rainbow.png";
 import typewriterSticker from "../assets/typewriter_sticker.png";
 import quillSticker from "../assets/quill_sticker.png";
@@ -46,7 +47,7 @@ const images = [
 
 
 // Define constants for better readability
-const NUDE_SLIDE_INDEX = images.length - 1;
+// Total slides: 8 tattoo images + 1 warning slide + 1 nude slide = 10
 
 const Biography = () => {
   const { t } = useTranslation("global");
@@ -66,13 +67,11 @@ const Biography = () => {
     return { __html: html };
   };
 
-  // State for the carousel's active index and modal status
-  const [swiperInstance, setSwiperInstance] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [hasConsented, setHasConsented] = useState(false);
+  // State for the carousel's active index
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Define names for the slides corresponding to the images array
+  // Now includes the warning slide between penultimate and last
   const slideNames = [
     t("biography.slides.rightArm"),
     t("biography.slides.leftArm"),
@@ -82,36 +81,13 @@ const Biography = () => {
     t("biography.slides.leg"),
     t("biography.slides.leg"),
     t("biography.slides.leg"),
+    "", // warning slide - no name
     t("biography.slides.fullBodyNude"),
   ];
 
-  // Function to handle slide change and intercept the nude slide
+  // Simple slide change handler - no modal interception
   const handleSlideChange = (swiper) => {
-    const nextIndex = swiper.activeIndex;
-
-    // Check if the user is attempting to slide to the nude image
-    if (nextIndex === NUDE_SLIDE_INDEX && !hasConsented) {
-      // Force Swiper to stay on the previous slide
-      swiper.slideTo(NUDE_SLIDE_INDEX - 1);
-
-      // Open the consent modal
-      setIsModalOpen(true);
-    } else {
-      // Allow navigation and update the active index
-      setActiveIndex(nextIndex);
-    }
-  };
-
-  // Function to handle consent
-  const handleConsent = (consent) => {
-    setIsModalOpen(false);
-    if (consent) {
-      setHasConsented(true);
-      // Now that consent is given, manually slide to the nude image
-      swiperInstance.slideTo(NUDE_SLIDE_INDEX);
-      setActiveIndex(NUDE_SLIDE_INDEX);
-    }
-    // If 'No' is clicked, the state remains false and the slide stays put
+    setActiveIndex(swiper.activeIndex);
   };
 
   return (
@@ -169,7 +145,7 @@ const Biography = () => {
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full" src={img3} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.youthCaption"))} />
-          <div className="bg-[#22c55e] mr-auto w-1/3 mt-2 h-1 rounded-full"></div>
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <div className="font-jost md:text-xl lg:text-2xl">
           <p className="mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.litterature"))} />
@@ -202,6 +178,7 @@ const Biography = () => {
               {t("biography.homeTitle")}
             </p>
             <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.homeCaption"))} />
+            <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
           </div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-2 font-bold italic" dangerouslySetInnerHTML={renderHTML(t("biography.adultTitle3"))} />
@@ -226,6 +203,7 @@ const Biography = () => {
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img5} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.cinemaCaption"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.cinemaDesc"))} />
       </div>
@@ -235,6 +213,7 @@ const Biography = () => {
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img6} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption2"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.bookDesc"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.novelDesc"))} />
@@ -245,6 +224,7 @@ const Biography = () => {
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img7} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.writingCaption"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.inspiration"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.writingDesc1"))} />
@@ -261,6 +241,7 @@ const Biography = () => {
         <div className="float-right w-1/2 md:w-1/4 ml-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img8} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption3"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc2"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.exitDesc3"))} />
@@ -288,7 +269,6 @@ const Biography = () => {
       <div className="clearfix mb-6">
         <div className="float-right w-full md:w-1/4 ml-0 md:ml-6 mb-4">
           <Swiper
-            onSwiper={setSwiperInstance}
             onSlideChange={handleSlideChange}
             spaceBetween={30}
             effect={"fade"}
@@ -298,7 +278,8 @@ const Biography = () => {
             modules={[EffectFade, Navigation, Pagination]}
             className="rounded-2xl shadow-xl w-full swiper-custom-theme"
           >
-            {images.map((src, index) => (
+            {/* Regular tattoo slides (all except the last nude one) */}
+            {images.slice(0, -1).map((src, index) => (
               <SwiperSlide key={index}>
                 <div className="relative overflow-hidden rounded-2xl">
                   <div className="w-full pb-[177.77%] relative">
@@ -311,45 +292,47 @@ const Biography = () => {
                 </div>
               </SwiperSlide>
             ))}
+
+            {/* Warning slide: tattoo image on left, soft text on right */}
+            <SwiperSlide key="warning">
+              <div className="relative overflow-hidden rounded-2xl bg-[#f5f0eb]">
+                <div className="w-full pb-[177.77%] relative">
+                  <div className="absolute inset-0 flex flex-row items-center p-4 gap-4">
+                    <img
+                      src={tattooWarningImg}
+                      alt="Tattoo detail"
+                      className="w-1/2 h-full object-contain rounded-xl"
+                    />
+                    <p className="w-1/2 font-jost text-[9px] md:text-[11px] text-gray-600 leading-relaxed lowercase">
+                      {t("biography.nudeWarning")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* Last slide: the nude image */}
+            <SwiperSlide key="nude">
+              <div className="relative overflow-hidden rounded-2xl">
+                <div className="w-full pb-[177.77%] relative">
+                  <img
+                    src={caruselImg9}
+                    alt={`Tattoo slide ${images.length}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
           <p className="text-center font-bold text-lg mt-2 text-[#0c331c] italic">
             {slideNames[activeIndex]}
           </p>
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 italic text-left mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.TattooCaption"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.endSection"))} />
       </div>
 
-      {/* --- Nude Content Consent Modal --- */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white p-8 rounded-lg shadow-2xl max-w-md w-full text-center">
-            <h3 className="text-2xl font-bold text-[#0c331c] mb-4 italic">
-              {t("biography.modalTitle")}
-            </h3>
-            <div className="text-gray-700 mb-6">
-              <span dangerouslySetInnerHTML={renderHTML(t("biography.modalDescription"))} />
-            </div>
-            <p className="text-gray-700 mb-8 font-semibold">
-              {t("biography.modalConsent")}
-            </p>
-            <div className="flex justify-center space-x-4">
-              <button
-                onClick={() => handleConsent(true)}
-                className="btn px-6 py-3 bg-[#0c331c] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-300"
-              >
-                {t("biography.modalYes")}
-              </button>
-              <button
-                onClick={() => handleConsent(false)}
-                className="px-6 py-3 border btn border-gray-300 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
-              >
-                {t("biography.modalNo")}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* desire for youth */}
       <div className="mb-6">
@@ -365,6 +348,7 @@ const Biography = () => {
         <div className="float-left w-1/2 md:w-1/4 mr-6 mb-4 mt-2">
           <img className="w-full rounded-2xl" src={img9} alt="" />
           <p className="font-jost text-[10px] md:text-xs opacity-50 hover:opacity-100 hover:text-sm md:hover:text-base transition-all duration-300 text-left italic mt-1" dangerouslySetInnerHTML={renderHTML(t("biography.caption4"))} />
+          <div className="bg-[#0E7D3A] mr-auto w-full mt-2 h-2 rounded-full"></div>
         </div>
         <h5 className="font-jost md:text-xl lg:text-2xl font-bold mb-2 italic" dangerouslySetInnerHTML={renderHTML(t("biography.loveTitle"))} />
         <p className="font-jost md:text-xl lg:text-2xl mb-4" dangerouslySetInnerHTML={renderHTML(t("biography.loveDesc1"))} />

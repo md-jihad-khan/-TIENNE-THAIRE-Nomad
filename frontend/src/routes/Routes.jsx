@@ -11,6 +11,7 @@ import NBS from "../pages/NBS";
 import Introduction from "../pages/Photography/Introduction";
 import Travel from "../pages/Photography/Travel";
 import Eroticism from "../pages/Photography/Eroticism";
+import Portraits from "../pages/Photography/Portraits";
 import La from "../pages/Books/Novel/La";
 import ErrorPage from "../pages/ErrorPage";
 import Al from "../pages/Books/Novel/Al";
@@ -91,6 +92,10 @@ export const router = createBrowserRouter([
       {
         path: "/photography/eroticism",
         element: <Eroticism />,
+      },
+      {
+        path: "/photography/portraits",
+        element: <Portraits />,
       },
       {
         path: "/nomadblacksheep",
